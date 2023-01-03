@@ -2,10 +2,10 @@ name: Get Page
 
 # 触发条件
 on:
-  push:
-    branches: [ "master" ]
-  pull_request:
-    branches: [ "master" ]
+  #push:
+    #branches: [ "master" ]
+  #pull_request:
+    #branches: [ "master" ]
   workflow_dispatch:
 
   schedule:
@@ -20,7 +20,7 @@ jobs:
     - name: Install httrack
       run: sudo apt install httrack
     - name: Get torproject.org Page
-      run: httrack https://torproject.org
+      run: httrack "https://torproject.org"
     #- name: Get torproject.org Page
       #run: echo aaaaa>>aa.txt
     - name: Commit change
