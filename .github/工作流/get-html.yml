@@ -15,12 +15,12 @@ jobs:
     runs-on: ubuntu-latest
     steps:
     - uses: actions/checkout@v3
-    # - name: Install httrack
-        # run: sudo apt install httrack
+    #- name: Install httrack
+      #run: sudo apt install httrack
     # - name: Get torproject.org Page
-        # run: httrack https://torproject.org
+      # run: httrack https://torproject.org
     - name: Get torproject.org Page
-        run: echo aaaaa>>aa.txt
+      run: echo aaaaa > ./aa.txt
     - name: Commit change
       run: |
         git config --local user.email "actions@github.com"
