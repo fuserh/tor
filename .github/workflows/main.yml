@@ -28,7 +28,7 @@ jobs:
         git config --local user.email "actions@github.com"
         git config --local user.name "GitHub Actions"
         git pull origin master
-        git add .
+        git add ./torproject.org
         git commit -m "在$(date '+%Y-%m-%d %H:%M:%S')更新网页并上传"
     - name: Push
       uses:  ad-m/github-push-action@master
