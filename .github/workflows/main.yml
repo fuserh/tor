@@ -13,23 +13,23 @@ on:
 
 jobs:
   main:
-    name: Merge & speedtest
+    name: 每周自动更新网页
     runs-on: ubuntu-latest
     steps:
     - uses: actions/checkout@v3
-    # - name: Install httrack
-      # run: sudo apt install httrack
-    # - name: Get torproject.org Page
-      # run: httrack https://torproject.org
+    - name: Install httrack
+      run: sudo apt install httrack
     - name: Get torproject.org Page
-      run: echo aaaaa>>aa.txt
+      run: httrack https://torproject.org
+    #- name: Get torproject.org Page
+      #run: echo aaaaa>>aa.txt
     - name: Commit change
       run: |
         git config --local user.email "actions@github.com"
         git config --local user.name "GitHub Actions"
         git pull origin master
         git add .
-        git commit -m "$(date '+%Y-%m-%d %H:%M:%S')更新上传"
+        git commit -m "在$(date '+%Y-%m-%d %H:%M:%S')更新网页并上传"
     - name: Push
       uses:  ad-m/github-push-action@master
       with:
