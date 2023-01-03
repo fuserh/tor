@@ -20,9 +20,14 @@ jobs:
     - name: Install httrack
       run: sudo apt install httrack
     - name: Get torproject.org Page
-      run: httrack "https://www.torproject.org/"
+      run: httrack "https://www.torproject.org/zh-CN"
     #- name: Get torproject.org Page
       #run: echo aaaaa>>aa.txt
+    - name: Upload artifact # 上传构建产物，这里我们的源码目录是 src，而实际运行的代码是构建后的 bin 目录
+      uses: actions/upload-artifact@v2
+      with:
+          name: build_output
+          path: .
     - name: Commit change
       run: |
         cd ./www.torproject.org
@@ -35,3 +40,4 @@ jobs:
       uses:  ad-m/github-push-action@master
       with:
         branch: master
+    
