@@ -4205,7 +4205,7 @@ readers do not read off random characters that represent icons */
   font-style: normal;
   font-weight: 400;
   src: url("../webfonts/fa-regular-400.html");
-  src: url("../webfonts/fa-regular-400d41d.html?#iefix") format("embedded-opentype"), url("../webfonts/fa-regular-400.woff2") format("woff2"), url("../webfonts/fa-regular-401.html") format("woff"), url("../webfonts/fa-regular-402.html") format("truetype"), url("../webfonts/fa-regular-403.html#fontawesome") format("svg"); }
+  src: url("../webfonts/fa-regular-400d41d.html?#iefix") format("embedded-opentype"), url("../webfonts/fa-regular-401.html") format("woff2"), url("../webfonts/fa-regular-402.html") format("woff"), url("../webfonts/fa-regular-403.html") format("truetype"), url("../webfonts/fa-regular-404.html#fontawesome") format("svg"); }
 
 .far {
   font-family: 'Font Awesome 5 Free';
@@ -4215,7 +4215,7 @@ readers do not read off random characters that represent icons */
   font-style: normal;
   font-weight: 900;
   src: url("../webfonts/fa-solid-900.html");
-  src: url("../webfonts/fa-solid-900d41d.html?#iefix") format("embedded-opentype"), url("../webfonts/fa-solid-901.html") format("woff2"), url("../webfonts/fa-solid-902.html") format("woff"), url("../webfonts/fa-solid-903.html") format("truetype"), url("../webfonts/fa-solid-904.html#fontawesome") format("svg"); }
+  src: url("../webfonts/fa-solid-900d41d.eot?#iefix") format("embedded-opentype"), url("../webfonts/fa-solid-900.woff2") format("woff2"), url("../webfonts/fa-solid-901.html") format("woff"), url("../webfonts/fa-solid-902.html") format("truetype"), url("../webfonts/fa-solid-903.html#fontawesome") format("svg"); }
 
 .fa,
 .fas {
