@@ -1,0 +1,668 @@
+<!doctype html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="vi" >
+
+<!-- Mirrored from www.torproject.org/vi/privchat/chapter-4/ by HTTrack Website Copier/3.x [XR&CO'2014], Mon, 22 May 2023 01:13:36 GMT -->
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Privchat chương 4 | Phòng vệ cho chính bạn kháng đỡ lại theo dõi và giám sát. Vượt qua kiểm duyệt.">
+  <meta name="twitter:card" content="summary" />
+  <meta name="twitter:site" content="@torproject" />
+  <meta name="twitter:creator" content="@torproject" />
+  <meta name="twitter:image" content="../../../static/images/tor-project-logo-onions.html"/>
+  <meta property="og:url" content="../../../index.html" />
+  <meta property="og:title" content="Dự án Tor Project | Bảo mật riêng tư &amp; Tự do Trực tuyến" />
+  <meta property="og:description" content="Phòng vệ cho chính bạn kháng đỡ lại theo dõi và giám sát. Vượt qua kiểm duyệt." />
+  <meta property="og:image" content="../../../static/images/tor-project-logo-onions.html" />
+  <meta name="monetization" content="$ilp.uphold.com/pYfXb92JBQN4">
+  <link rel="stylesheet" href="../../../static/css/bootstrapf024.html?h=d43bce84">
+  <link rel="stylesheet" href="../../../static/fonts/fontawesome/css/all.mindad8.html?h=9d272f6a" rel="stylesheet">
+  <!-- Standard favicon -->
+  <link rel="icon" type="image/x-icon" href="../../../static/images/favicon/favicon.html">
+  <!-- Recommended favicon format -->
+  <link rel="icon" type="image/png" href="../../../static/images/favicon/favicon-2.html">
+  <title>Dự án Tor Project | Privchat chương 4</title>
+  
+</head>
+<body class="no-gutters">
+  <header>
+      
+<div class="container-fluid bg-primary">
+  <nav class="navbar no-background navbar-expand-lg navbar-dark bg-primary p-4">
+
+    <a class="navbar-brand" href="../../index.html">
+      <img alt="The Tor Project" src="../../../static/images/tor-logo%402x0291.html?h=16ad42bc" >
+      <span class="sr-only">Tor Logo</span>
+    </a>
+
+    
+    
+      <h4 class="pl-2 pr-2"><a href="https://donate.torproject.org/" title="Quyên góp"><span class="badge badge-warning p-2">Quyên góp ngay</span></a></h4>
+    
+
+    <label for="nav-toggle">
+      <a class="btn btn-lg btn-primary navbar-toggler text-white p-3" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        Menu <span class="navbar-toggler-icon ml-1"></span>
+      </a>
+    </label>
+    <input type="checkbox" id="nav-toggle"/>
+    <div class="collapse navbar-collapse hamburger-menu" id="navbarSupportedContent">
+      <div class="mx-auto">
+        <ul class="navbar-nav">
+        	
+        	
+        	<li class="nav-item">
+            
+            
+              
+              
+                <a class="nav-link" href="../../../about/history/index.html">
+              
+            
+            Về chúng tôi
+              
+            </a>
+        	</li>
+  	
+        	<li class="nav-item">
+            
+            
+              
+              
+                <a class="nav-link" href="https://support.torproject.org/">
+              
+            
+            Hỗ trợ
+              
+            </a>
+        	</li>
+  	
+        	<li class="nav-item">
+            
+            
+              
+              
+                <a class="nav-link" href="https://community.torproject.org/">
+              
+            
+            Cộng đồng
+              
+            </a>
+        	</li>
+  	
+        	<li class="nav-item">
+            
+            
+              
+              
+                <a class="nav-link" href="https://blog.torproject.org/">
+              
+            
+            Các bài Blog
+              
+            </a>
+        	</li>
+  	
+        	<li class="nav-item">
+            
+            
+              
+              
+                <a class="nav-link" href="https://donate.torproject.org/">
+              
+            
+            Quyên góp
+              
+            </a>
+        	</li>
+  	
+    <!--
+            I add some strings here because the i18n plugin does not pick them up from the Databags
+            Về chúng tôi
+            Tài liệu
+            Hỗ trợ
+            Cộng đồng
+            Các bài Blog
+            PrivChat
+            Các Việc làm
+            Liên hệ
+            Báo chí
+            Quyên góp
+    -->
+        </ul>
+      </div>
+      
+      
+        <div class="btn-group dropdown pull-right">
+          
+            <button type="button" class="btn btn-primary bg-primary dropdown-toggle btn-block" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+          
+          Tiếng Việt (vi)
+          </button>
+          <div class="dropdown-menu">
+            
+              
+                <a class="dropdown-item" href="../../../privchat/chapter-4/index.html">English (en)</a>
+              
+            
+              
+                <a class="dropdown-item" href="../../../ca/privchat/chapter-4/index.html">Català (ca)</a>
+              
+            
+              
+                <a class="dropdown-item" href="../../../de/privchat/chapter-4/index.html">Deutsch (de)</a>
+              
+            
+              
+                <a class="dropdown-item" href="../../../es/privchat/chapter-4/index.html">Español (es)</a>
+              
+            
+              
+                <a class="dropdown-item" href="../../../fa/privchat/chapter-4/index.html">فارسی (fa)</a>
+              
+            
+              
+                <a class="dropdown-item" href="../../../fr/privchat/chapter-4/index.html">Français (fr)</a>
+              
+            
+              
+                <a class="dropdown-item" href="../../../hu/privchat/chapter-4/index.html">Magyar nyelv (hu)</a>
+              
+            
+              
+                <a class="dropdown-item" href="../../../is/privchat/chapter-4/index.html">Íslenska (is)</a>
+              
+            
+              
+                <a class="dropdown-item" href="../../../it/privchat/chapter-4/index.html">Italiano (it)</a>
+              
+            
+              
+                <a class="dropdown-item" href="../../../ja/privchat/chapter-4/index.html">日本語 (ja)</a>
+              
+            
+              
+                <a class="dropdown-item" href="../../../ka/privchat/chapter-4/index.html">ქართული (ka)</a>
+              
+            
+              
+                <a class="dropdown-item" href="../../../km/privchat/chapter-4/index.html">ភាសាខ្មែរ (km)</a>
+              
+            
+              
+                <a class="dropdown-item" href="../../../ko/privchat/chapter-4/index.html">한국어(ko)</a>
+              
+            
+              
+                <a class="dropdown-item" href="../../../pt-BR/privchat/chapter-4/index.html">Português Brasil (pt-BR)</a>
+              
+            
+              
+                <a class="dropdown-item" href="../../../ru/privchat/chapter-4/index.html">Русский (ru)</a>
+              
+            
+              
+                <a class="dropdown-item" href="../../../sq/privchat/chapter-4/index.html">Shqip (sq)</a>
+              
+            
+              
+                <a class="dropdown-item" href="../../../sw/privchat/chapter-4/index.html">Kiswahili (sw)</a>
+              
+            
+              
+                <a class="dropdown-item" href="../../../tr/privchat/chapter-4/index.html">Türkçe (tr)</a>
+              
+            
+              
+            
+              
+                <a class="dropdown-item" href="../../../zh-CN/privchat/chapter-4/index.html">简体中文 (zh-CN)</a>
+              
+            
+              
+                <a class="dropdown-item" href="../../../zh-TW/privchat/chapter-4/index.html">正體中文 (zh-TW)</a>
+              
+            
+          </div>
+        </div>
+      
+      
+      <div class="pull-right">
+        
+          <a class="btn btn-outline-light pull-right" href="../../download/index.html">
+        
+          Tải xuống trình duyệt Tor Browser<i class="ml-2 pt-1 fas fa-arrow-down-png"></i>
+        </a>
+      </div>
+    </nav>
+</div>
+  </header>
+  <div class="page pt-4">
+    
+<div class="container-fluid bg-primary">
+
+  <div class="row flex-xl-nowrap order-last">
+    
+    <div class="container bg-primary pt-1 pt-sm-0">
+    
+      <div class="row">
+        
+        <div class="col-12 content-center pt-5">
+          <div class="row">
+            <h6 class="mx-auto text-white text-capitalize"></h6>
+          </div>
+          <div class="row pb-5">
+            <h2 class="mx-auto display-3 text-white text-capitalize">Privchat chương 4</h2>
+          </div>
+          
+          <div class="row header-description">
+          
+            
+          </div>
+        </div>
+        
+      </div>
+    </div>
+  </div>
+</div>
+
+    <div class="container-fluid">
+      <div class="row flex-xl-nowrap">
+        
+        <main role="main" class="mx-auto col-12 order-last text-left">
+          <div class="container py-3 mt-5 preamble">
+            
+          </div>
+          <div class="container" style="background:url(../../../static/images/privchat/pattern.png) no-repeat center; background-size: contain;">
+  <div class="w-50 text-center mx-auto">
+    <img class="img-fluid p-3" height="auto" src="../../../static/images/privchat/privchat.html" /> <h1 class="display-2 text-primary">PrivChat</h1>
+    <p class="text-primary p-3"> <p>một cuộc trò chuyện về công nghệ, các quyền con người, <br/>và tự do trên internet do Dự án Tor Project mang đến cho bạn</p>
+</p>
+  </div>
+</div>
+
+<div class="container pb-3 mt-5 preamble">
+  <p>
+    PrivChat là chuỗi sự kiện gây quỹ được tổ chức để quyên góp cho Dự án Tor Project. Thông qua PrivChat, chúng tôi sẽ mang đến cho bạn những thông tin quan trọng liên quan đến những gì đang diễn ra trong lĩnh vực công nghệ, quyền con người và tự do internet bằng cách tham vấn các chuyên gia để trò chuyện với cộng đồng của chúng tôi.
+  </p>
+
+  <hr class="mt-5"/>
+
+</div>
+
+<div class="container py-3 mt-5">
+    <p class="h2 text-primary" target="_blank">Chương #4 - Kỷ niệm 25 năm Định tuyến Onion</p>
+    <a class="btn btn-small bg-primary text-light my-4" href="https://www.youtube.com/watch?v=-wbivkG8TcU" target="_blank"><i class="mr-2 pt-1 fas fa-play-circle-png"></i> Theo dõi </a>
+    <div>
+    <p class="font-family-serif">
+      Kỷ niệm 25 năm định tuyến onion với Tor!
+    </p>
+    <p class="font-family-serif">
+      Ngày 31 tháng 5 năm 2021 đánh dấu kỷ niệm 25 năm lần đầu tiên thuyết trình công khai về định tuyến onion ở Cambridge, Vương quốc Anh tại Hội thảo Ẩn giấu Thông tin đầu tiên của Viện Isaac Newton.
+    </p>
+    <p class="font-family-serif">
+      <p>Xin mời bạn cùng đón mừng khoảnh khắc đặc biệt này với chúng tôi để nói về sự khởi đầu của định tuyến Onion, ý tưởng này đã trở thành Tor như thế nào, và Dự án Tor Project cuối cùng đã ra đời như thế nào. Chúng tôi sẽ có sự tham gia của <strong>Paul Syverson</strong>, một trong những tác giả của <a href="https://www.onion-router.net/Publications.html#IH-1996">bài báo định tuyến onion đầu tiên</a>, cùng với Những người đồng sáng lập Dự án Tor Project <strong>Roger Dingledine</strong> và <strong>Nick Mathewson</strong>.</p>
+
+    </p>
+    <p class="font-family-serif">
+      <p>Chúng tôi sẽ hồi tưởng về những ngày đầu tiên của mạng định tuyến Onion tại Phòng thí nghiệm Nghiên cứu Hải quân Hoa Kỳ (NRL). (Hồi đó, các kết nối của bộ định tuyến Onion đi qua năm nút giao thay vì thiết kế ba nút giao hiện tại của Tor!) Không có gì là bí mật khi khái niệm định tuyến Onion bắt nguồn từ NRL (có trên <a href="../about/history/index.html">trang lịch sử của chúng tôi</a> ), nhưng còn rất nhiều điều chúng tôi muốn chia sẻ về cách Tor đã bắt đầu và những gì chúng tôi đã đạt được trong 25 năm qua.</p>
+
+    </p>
+    <p class="font-family-serif">
+      <p><strong>Gabriella Coleman</strong> – nhà nhân chủng học, tác giả và thành viên hội đồng quản trị Tor – sẽ tham gia với chúng tôi với tư cách là người dẫn chương trình và người điều hành. Tham gia với chúng tôi để có một phiên bản kỷ niệm của PrivChat để kỷ niệm 25 năm định tuyến onion.</p>
+
+    </p>
+    </div>
+</div>
+
+<div class="container pt-5 justify-content-center">
+
+  <h4>Nhà chủ</h4>
+
+    <div class="row">
+      <div class="container">
+      <div class="card flex-row flex-wrap py-3">
+        <div class="col-3">
+            <img class="card-img-top" src="../../../static/images/privchat/biella.png" alt="">
+        </div>
+        <div class="col">
+          <div class="card-block px-2">
+              <div class="pb-4">
+                <h4 class="display-4 text-primary">Gabriella Coleman</h4>
+                <strong class="display-5 text-primary mb-4">Giáo sư @ McGill, Thành viên Hội đồng Tor</strong>
+              </div>
+              <p class="text-tpo">
+                <p>Gabriella (Biella) Coleman giữ chức Chủ tịch Wolfe về Kiến thức Khoa học và Công nghệ <a href="http://www.mcgill.ca/ahcs/people-contacts/faculty/gabriella-coleman">tại Đại học McGill.</a> Được đào tạo để trở thành nhà nhân chủng, học bổng của cô <a href="https://www.journals.uchicago.edu/doi/pdfplus/10.1086/688697">bao gồm chính trị, văn hóa và đạo đức của việc hack</a>. Cô là tác giả của hai cuốn sách về tin tặc máy tính, đồng thời là người sáng lập và biên tập <a href="https://hackcur.io/">Hack_Curio</a>, một cổng thông tin video về văn hóa hack (bạn có thể tìm hiểu thêm về dự án <a href="https://media.ccc.de/v/36c3-10875-hack_curio#t=24">tại đây</a>). Cô ấy hiện đang viết một cuốn sách gồm các bài tiểu luận về tin tặc và nhà nước, đồng thời sẽ cung cấp tài liệu từ cuốn sách cho các Bài giảng của Henry Morgan năm 2020.</p>
+</p>
+<p  class="text-tpo"><p>Cuốn sách đầu tiên của cô ấy <a href="http://www.amazon.com/Coding-Freedom-Ethics-Aesthetics-Hacking/dp/0691144613/ref=sr_1_1?ie=UTF8&amp;qid=1419086140&amp;sr=8-1&amp;keywords=Coding+Freedom">Tự do viết code: Đạo đức và tính thẩm mỹ của việc hack</a> đã được xuất bản vào năm 2013 với Nhà xuất bản Đại học Princeton. Sau đó, cô xuất bản <a href="http://www.versobooks.com/books/1749-hacker-hoaxer-whistleblower-spy">Hacker, Hoaxer, Whistleblower, Spy: The Many Faces of Anonymous</a> (Verso , 2014), được đặt tên cho <a href="https://www.kirkusreviews.com/lists/best-current-affairs-books-2014/hacker-hoaxer-whistleblower-spy/">Kirkus Reviews Những cuốn sách hay nhất 2014</a> và được trao <a href="http://blog.castac.org/2015/10/2015-forsythe/">Giải thưởng Diana Forsythe của Hiệp hội Nhân chủng học Hoa Kỳ</a>.</p>
+ </p>
+<p  class="text-tpo"><p>Cam kết phục vụ cộng đồng dân tộc học, cô thường trình bày công việc của mình cho <a href="https://www.youtube.com/watch?v=A8mtG4oMzLs">nhiều đối tượng khán giả</a>, giảng dạy các khóa học đại học và sau đại học, đồng thời viết cho các phương tiện truyền thông nổi tiếng, bao gồm New York Times, Slate, Wired, MIT Technology Review, Huffington Post và Atlantic. Cô là thành viên hội đồng quản trị của <a href="../../../index.html">Dự án Tor</a>.</p>
+</p>
+<p class="text-tpo"><p>Bạn có thể tìm thấy CV, thông tin liên hệ, bao gồm khóa key PGP và những hình ảnh có độ phân giải cao <a href="http://gabriellacoleman.org/info/">tại đây</a>.</p>
+
+</p>
+          </div>
+        </div>
+      </div>
+      </div>
+    </div>
+
+  <h4 class="mt-5">Những người tham gia</h4>
+
+  <div class="row">
+    <div class="container">
+
+    <div class="card flex-row flex-wrap py-3 mb-5">
+      <div class="col-3">
+          <img class="card-img-top" src="../../../static/images/privchat/roger.html" alt="">
+      </div>
+      <div class="col">
+        <div class="card-block px-2">
+            <div class="pb-4">
+              <h4 class="display-4 text-primary">Roger Dingledine</h4>
+              <strong class="display-5 text-primary mb-4">Chủ tịch &amp; Đồng sáng lập, dự án Tor Project</strong>
+            </div>
+            <p class="text-tpo">Roger Dingledine là chủ tịch và đồng sáng lập của Dự án Tor Project, một tổ chức phi lợi nhuận phát triển phần mềm mã nguồn mở và miễn phí để bảo vệ mọi người khỏi bị theo dõi, kiểm duyệt và giám sát trực tuyến. Ông làm việc cùng với các nhà báo và các nhà hoạt động ở nhiều châu lục để giúp họ hiểu được và phòng vệ trước những mối đe dọa mà họ phải đối mặt. Roger đã được MIT Technology Review chọn là một trong số 35 nhà đổi mới hàng đầu dưới 35 tuổi, ông là đồng tác giả của bài báo thiết kế Tor đã giành được giải thưởng &#34;Test of Time&#34; của Usenix Security và đã được tạp chí Foreign Policy công nhận là một trong những 100 nhà tư tưởng toàn cầu hàng đầu của nó.</p>
+        </div>
+      </div>
+    </div>
+
+    <div class="card flex-row flex-wrap py-3 mb-5">
+      <div class="col-3">
+          <img class="card-img-top" src="../../../static/images/privchat/nick.png" alt="">
+      </div>
+      <div class="col">
+        <div class="card-block px-2">
+            <div class="pb-4">
+              <h4 class="display-4 text-primary">Nick Mathewson</h4>
+              <strong class="display-5 text-primary mb-4">Kiến trúc sư trưởng &amp; Đồng sáng lập Mạng, Dự án Tor Project</strong>
+            </div>
+            <p class="text-tpo">Anh ấy là một trong những nhà thiết kế ban đầu của Tor và là một chuyên gia trong việc triển khai các công nghệ ẩn danh. Anh ấy bắt đầu tình nguyện lập trình Tor vào năm 2002, trở thành nhà phát triển chính vào năm 2007 và trở thành kiến trúc sư phần mềm hàng đầu vào năm 2012. Nick là người có công trong việc viết các thông số kỹ thuật giao thức toàn diện của Tor, giúp các nhà nghiên cứu đặt cơ sở cho công việc của họ trên một nền tảng vững chắc và đã kích hoạt nhiều triển khai độc lập của các giao thức Tor.</p>
+        </div>
+      </div>
+    </div>
+
+    <div class="card flex-row flex-wrap py-3 mb-5">
+      <div class="col-3">
+          <img class="card-img-top" src="../../../static/images/privchat/paul.html" alt="">
+      </div>
+      <div class="col">
+        <div class="card-block px-2">
+            <div class="pb-4">
+              <h4 class="display-4 text-primary">Paul Syverson</h4>
+              <strong class="display-5 text-primary mb-4">Nhà toán học, Phòng thí nghiệm Nghiên cứu Hải quân Hoa Kỳ</strong>
+            </div>
+            <p class="text-tpo">Nhà phát minh ra định tuyến onion, người khởi tạo Tor, tác giả của một cuốn sách và hơn một trăm bài báo được trích dẫn, chủ trì của nhiều hội nghị về bảo mật và quyền riêng tư, người có tham vọng đi lại bằng xe đạp một bánh -- có nhiều bằng cấp cao về triết học và toán học. Paul là nhà sáng lập Hội nghị chuyên đề về công nghệ nâng cao quyền riêng tư và Hội thảo ACM về quyền riêng tư trong xã hội điện tử. Ông cũng là Người tiên phong của EFF và là Thành viên của ACM. Trong ba thập kỷ làm Nhà toán học tại Phòng thí nghiệm Nghiên cứu Hải quân Hoa Kỳ, ông cũng là học giả thỉnh giảng tại các tổ chức ở Hoa Kỳ và Châu Âu.</p>
+        </div>
+      </div>
+    </div>
+
+</div>
+
+
+<div class="container">
+  <div class="row bg-secondary p-5 mx-1 my-5">
+    <h1><i class="fas fa-hand-holding-usd px-5 text-light"></i></h1>
+    <h3 class="preamble text-light text-center mx-auto">Những sự quyên góp của bạn làm cho loạt bài này và công việc của chúng tôi tại Tor trở nên khả thi.<br/> <p>Cách tốt nhất để hỗ trợ công việc của chúng tôi là <a class="text-success" href="https://donate.torproject.org/monthly-giving" target="_blank"> trở thành người quyên góp hàng tháng.</a></p>
+</h3>
+  </div>
+</div>
+
+        </main>
+      </div>
+    </div>
+  </div>
+  
+    
+
+<div class="container-fluid bg-dark footer order-last text-left">
+
+  
+
+  <div class="row onion-bg">
+    <div class="col-12 d-flex justify-content-right">
+      <div class="container pt-5 justify-content-right">
+        <div class="offset-lx-2 offset-sm-4 mt-5">
+           <h2 class="text-white text-bold">Tải xuống trình duyệt Tor Browser</h2>
+            <p class="text-white">Tải về Trình duyệt Tor Browser để trải nghiệm duyệt web thực sự riêng tư không có theo dõi, giám sát, hoặc kiểm duyệt.</p>
+            
+            
+              <a class="btn text-primary bg-white btn-light pull-right mt-2" href="../../download/index.html">
+            
+
+              Tải xuống trình duyệt Tor Browser<i class="ml-2 pt-1 fas fa-arrow-down-png-purple"></i>
+            </a>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  
+
+
+  <div class="row">
+    <div class="col-12 d-flex justify-content-center">
+      <div class="col-sm-6 offset-lx-1 offset-sm-0 mt-5">
+	        <h5 class="font-weight-bold mt-5 text-white">Sứ mạng của chúng tôi:</h5>
+          <p class="text-white mb-5" >Để thúc đẩy tiến bộ các quyền và tự do của con người thông qua khởi tạo và triển khai các công nghệ riêng tư và ẩn danh mã nguồn mở và miễn phí, hỗ trợ tính khả dụng và sử dụng vô hạn của chúng, đồng thời nâng cao nhận thức khoa học và phổ thông đại chúng.</p>
+      </div>
+      <div class="col-sm-2 mt-5 d-none d-sm-block">
+        <ul class="nav flex-column mt-sm-5">
+          
+          
+          <li class="nav-item">
+          
+          
+            
+            
+              <a class="nav-link text-light" href="../../../about/jobs/index.html">
+            
+          
+              Các Việc làm
+              
+            </a>
+          </li>
+          
+          <li class="nav-item">
+          
+          
+            
+            
+              <a class="nav-link text-light" href="https://blog.torproject.org/">
+            
+          
+              Các bài Blog
+              
+            </a>
+          </li>
+          
+          <li class="nav-item">
+          
+          
+            
+            
+              <a class="nav-link text-light" href="../../../contact/index.html">
+            
+          
+              Liên hệ
+              
+            </a>
+          </li>
+          
+          <li class="nav-item">
+          
+          
+            
+            
+              <a class="nav-link text-light" href="../../../press/index.html">
+            
+          
+              Báo chí
+              
+            </a>
+          </li>
+          
+          <li class="nav-item">
+          
+          
+            
+            
+              <a class="nav-link text-light" href="../../../privchat/index.html">
+            
+          
+              PrivChat
+              
+            </a>
+          </li>
+          
+        </ul>
+        
+        
+          <a href="https://donate.torproject.org/" title="Quyên góp"><h4><span class="badge badge-warning p-2">Quyên góp ngay</span></h4></a>
+        
+      </div>
+    </div>
+  </div>
+  
+  <div class="row">
+    <div class="col-12 d-flex justify-content-center">
+      <div class="col-sm-6 offset-lx-1 offset-sm-0 mt-5">
+        <p class="text-primary-light text-uppercase">Đăng ký theo dõi thư báo Newsletter của chúng tôi</p>
+        <p class="text-light">Nhận các bản cập nhật hàng tháng và các cơ hội tới từ Dự án Tor Project:</p>
+        <p class="w"><a class="btn btn-small btn-dark mt-2 text-white text-uppercase active" role="button" aria-pressed="true" href="https://newsletter.torproject.org/">Đăng ký</a></p>
+      </div>
+      <div class="col-sm-2 mt-5 d-none d-sm-block">
+        <div class="row">
+          <h4><a class="text-white px-3" target="_blank" href="https://forum.torproject.net/"><i class="fab fa-discourse"></i></a></h4>
+          <h4><a class="text-white px-3" target="_blank" href="https://www.facebook.com/TorProject/"><i class="fab fa-facebook-png"></i></a></h4>
+          <h4><a class="mastodon text-white px-3" target="_blank" href="https://mastodon.social/@torproject" rel="me"><i class="fab fa-mastodon-png"></i></a></h4>
+        </div>
+        <div class="row">
+          <h4><a class="instagram text-white px-3" target="_blank" href="https://www.instagram.com/torproject"><i class="fab fa-instagram-png"></i></a></h4>
+          <h4><a class="twitter text-white px-3" target="_blank" href="https://twitter.com/torproject"><i class="fab fa-twitter-png"></i></a></h4>
+          <h4><a class="linkedin text-white px-3" target="_blank" href="https://www.linkedin.com/company/tor-project"><i class="fab fa-linkedin-png"></i></a></h4>
+        </div>
+        <div class="row">
+          <h4><a class="github text-white px-3" target="_blank" href="https://github.com/torproject"><i class="fab fa-github-png"></i></a></h4>
+          <h4><a class="telegram text-white px-3" target="_blank" href="https://t.me/torproject"><i class="fab fa-telegram-png"></i></a></h4>
+        </div>
+      </div>
+    </div>
+  </div>
+  
+  <div class="row">
+    <div class="col-12 d-flex justify-content-center">
+      <div class="col-8 mt-5">
+        
+        <p class="text-primary text-light">Thương hiệu, thông tin bản quyền, và các quy tắc sử dụng bởi bên thứ ba có thể được tìm thấy tại đường dẫn của chúng tôi là 
+  <a href="../../../about/trademark/index.html" target="_blank" class="text-primary text-light"><u>FAQ</u></a>
+.</p>
+      </div>
+      <div class="col-sm-2 mt-5 d-none d-sm-block">
+        <div class="btn-group dropup float-right">
+      	  <button type="button" class="btn btn-primary dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+            Tiếng Việt (vi)
+      	  </button>
+      	  <div class="dropdown-menu">
+            
+              
+    	          <a class="dropdown-item" href="../../../privchat/chapter-4/index.html">English (en)</a>
+              
+            
+              
+    	          <a class="dropdown-item" href="../../../ca/privchat/chapter-4/index.html">Català (ca)</a>
+              
+            
+              
+    	          <a class="dropdown-item" href="../../../de/privchat/chapter-4/index.html">Deutsch (de)</a>
+              
+            
+              
+    	          <a class="dropdown-item" href="../../../es/privchat/chapter-4/index.html">Español (es)</a>
+              
+            
+              
+    	          <a class="dropdown-item" href="../../../fa/privchat/chapter-4/index.html">فارسی (fa)</a>
+              
+            
+              
+    	          <a class="dropdown-item" href="../../../fr/privchat/chapter-4/index.html">Français (fr)</a>
+              
+            
+              
+    	          <a class="dropdown-item" href="../../../hu/privchat/chapter-4/index.html">Magyar nyelv (hu)</a>
+              
+            
+              
+    	          <a class="dropdown-item" href="../../../is/privchat/chapter-4/index.html">Íslenska (is)</a>
+              
+            
+              
+    	          <a class="dropdown-item" href="../../../it/privchat/chapter-4/index.html">Italiano (it)</a>
+              
+            
+              
+    	          <a class="dropdown-item" href="../../../ja/privchat/chapter-4/index.html">日本語 (ja)</a>
+              
+            
+              
+    	          <a class="dropdown-item" href="../../../ka/privchat/chapter-4/index.html">ქართული (ka)</a>
+              
+            
+              
+    	          <a class="dropdown-item" href="../../../km/privchat/chapter-4/index.html">ភាសាខ្មែរ (km)</a>
+              
+            
+              
+    	          <a class="dropdown-item" href="../../../ko/privchat/chapter-4/index.html">한국어(ko)</a>
+              
+            
+              
+    	          <a class="dropdown-item" href="../../../pt-BR/privchat/chapter-4/index.html">Português Brasil (pt-BR)</a>
+              
+            
+              
+    	          <a class="dropdown-item" href="../../../ru/privchat/chapter-4/index.html">Русский (ru)</a>
+              
+            
+              
+    	          <a class="dropdown-item" href="../../../sq/privchat/chapter-4/index.html">Shqip (sq)</a>
+              
+            
+              
+    	          <a class="dropdown-item" href="../../../sw/privchat/chapter-4/index.html">Kiswahili (sw)</a>
+              
+            
+              
+    	          <a class="dropdown-item" href="../../../tr/privchat/chapter-4/index.html">Türkçe (tr)</a>
+              
+            
+              
+            
+              
+    	          <a class="dropdown-item" href="../../../zh-CN/privchat/chapter-4/index.html">简体中文 (zh-CN)</a>
+              
+            
+              
+    	          <a class="dropdown-item" href="../../../zh-TW/privchat/chapter-4/index.html">正體中文 (zh-TW)</a>
+              
+            
+        	</div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <script src="../../../static/js/jquery-3.2.1.min518c.js?h=1055018c" ></script>
+  <script src="../../../static/js/popper.min4068.html?h=a4336719" ></script>
+  <script src="../../../static/js/bootstrap.bundle.min8420.html?h=46d1f82f" ></script>
+  <script src="../../../static/js/scrollspy.minbf04.html?h=02674132" ></script>
+  <script src="../../../static/js/modernizr1532.html?h=9a7f0609" ></script>
+  <script src="../../../static/js/download4ad7.html?h=caaadf8f" ></script>
+  <script src="../../../static/js/fallback5781.html?h=de02ee18" ></script>
+  </div>
+</div>
+  
+</body>
+
+<!-- Mirrored from www.torproject.org/vi/privchat/chapter-4/ by HTTrack Website Copier/3.x [XR&CO'2014], Mon, 22 May 2023 01:13:36 GMT -->
+</html>

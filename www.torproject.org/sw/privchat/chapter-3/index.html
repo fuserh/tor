@@ -1,0 +1,651 @@
+<!doctype html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="sw" >
+
+<!-- Mirrored from www.torproject.org/sw/privchat/chapter-3/ by HTTrack Website Copier/3.x [XR&CO'2014], Mon, 22 May 2023 01:13:35 GMT -->
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content=" | Jilinde na kufuatiliwa na kuchukuliwa data zako. Kukwepa udhibiti.">
+  <meta name="twitter:card" content="summary" />
+  <meta name="twitter:site" content="@torproject" />
+  <meta name="twitter:creator" content="@torproject" />
+  <meta name="twitter:image" content="../../../static/images/tor-project-logo-onions.html"/>
+  <meta property="og:url" content="../../../index.html" />
+  <meta property="og:title" content="Tor Project | Faragha &amp; Uhuru Mtandaoni" />
+  <meta property="og:description" content="Jilinde na kufuatiliwa na kuchukuliwa data zako. Kukwepa udhibiti." />
+  <meta property="og:image" content="../../../static/images/tor-project-logo-onions.html" />
+  <meta name="monetization" content="$ilp.uphold.com/pYfXb92JBQN4">
+  <link rel="stylesheet" href="../../../static/css/bootstrapf024.html?h=d43bce84">
+  <link rel="stylesheet" href="../../../static/fonts/fontawesome/css/all.mindad8.html?h=9d272f6a" rel="stylesheet">
+  <!-- Standard favicon -->
+  <link rel="icon" type="image/x-icon" href="../../../static/images/favicon/favicon.html">
+  <!-- Recommended favicon format -->
+  <link rel="icon" type="image/png" href="../../../static/images/favicon/favicon-2.html">
+  <title>Tor Project | </title>
+  
+</head>
+<body class="no-gutters">
+  <header>
+      
+<div class="container-fluid bg-primary">
+  <nav class="navbar no-background navbar-expand-lg navbar-dark bg-primary p-4">
+
+    <a class="navbar-brand" href="../../index.html">
+      <img alt="The Tor Project" src="../../../static/images/tor-logo%402x0291.html?h=16ad42bc" >
+      <span class="sr-only">Tor Logo</span>
+    </a>
+
+    
+    
+      <h4 class="pl-2 pr-2"><a href="https://donate.torproject.org/" title="Changia"><span class="badge badge-warning p-2">Changia sasa</span></a></h4>
+    
+
+    <label for="nav-toggle">
+      <a class="btn btn-lg btn-primary navbar-toggler text-white p-3" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        Menyu <span class="navbar-toggler-icon ml-1"></span>
+      </a>
+    </label>
+    <input type="checkbox" id="nav-toggle"/>
+    <div class="collapse navbar-collapse hamburger-menu" id="navbarSupportedContent">
+      <div class="mx-auto">
+        <ul class="navbar-nav">
+        	
+        	
+        	<li class="nav-item">
+            
+            
+              
+              
+                <a class="nav-link" href="../../../about/history/index.html">
+              
+            
+            Kuhusu
+              
+            </a>
+        	</li>
+  	
+        	<li class="nav-item">
+            
+            
+              
+              
+                <a class="nav-link" href="https://support.torproject.org/">
+              
+            
+            Msaada
+              
+            </a>
+        	</li>
+  	
+        	<li class="nav-item">
+            
+            
+              
+              
+                <a class="nav-link" href="https://community.torproject.org/">
+              
+            
+            jumuiya
+              
+            </a>
+        	</li>
+  	
+        	<li class="nav-item">
+            
+            
+              
+              
+                <a class="nav-link" href="https://blog.torproject.org/">
+              
+            
+            Blogi
+              
+            </a>
+        	</li>
+  	
+        	<li class="nav-item">
+            
+            
+              
+              
+                <a class="nav-link" href="https://donate.torproject.org/">
+              
+            
+            Changia
+              
+            </a>
+        	</li>
+  	
+    <!--
+            I add some strings here because the i18n plugin does not pick them up from the Databags
+            Kuhusu
+            Kuhifadhi kumbukumbu
+            Msaada
+            jumuiya
+            Blogi
+            PrivChat
+            Kazi
+            Mawasiliano
+            Habari
+            Changia
+    -->
+        </ul>
+      </div>
+      
+      
+        <div class="btn-group dropdown pull-right">
+          
+            <button type="button" class="btn btn-primary bg-primary dropdown-toggle btn-block" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+          
+          Kiswahili (sw)
+          </button>
+          <div class="dropdown-menu">
+            
+              
+                <a class="dropdown-item" href="../../../privchat/chapter-3/index.html">English (en)</a>
+              
+            
+              
+                <a class="dropdown-item" href="../../../ca/privchat/chapter-3/index.html">Català (ca)</a>
+              
+            
+              
+                <a class="dropdown-item" href="../../../de/privchat/chapter-3/index.html">Deutsch (de)</a>
+              
+            
+              
+                <a class="dropdown-item" href="../../../es/privchat/chapter-3/index.html">Español (es)</a>
+              
+            
+              
+                <a class="dropdown-item" href="../../../fa/privchat/chapter-3/index.html">فارسی (fa)</a>
+              
+            
+              
+                <a class="dropdown-item" href="../../../fr/privchat/chapter-3/index.html">Français (fr)</a>
+              
+            
+              
+                <a class="dropdown-item" href="../../../hu/privchat/chapter-3/index.html">Magyar nyelv (hu)</a>
+              
+            
+              
+                <a class="dropdown-item" href="../../../is/privchat/chapter-3/index.html">Íslenska (is)</a>
+              
+            
+              
+                <a class="dropdown-item" href="../../../it/privchat/chapter-3/index.html">Italiano (it)</a>
+              
+            
+              
+                <a class="dropdown-item" href="../../../ja/privchat/chapter-3/index.html">日本語 (ja)</a>
+              
+            
+              
+                <a class="dropdown-item" href="../../../ka/privchat/chapter-3/index.html">ქართული (ka)</a>
+              
+            
+              
+                <a class="dropdown-item" href="../../../km/privchat/chapter-3/index.html">ភាសាខ្មែរ (km)</a>
+              
+            
+              
+                <a class="dropdown-item" href="../../../ko/privchat/chapter-3/index.html">한국어(ko)</a>
+              
+            
+              
+                <a class="dropdown-item" href="../../../pt-BR/privchat/chapter-3/index.html">Português Brasil (pt-BR)</a>
+              
+            
+              
+                <a class="dropdown-item" href="../../../ru/privchat/chapter-3/index.html">Русский (ru)</a>
+              
+            
+              
+                <a class="dropdown-item" href="../../../sq/privchat/chapter-3/index.html">Shqip (sq)</a>
+              
+            
+              
+            
+              
+                <a class="dropdown-item" href="../../../tr/privchat/chapter-3/index.html">Türkçe (tr)</a>
+              
+            
+              
+                <a class="dropdown-item" href="../../../vi/privchat/chapter-3/index.html">Tiếng Việt (vi)</a>
+              
+            
+              
+                <a class="dropdown-item" href="../../../zh-CN/privchat/chapter-3/index.html">简体中文 (zh-CN)</a>
+              
+            
+              
+                <a class="dropdown-item" href="../../../zh-TW/privchat/chapter-3/index.html">正體中文 (zh-TW)</a>
+              
+            
+          </div>
+        </div>
+      
+      
+      <div class="pull-right">
+        
+          <a class="btn btn-outline-light pull-right" href="../../download/index.html">
+        
+          Pakua Tor Browser<i class="ml-2 pt-1 fas fa-arrow-down-png"></i>
+        </a>
+      </div>
+    </nav>
+</div>
+  </header>
+  <div class="page pt-4">
+    
+<div class="container-fluid bg-primary">
+
+  <div class="row flex-xl-nowrap order-last">
+    
+    <div class="container bg-primary pt-1 pt-sm-0">
+    
+      <div class="row">
+        
+        <div class="col-12 content-center pt-5">
+          <div class="row">
+            <h6 class="mx-auto text-white text-capitalize"></h6>
+          </div>
+          <div class="row pb-5">
+            <h2 class="mx-auto display-3 text-white text-capitalize"></h2>
+          </div>
+          
+          <div class="row header-description">
+          
+            
+          </div>
+        </div>
+        
+      </div>
+    </div>
+  </div>
+</div>
+
+    <div class="container-fluid">
+      <div class="row flex-xl-nowrap">
+        
+        <main role="main" class="mx-auto col-12 order-last text-left">
+          <div class="container py-3 mt-5 preamble">
+            
+          </div>
+          <div class="container" style="background:url(../../../static/images/privchat/pattern.png) no-repeat center; background-size: contain;">
+  <div class="w-50 text-center mx-auto">
+    <img class="img-fluid p-3" height="auto" src="../../../static/images/privchat/privchat.html" /> <h1 class="display-2 text-primary">PrivChat</h1>
+    <p class="text-primary p-3"> <p>Mjadala kuhusiana na teknolojia, haki za binadamu, <br/>na uhuru wa mtandao umeletwa kwako na Tor Project</p>
+</p>
+  </div>
+</div>
+
+<div class="container pb-3 mt-5 preamble">
+  <p>
+    PrivChat ni mfululizo wa matukio ya harambee yaliyofanywa kuchangia Tor Project. Kupitia PrivChat, tutakuletea taarifa muhimu kuhusiana na nini kinaendelea katika teknolojia, haki za binadamu, na uhuru wa mtandao kwa kukusanya wataalamu wabobezi kuwasilana kwa majibinazo na jamii yetu.
+  </p>
+
+  <hr class="mt-5"/>
+
+</div>
+
+<div class="container py-3 mt-5">
+    <p class="h2 text-primary" target="_blank">Sura ya #3-Tor kuendeleza haki za binadamu</p>
+    <a class="btn btn-small bg-primary text-light my-4" href="https://www.youtube.com/watch?v=S2N3GoewgC8" target="_blank"><i class="mr-2 pt-1 fas fa-play-circle-png"></i> Angalia </a>
+    <div>
+    <p class="font-family-serif">
+    Dhima kuu ya Tor Project&#39;s ni kukuza haki za kibinadamu na uhuru kwa kuunda na kueneza teknolojia huru, za bure na za wazi na faragha na usiri mtandaoni. Watu wanatumia teknolojia yetu, inayoitwa mtandao wa Tor na Tor Browser, kwa njia tofauti. Tor inatumika na watoa taarifa wanaohitaji njia salama kuleta taarifa nzuri za matendo mabaya -- taarifa hizi ni muhimu jamii kujua -- bila kujulikana wao ni nani. Tor inatumika na wanaharakati duniani kote ambao wanapinga serikani kandanizi na kulinda haki za binadamu, sio tu kwa usalama wao na kutojulikana, lakini pia kukwepa udhibiti wa mtandao ili sauti zao zisikike. Tor inawezesha mamilioni ya watu kujilinda mtandaoni, Haijalishi nafasi walizonazo au wasizonazo. Kwa toleo letu la tatu la PrivChat, tutaleta maisha halisi ya watumiaji wa Tor ambao wataelezea namna Tor imekuwa muhimu kwao na kazi zao katika kulinda haki za binadamu na uhuru duniani kote.
+    </p>
+    </div>
+</div>
+
+<div class="container pt-5 justify-content-center">
+
+  <h4>Mtunzaji</h4>
+
+    <div class="row">
+      <div class="container">
+      <div class="card flex-row flex-wrap py-3">
+        <div class="col-3">
+            <img class="card-img-top" src="../../../static/images/privchat/ed.html" alt="">
+        </div>
+        <div class="col">
+          <div class="card-block px-2">
+              <div class="pb-4">
+                <h4 class="display-4 text-primary">Edward Snowden</h4>
+                <strong class="display-5 text-primary mb-4">Raisi, Freedom of the Press Foundation</strong>
+              </div>
+              <p class="text-tpo">
+              Edward Snowden ni raia wa Marekani, afisa intelijensia na mtoa habari aliyepita. Nyaraka alizoweka wazi imetoa ukurasa muhimu kwa umma katika NSA na washirika wenza wa kimataifa wa intelijensia’ programu nyingi za siri za ufuatiliaji na uwezo. Taarifa hizi umetengeneza umakini mkubwa sana duniani kote katika kuingilia faragha na usalama wa kidigitali na usalama wa kidigitali, ikapalekea mjadala wa kidunia juu ya maswala hayo.
+              </p>
+          </div>
+        </div>
+      </div>
+      </div>
+    </div>
+
+  <h4 class="mt-5">Washiriki</h4>
+
+  <div class="row">
+    <div class="container">
+
+    <div class="card flex-row flex-wrap py-3 mb-5">
+      <div class="col-3">
+          <img class="card-img-top" src="../../../static/images/privchat/alison.html" alt="">
+      </div>
+      <div class="col">
+        <div class="card-block px-2">
+            <div class="pb-4">
+              <h4 class="display-4 text-primary">Alison Macrina</h4>
+              <strong class="display-5 text-primary mb-4">Muanzilishi wa , Library Freedom Project</strong>
+            </div>
+            <p class="text-tpo">Alison Macrina ni mkutubi na muanzilishi wa mradi wa Library Freedom, utendani wa jamii ya wafanya kazi wa maktaba kuishi katika misingi yetu ya uhuru wa taaluma na faragha katika ulimwengu halisi. Kazi yake ililenga katika kuangalia madhara ya ufuatiliwaji katika jamii ya wakutubi na kazi za wakutubi, namna ufuatiliaji unahusiana na maswala mengine ya haki za kijamii na uhuru wa taaluma, na nguvu ya mabadiliko katika teknolojia zetu. Alison na mradi wa Library Freedom wamepata tuzo ya Free Software Foundation&#39;s kwa mradi wa Social Benefit, Library Journal&#39;s Movers na Shakers, tuzo ya the New York Library Association&#39;s Intellectual Freedom, nna tuzo ya LITA/Library Hi Tech .
+            </p>
+        </div>
+      </div>
+    </div>
+
+
+    <div class="card flex-row flex-wrap py-3 mb-5">
+      <div class="col-3">
+          <img class="card-img-top" src="../../../static/images/privchat/berhan.html" alt="">
+      </div>
+      <div class="col">
+        <div class="card-block px-2">
+            <div class="pb-4">
+              <h4 class="display-4 text-primary">Berhan Taye</h4>
+              <strong class="display-5 text-primary mb-4">Meneja wa Sera za Afrika na kuongoza kuzima mtandao duniani, Access Now</strong>
+            </div>
+            <p class="text-tpo">Berhan Taye (She/her) ni mtafiti anayechunguza uhusiano uliopo kati ya teknolojia, jamii, na haki za kijamii. Ni meneja wa Africa Policy na kiongozi wa Global Internet Shutdowns katika taasisi ya Access Now. Ameongoza kampeni ya #KeepItOn, kampeni ya dunia ya kuzuia vitendo vya uzimwaji wa mtandao kwa muungano wa zaidi ya mashirika wanachama 220 duniani kote. Kabla hajajiunga na Access Now, alikuwa mtafiti wa mambo ya teknolojia kwa ajili ya haki za kijamii mradi wa ukaguzi ambao umetoa taarifa ya MoreThanCode.cc.
+            </p>
+        </div>
+      </div>
+    </div>
+
+
+    <div class="card flex-row flex-wrap py-3 mb-5">
+      <div class="col-3">
+          <img class="card-img-top" src="../../../static/images/privchat/ramy.html" alt="">
+      </div>
+      <div class="col">
+        <div class="card-block px-2">
+            <div class="pb-4">
+              <h4 class="display-4 text-primary">Ramy Raoof</h4>
+              <strong class="display-5 text-primary mb-4">Mwanateknolojia wa Maabara ya Usalama, Amnesty International</strong>
+            </div>
+            <p class="text-tpo">Ramy Raoof ni mtafiti wa teknolojia na faragha, kazi zake za hivi karibuni zimelenga katika kufanya tafiti za mashambulio ya kidigitalki yaliyokusudiwa kinyume na wapigania haki za binadamu ma ,mashirika yasiyo ya kiserikali na kuendeleza taratibu za ulinzi wa kidigitali na kuwajengea uwezo wanaharakati katika nchi za mashariki ya kati na Marekani ya kati kuhusiana na ufuatiliaji mtandaoni na udhibiti. Ramy ni mwanateknolojia anayechunguza na kuangalia madhara ya teknolojia katika jamii katika maabara ya Amnesty International&#39;s Security na pia yupo katika Tor Project kama mjumbe wa bodi ya wakurugenzi. Kabla hajajiunga na Amnesty, alitumika kama mwanateknolojia mkuu katikaEgyptian Initiative for Personal Rights (EIPR). Ramy amepokea tuzo ya kimataifa ya Heroes of Human Rights na Communications Surveillance kutoka kwa Access Now mwaka 2017 na mwezi Mei 2016 alipokea tuzo ya kimataifa ya international Bobs - Best of Online Activism kama njia ya kutaambua mchango wake katika usalama wa kidigitali na faragha kutoka kwa Deutsche Welle. Katika Twitter https://twitter.com/RamyRaoof.
+            </p>
+        </div>
+      </div>
+    </div>
+
+
+</div>
+
+<div class="container">
+  <div class="row bg-secondary p-5 mx-1 my-5">
+    <h1><i class="fas fa-hand-holding-usd px-5 text-light"></i></h1>
+    <h3 class="preamble text-light text-center mx-auto">Mchango wako unafanya mfululizo huu na kazi zetu katika Tor kuwezekana.<br/> <p>Njia bora ya kuunga mkono kazi zetu ni <a class="text-success" href="https://donate.torproject.org/monthly-giving" target="_blank">kuwa mchangiaji wa kila mwezi.</a></p>
+</h3>
+  </div>
+</div>
+
+        </main>
+      </div>
+    </div>
+  </div>
+  
+    
+
+<div class="container-fluid bg-dark footer order-last text-left">
+
+  
+
+  <div class="row onion-bg">
+    <div class="col-12 d-flex justify-content-right">
+      <div class="container pt-5 justify-content-right">
+        <div class="offset-lx-2 offset-sm-4 mt-5">
+           <h2 class="text-white text-bold">Pakua Tor Browser</h2>
+            <p class="text-white">PakuaTor Browser ili kupata uzoefu wa kuperuzi mtandaoni bila kufuatiliwa,kuchukuliwa taarifa zako na kudhibitiwa.</p>
+            
+            
+              <a class="btn text-primary bg-white btn-light pull-right mt-2" href="../../download/index.html">
+            
+
+              Pakua Tor Browser<i class="ml-2 pt-1 fas fa-arrow-down-png-purple"></i>
+            </a>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  
+
+
+  <div class="row">
+    <div class="col-12 d-flex justify-content-center">
+      <div class="col-sm-6 offset-lx-1 offset-sm-0 mt-5">
+	        <h5 class="font-weight-bold mt-5 text-white">Dhima yetu:</h5>
+          <p class="text-white mb-5" >Kukuza haki za kibinadamu na uhurukwa kuunda na kusambaza teknolojia huru zinazopatikana bure na zenye kuwa na faragha na kutojulikana, kusaidia kutokuwa na upatikanaji na matumizi yaliyozuiliwa, na kuongeza uelewa wao wa kisayansi na mkubwa.</p>
+      </div>
+      <div class="col-sm-2 mt-5 d-none d-sm-block">
+        <ul class="nav flex-column mt-sm-5">
+          
+          
+          <li class="nav-item">
+          
+          
+            
+            
+              <a class="nav-link text-light" href="../../../about/jobs/index.html">
+            
+          
+              Kazi
+              
+            </a>
+          </li>
+          
+          <li class="nav-item">
+          
+          
+            
+            
+              <a class="nav-link text-light" href="https://blog.torproject.org/">
+            
+          
+              Blogi
+              
+            </a>
+          </li>
+          
+          <li class="nav-item">
+          
+          
+            
+            
+              <a class="nav-link text-light" href="../../../contact/index.html">
+            
+          
+              Mawasiliano
+              
+            </a>
+          </li>
+          
+          <li class="nav-item">
+          
+          
+            
+            
+              <a class="nav-link text-light" href="../../../press/index.html">
+            
+          
+              Habari
+              
+            </a>
+          </li>
+          
+          <li class="nav-item">
+          
+          
+            
+            
+              <a class="nav-link text-light" href="../../../privchat/index.html">
+            
+          
+              PrivChat
+              
+            </a>
+          </li>
+          
+        </ul>
+        
+        
+          <a href="https://donate.torproject.org/" title="Changia"><h4><span class="badge badge-warning p-2">Changia sasa</span></h4></a>
+        
+      </div>
+    </div>
+  </div>
+  
+  <div class="row">
+    <div class="col-12 d-flex justify-content-center">
+      <div class="col-sm-6 offset-lx-1 offset-sm-0 mt-5">
+        <p class="text-primary-light text-uppercase">Jisajili katika Newsletter yetu</p>
+        <p class="text-light">Pata taarifa na fursa za kila mwezi kutoka Tor Project:</p>
+        <p class="w"><a class="btn btn-small btn-dark mt-2 text-white text-uppercase active" role="button" aria-pressed="true" href="https://newsletter.torproject.org/">Jiandikishe</a></p>
+      </div>
+      <div class="col-sm-2 mt-5 d-none d-sm-block">
+        <div class="row">
+          <h4><a class="text-white px-3" target="_blank" href="https://forum.torproject.net/"><i class="fab fa-discourse"></i></a></h4>
+          <h4><a class="text-white px-3" target="_blank" href="https://www.facebook.com/TorProject/"><i class="fab fa-facebook-png"></i></a></h4>
+          <h4><a class="mastodon text-white px-3" target="_blank" href="https://mastodon.social/@torproject" rel="me"><i class="fab fa-mastodon-png"></i></a></h4>
+        </div>
+        <div class="row">
+          <h4><a class="instagram text-white px-3" target="_blank" href="https://www.instagram.com/torproject"><i class="fab fa-instagram-png"></i></a></h4>
+          <h4><a class="twitter text-white px-3" target="_blank" href="https://twitter.com/torproject"><i class="fab fa-twitter-png"></i></a></h4>
+          <h4><a class="linkedin text-white px-3" target="_blank" href="https://www.linkedin.com/company/tor-project"><i class="fab fa-linkedin-png"></i></a></h4>
+        </div>
+        <div class="row">
+          <h4><a class="github text-white px-3" target="_blank" href="https://github.com/torproject"><i class="fab fa-github-png"></i></a></h4>
+          <h4><a class="telegram text-white px-3" target="_blank" href="https://t.me/torproject"><i class="fab fa-telegram-png"></i></a></h4>
+        </div>
+      </div>
+    </div>
+  </div>
+  
+  <div class="row">
+    <div class="col-12 d-flex justify-content-center">
+      <div class="col-8 mt-5">
+        
+        <p class="text-primary text-light">Alama ya biashara, tangazo la hatimiliki, na sheria za kutumiwa na wahusika wasio wa moja kwa moja zinaweza kupatikana katika 
+  <a href="../../../about/trademark/index.html" target="_blank" class="text-primary text-light"><u>FAQ</u></a>
+ yetu.</p>
+      </div>
+      <div class="col-sm-2 mt-5 d-none d-sm-block">
+        <div class="btn-group dropup float-right">
+      	  <button type="button" class="btn btn-primary dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+            Kiswahili (sw)
+      	  </button>
+      	  <div class="dropdown-menu">
+            
+              
+    	          <a class="dropdown-item" href="../../../privchat/chapter-3/index.html">English (en)</a>
+              
+            
+              
+    	          <a class="dropdown-item" href="../../../ca/privchat/chapter-3/index.html">Català (ca)</a>
+              
+            
+              
+    	          <a class="dropdown-item" href="../../../de/privchat/chapter-3/index.html">Deutsch (de)</a>
+              
+            
+              
+    	          <a class="dropdown-item" href="../../../es/privchat/chapter-3/index.html">Español (es)</a>
+              
+            
+              
+    	          <a class="dropdown-item" href="../../../fa/privchat/chapter-3/index.html">فارسی (fa)</a>
+              
+            
+              
+    	          <a class="dropdown-item" href="../../../fr/privchat/chapter-3/index.html">Français (fr)</a>
+              
+            
+              
+    	          <a class="dropdown-item" href="../../../hu/privchat/chapter-3/index.html">Magyar nyelv (hu)</a>
+              
+            
+              
+    	          <a class="dropdown-item" href="../../../is/privchat/chapter-3/index.html">Íslenska (is)</a>
+              
+            
+              
+    	          <a class="dropdown-item" href="../../../it/privchat/chapter-3/index.html">Italiano (it)</a>
+              
+            
+              
+    	          <a class="dropdown-item" href="../../../ja/privchat/chapter-3/index.html">日本語 (ja)</a>
+              
+            
+              
+    	          <a class="dropdown-item" href="../../../ka/privchat/chapter-3/index.html">ქართული (ka)</a>
+              
+            
+              
+    	          <a class="dropdown-item" href="../../../km/privchat/chapter-3/index.html">ភាសាខ្មែរ (km)</a>
+              
+            
+              
+    	          <a class="dropdown-item" href="../../../ko/privchat/chapter-3/index.html">한국어(ko)</a>
+              
+            
+              
+    	          <a class="dropdown-item" href="../../../pt-BR/privchat/chapter-3/index.html">Português Brasil (pt-BR)</a>
+              
+            
+              
+    	          <a class="dropdown-item" href="../../../ru/privchat/chapter-3/index.html">Русский (ru)</a>
+              
+            
+              
+    	          <a class="dropdown-item" href="../../../sq/privchat/chapter-3/index.html">Shqip (sq)</a>
+              
+            
+              
+            
+              
+    	          <a class="dropdown-item" href="../../../tr/privchat/chapter-3/index.html">Türkçe (tr)</a>
+              
+            
+              
+    	          <a class="dropdown-item" href="../../../vi/privchat/chapter-3/index.html">Tiếng Việt (vi)</a>
+              
+            
+              
+    	          <a class="dropdown-item" href="../../../zh-CN/privchat/chapter-3/index.html">简体中文 (zh-CN)</a>
+              
+            
+              
+    	          <a class="dropdown-item" href="../../../zh-TW/privchat/chapter-3/index.html">正體中文 (zh-TW)</a>
+              
+            
+        	</div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <script src="../../../static/js/jquery-3.2.1.min518c.js?h=1055018c" ></script>
+  <script src="../../../static/js/popper.min4068.html?h=a4336719" ></script>
+  <script src="../../../static/js/bootstrap.bundle.min8420.html?h=46d1f82f" ></script>
+  <script src="../../../static/js/scrollspy.minbf04.html?h=02674132" ></script>
+  <script src="../../../static/js/modernizr1532.html?h=9a7f0609" ></script>
+  <script src="../../../static/js/download4ad7.html?h=caaadf8f" ></script>
+  <script src="../../../static/js/fallback5781.html?h=de02ee18" ></script>
+  </div>
+</div>
+  
+</body>
+
+<!-- Mirrored from www.torproject.org/sw/privchat/chapter-3/ by HTTrack Website Copier/3.x [XR&CO'2014], Mon, 22 May 2023 01:13:35 GMT -->
+</html>

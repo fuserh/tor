@@ -1,0 +1,660 @@
+<!doctype html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="ja" >
+
+<!-- Mirrored from www.torproject.org/ja/privchat/chapter-2/ by HTTrack Website Copier/3.x [XR&CO'2014], Mon, 22 May 2023 01:13:33 GMT -->
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content=" | 追跡と監視から身を守る。検閲を回避する。">
+  <meta name="twitter:card" content="summary" />
+  <meta name="twitter:site" content="@torproject" />
+  <meta name="twitter:creator" content="@torproject" />
+  <meta name="twitter:image" content="../../../static/images/tor-project-logo-onions.html"/>
+  <meta property="og:url" content="../../../index.html" />
+  <meta property="og:title" content="The Tor Project | オンラインでのプライバシーと自由" />
+  <meta property="og:description" content="追跡と監視から身を守る。検閲を回避する。" />
+  <meta property="og:image" content="../../../static/images/tor-project-logo-onions.html" />
+  <meta name="monetization" content="$ilp.uphold.com/pYfXb92JBQN4">
+  <link rel="stylesheet" href="../../../static/css/bootstrapf024.html?h=d43bce84">
+  <link rel="stylesheet" href="../../../static/fonts/fontawesome/css/all.mindad8.html?h=9d272f6a" rel="stylesheet">
+  <!-- Standard favicon -->
+  <link rel="icon" type="image/x-icon" href="../../../static/images/favicon/favicon.html">
+  <!-- Recommended favicon format -->
+  <link rel="icon" type="image/png" href="../../../static/images/favicon/favicon-2.html">
+  <title>Tor Project | </title>
+  
+</head>
+<body class="no-gutters">
+  <header>
+      
+<div class="container-fluid bg-primary">
+  <nav class="navbar no-background navbar-expand-lg navbar-dark bg-primary p-4">
+
+    <a class="navbar-brand" href="../../index.html">
+      <img alt="The Tor Project" src="../../../static/images/tor-logo%402x0291.html?h=16ad42bc" >
+      <span class="sr-only">Tor Logo</span>
+    </a>
+
+    
+    
+      <h4 class="pl-2 pr-2"><a href="https://donate.torproject.org/" title="寄付"><span class="badge badge-warning p-2">今すぐ寄付</span></a></h4>
+    
+
+    <label for="nav-toggle">
+      <a class="btn btn-lg btn-primary navbar-toggler text-white p-3" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        メニュー <span class="navbar-toggler-icon ml-1"></span>
+      </a>
+    </label>
+    <input type="checkbox" id="nav-toggle"/>
+    <div class="collapse navbar-collapse hamburger-menu" id="navbarSupportedContent">
+      <div class="mx-auto">
+        <ul class="navbar-nav">
+        	
+        	
+        	<li class="nav-item">
+            
+            
+              
+              
+                <a class="nav-link" href="../../../about/history/index.html">
+              
+            
+            概要
+              
+            </a>
+        	</li>
+  	
+        	<li class="nav-item">
+            
+            
+              
+              
+                <a class="nav-link" href="https://support.torproject.org/">
+              
+            
+            サポート
+              
+            </a>
+        	</li>
+  	
+        	<li class="nav-item">
+            
+            
+              
+              
+                <a class="nav-link" href="https://community.torproject.org/">
+              
+            
+            コミュニティ
+              
+            </a>
+        	</li>
+  	
+        	<li class="nav-item">
+            
+            
+              
+              
+                <a class="nav-link" href="https://blog.torproject.org/">
+              
+            
+            ブログ
+              
+            </a>
+        	</li>
+  	
+        	<li class="nav-item">
+            
+            
+              
+              
+                <a class="nav-link" href="https://donate.torproject.org/">
+              
+            
+            寄付
+              
+            </a>
+        	</li>
+  	
+    <!--
+            I add some strings here because the i18n plugin does not pick them up from the Databags
+            概要
+            文書
+            サポート
+            コミュニティ
+            ブログ
+            PrivChat
+            採用情報
+            連絡先
+            プレス
+            寄付
+    -->
+        </ul>
+      </div>
+      
+      
+        <div class="btn-group dropdown pull-right">
+          
+            <button type="button" class="btn btn-primary bg-primary dropdown-toggle btn-block" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+          
+          日本語 (ja)
+          </button>
+          <div class="dropdown-menu">
+            
+              
+                <a class="dropdown-item" href="../../../privchat/chapter-2/index.html">English (en)</a>
+              
+            
+              
+                <a class="dropdown-item" href="../../../ca/privchat/chapter-2/index.html">Català (ca)</a>
+              
+            
+              
+                <a class="dropdown-item" href="../../../de/privchat/chapter-2/index.html">Deutsch (de)</a>
+              
+            
+              
+                <a class="dropdown-item" href="../../../es/privchat/chapter-2/index.html">Español (es)</a>
+              
+            
+              
+                <a class="dropdown-item" href="../../../fa/privchat/chapter-2/index.html">فارسی (fa)</a>
+              
+            
+              
+                <a class="dropdown-item" href="../../../fr/privchat/chapter-2/index.html">Français (fr)</a>
+              
+            
+              
+                <a class="dropdown-item" href="../../../hu/privchat/chapter-2/index.html">Magyar nyelv (hu)</a>
+              
+            
+              
+                <a class="dropdown-item" href="../../../is/privchat/chapter-2/index.html">Íslenska (is)</a>
+              
+            
+              
+                <a class="dropdown-item" href="../../../it/privchat/chapter-2/index.html">Italiano (it)</a>
+              
+            
+              
+            
+              
+                <a class="dropdown-item" href="../../../ka/privchat/chapter-2/index.html">ქართული (ka)</a>
+              
+            
+              
+                <a class="dropdown-item" href="../../../km/privchat/chapter-2/index.html">ភាសាខ្មែរ (km)</a>
+              
+            
+              
+                <a class="dropdown-item" href="../../../ko/privchat/chapter-2/index.html">한국어(ko)</a>
+              
+            
+              
+                <a class="dropdown-item" href="../../../pt-BR/privchat/chapter-2/index.html">Português Brasil (pt-BR)</a>
+              
+            
+              
+                <a class="dropdown-item" href="../../../ru/privchat/chapter-2/index.html">Русский (ru)</a>
+              
+            
+              
+                <a class="dropdown-item" href="../../../sq/privchat/chapter-2/index.html">Shqip (sq)</a>
+              
+            
+              
+                <a class="dropdown-item" href="../../../sw/privchat/chapter-2/index.html">Kiswahili (sw)</a>
+              
+            
+              
+                <a class="dropdown-item" href="../../../tr/privchat/chapter-2/index.html">Türkçe (tr)</a>
+              
+            
+              
+                <a class="dropdown-item" href="../../../vi/privchat/chapter-2/index.html">Tiếng Việt (vi)</a>
+              
+            
+              
+                <a class="dropdown-item" href="../../../zh-CN/privchat/chapter-2/index.html">简体中文 (zh-CN)</a>
+              
+            
+              
+                <a class="dropdown-item" href="../../../zh-TW/privchat/chapter-2/index.html">正體中文 (zh-TW)</a>
+              
+            
+          </div>
+        </div>
+      
+      
+      <div class="pull-right">
+        
+          <a class="btn btn-outline-light pull-right" href="../../download/index.html">
+        
+          Tor Browser をダウンロード<i class="ml-2 pt-1 fas fa-arrow-down-png"></i>
+        </a>
+      </div>
+    </nav>
+</div>
+  </header>
+  <div class="page pt-4">
+    
+<div class="container-fluid bg-primary">
+
+  <div class="row flex-xl-nowrap order-last">
+    
+    <div class="container bg-primary pt-1 pt-sm-0">
+    
+      <div class="row">
+        
+        <div class="col-12 content-center pt-5">
+          <div class="row">
+            <h6 class="mx-auto text-white text-capitalize"></h6>
+          </div>
+          <div class="row pb-5">
+            <h2 class="mx-auto display-3 text-white text-capitalize"></h2>
+          </div>
+          
+          <div class="row header-description">
+          
+            
+          </div>
+        </div>
+        
+      </div>
+    </div>
+  </div>
+</div>
+
+    <div class="container-fluid">
+      <div class="row flex-xl-nowrap">
+        
+        <main role="main" class="mx-auto col-12 order-last text-left">
+          <div class="container py-3 mt-5 preamble">
+            
+          </div>
+          <div class="container" style="background:url(../../../static/images/privchat/pattern.png) no-repeat center; background-size: contain;">
+  <div class="w-50 text-center mx-auto">
+    <img class="img-fluid p-3" height="auto" src="../../../static/images/privchat/privchat.html" /> <h1 class="display-2 text-primary">PrivChat</h1>
+    <p class="text-primary p-3"> <p>Tor Projectがお届けする、テクノロジー、人権、<br />、そしてインターネットの自由についての会話</p>
+</p>
+  </div>
+</div>
+
+<div class="container pb-3 mt-5 preamble">
+  <p>
+    PrivChat は、Tor プロジェクトへの寄付を募るために開催される募金イベント シリーズです。 PrivChat を通じて、コミュニティとのチャットのために専門家を招集することにより、テクノロジー、人権、およびインターネットの自由で起こっていることに関連する重要な情報をお届けします。
+  </p>
+
+  <hr class="mt-5"/>
+
+</div>
+
+<div class="container py-3 mt-5">
+    <p class="h2 text-primary" target="_blank">第 2 章 - 検閲回避の良い点、悪い点、醜い点</p>
+    <a class="btn btn-small bg-primary text-light my-4" href="https://youtu.be/aOOChyMCZH4" target="_blank"><i class="mr-2 pt-1 fas fa-play-circle-png"></i> 見る </a>
+    <div>
+    <p class="font-family-serif">
+      毎年、インターネット検閲は世界的に増加しています。ネットワークレベルのブロッキングから国家レベルのインターネットの遮断まで、政府や民間企業は情報を制限し、人と人とのつながりを妨げる強力な手段を持っています。多くの人々、グループ、組織が、インターネット検閲を研究、測定、撃退するために革新的な仕事をしており、何百万人もの人々がより定期的かつ安全にインターネットに接続できるようにしています。こうした成功にもかかわらず、私たちは検閲メカニズムに何十億ドルも費やす資金力のある敵に直面しており、軍拡競争は続いているのです。TorによるPrivChatの第2回目は、検閲回避の最前線で起きている「良いこと」「悪いこと」「醜いこと」についてお話しします。検閲技術がますます洗練され、国家間で売買される世界では、それを測定し、回避するためのツールを構築する私たちの創造性も、反撃する人々の意欲も高まっています。しかし、それで十分なのでしょうか？インターネットの自由のために戦う人々や組織が直面する障壁は何なのでしょうか？
+    </p>
+    </div>
+</div>
+
+<div class="container pt-5 justify-content-center">
+
+    <h4>ホスト</h4>
+
+    <div class="row">
+      <div class="container">
+      <div class="card flex-row flex-wrap py-3">
+        <div class="col-3">
+            <img class="card-img-top" src="../../../static/images/privchat/cory.html" alt="">
+        </div>
+        <div class="col">
+          <div class="card-block px-2">
+              <div class="pb-4">
+                <h4 class="display-4 text-primary">Cory Doctorow</h4>
+                <strong class="display-5 text-primary mb-4">Electronic Frontier Foundation, MIT</strong>
+              </div>
+              <p class="text-tpo"><p><a href="https://craphound.com/" target="_blank" title="Cory Doctorow">Cory Doctorow</a>はSF作家、活動家、ジャーナリストです。著書に、大人向けSF『RADICALIZED』『WALKAWAY』、YAグラフィックノベル『IN REAL LIFE』、ノンフィクションビジネス書『INFORMATION DOESN'T WANT TO BE FREE』、ヤングアダルト小説『HOMELAND』『PIRATE CINEMA』『LITTLE BROTHER』がある。最新作は『POESY THE MONSTER SLAYER』（絵本）があります。次作は、『LITTLE BROTHER』の続編となる『ATTACK SURFACE』。Pluralistic.netで毎日ブログを更新しています。電子フロンティア財団に勤務し、MITメディアラボ研究員、オープン大学コンピュータサイエンス客員教授、ノースカロライナ大学図書館情報科学部実践客員教授、英国オープンライツグループの共同設立者です。カナダのトロントで生まれ、現在はロサンゼルスに住んでいます。</p>
+</p>
+          </div>
+        </div>
+      </div>
+      </div>
+    </div>
+
+  <h4 class="mt-5">参加者</h4>
+
+  <div class="row">
+    <div class="container">
+
+    <div class="card flex-row flex-wrap py-3 mb-5">
+      <div class="col-3">
+          <img class="card-img-top" src="../../../static/images/privchat/felicia.html" alt="">
+      </div>
+      <div class="col">
+        <div class="card-block px-2">
+            <div class="pb-4">
+              <h4 class="display-4 text-primary">Felicia Anthonio</h4>
+              <strong class="display-5 text-primary mb-4">アクセス・ナウのキャンペーン担当、#KeepItOn Lead</strong>
+            </div>
+            <p class="text-tpo">フェリシア・アントニオは、インターネットのシャットダウンと闘う世界的なキャンペーンである#KeepItOn CampaignのCampaignerとしてAccess Nowに勤務しています。KeepItOn連合は、世界中の210以上の組織で構成されています。アクセス・ナウ入社以前は、西アフリカ・メディア財団（MFWA）のプログラム・アソシエイトとして、アフリカの表現自由団体の大陸間ネットワークであるアフリカ表現自由交換（AFEX）をコーディネートしていました。フェリシアは、ジャーナリストの安全、情報へのアクセス、インターネットの自由、デジタル権など、表現の自由に関するキャンペーンやアドボカシー活動を主導し、特に表現の自由の享受（オフラインとオンライン）に不利な政策改革に焦点を当てました。彼女は、アフリカン・インターネット・ガバナンス・スクール（AfriSIG）の2019年度フェローです。フランスのオルレアン大学でLettres, Langues et Affaires Internationalesの修士号を取得し、ガーナ大学でフランス語と心理学の学士号を取得しています。
+            </p>
+        </div>
+      </div>
+    </div>
+
+    <div class="card flex-row flex-wrap py-3 mb-5">
+      <div class="col-3">
+          <img class="card-img-top" src="../../../static/images/privchat/vrinda.html" alt="">
+      </div>
+      <div class="col">
+        <div class="card-block px-2">
+            <div class="pb-4">
+              <h4 class="display-4 text-primary">Vrinda Bhandari</h4>
+              <strong class="display-5 text-primary mb-4">インターネット自由財団 訴訟担当顧問</strong>
+            </div>
+            <p class="text-tpo">ヴリンダ・バンダリは、インド・ニューデリーの訴訟弁護士で、デジタル権、テクノロジー、プライバシーの分野を専門としています。インドの生体認証プロジェクト（Aadhaar）、政府が開発した連絡先追跡アプリ（Aarogya Setu）、ジャンムー・カシミール州のインターネット復旧、インドの監視体制や名誉毀損罪規定の合憲性への挑戦などに関連する訴訟に携わってきた。また、ウェブサイトのブロッキング、名誉毀損、扇動に関わる事件でクライアントに助言し、代理人を務めた経験もある。ローズ奨学生であり、オックスフォード大学で法学修士号（BCL）および公共政策修士号（MPP）を取得し、バンガロールのインド大学国立法学部で法学博士号を取得した後、同大学を卒業した。
+            </p>
+        </div>
+      </div>
+    </div>
+
+    <div class="card flex-row flex-wrap py-3 mb-5">
+      <div class="col-3">
+          <img class="card-img-top" src="../../../static/images/privchat/cecylia.html" alt="">
+      </div>
+      <div class="col">
+        <div class="card-block px-2">
+            <div class="pb-4">
+              <h4 class="display-4 text-primary">Cecylia Bocovich</h4>
+              <strong class="display-5 text-primary mb-4">The Tor Project 開発者</strong>
+            </div>
+            <p class="text-tpo">セシリアはTor Projectのソフトウェア開発者で、検閲を回避するツールの開発と、すべてのユーザーがTorネットワークにアクセスできるようにすることに重点を置いています。彼女は2018年にウォータールー大学でコンピュータサイエンスの博士号を取得して卒業し、現在も客員研究員としてCryptography, Security, and Privacy (CrySP) Research Labに参加し続けています。大学院生時代は、機械学習が可能な強力な検閲装置に対抗する検閲回避技術や、プライバシーツールの使い勝手について研究していました。現在は、コミュニティを強化し、同意を可能にするプライバシー技術の開発に取り組む非営利団体、Open Privacyのアドバイザーを務めています。また、プライバシー研究のためのソースコードやデータセットの一般配布を支援・促進することを目的とした学術誌「Proceedings on Privacy Enhancing Technologies（PoPETs）」の創刊・運営に携わり、現在はアーティファクト委員会の委員長を務めています。</p>
+        </div>
+      </div>
+    </div>
+
+    <div class="card flex-row flex-wrap py-3 mb-5">
+      <div class="col-3">
+          <img class="card-img-top" src="../../../static/images/privchat/arturo.html" alt="">
+      </div>
+      <div class="col">
+        <div class="card-block px-2">
+            <div class="pb-4">
+              <h4 class="display-4 text-primary">Arturo Filastò</h4>
+              <strong class="display-5 text-primary mb-4">OONIプロジェクトリード＆エンジニア</strong>
+            </div>
+            <p class="text-tpo">アルトゥーロは2011年にOpen Observatory of Network Interference (OONI)を共同設立し、以来、そのプロジェクトリードとコアエンジニアを務めています。以前はTor Projectで開発者として働き、GlobaLeaksなど人権を促進する他のフリーソフトウェアプロジェクトを多数立ち上げた。また、Hermes Center for Digital Human Rightsを共同設立し、副代表を務める。アルトゥーロは、ローマ・サピエンツァ大学で数学とコンピュータサイエンスを学びました。</p>
+        </div>
+      </div>
+    </div>
+
+</div>
+
+<div class="container">
+  <div class="row bg-secondary p-5 mx-1 my-5">
+    <h1><i class="fas fa-hand-holding-usd px-5 text-light"></i></h1>
+    <h3 class="preamble text-light text-center mx-auto">皆様のご寄付により、このシリーズとTorでの仕事が可能になっています。<br/> <p>私たちの活動を支援する最善の方法は、<a class="text-success" href="https://donate.torproject.org/monthly-giving" target="_blank">毎月の寄付者になることです。</a></p>
+</h3>
+  </div>
+</div>
+        </main>
+      </div>
+    </div>
+  </div>
+  
+    
+
+<div class="container-fluid bg-dark footer order-last text-left">
+
+  
+
+  <div class="row onion-bg">
+    <div class="col-12 d-flex justify-content-right">
+      <div class="container pt-5 justify-content-right">
+        <div class="offset-lx-2 offset-sm-4 mt-5">
+           <h2 class="text-white text-bold">Tor Browser をダウンロード</h2>
+            <p class="text-white">Tor Browser をダウンロードして、追跡、監視、検閲なしの真のプライベートブラウジングを体験しましょう。</p>
+            
+            
+              <a class="btn text-primary bg-white btn-light pull-right mt-2" href="../../download/index.html">
+            
+
+              Tor Browser をダウンロード<i class="ml-2 pt-1 fas fa-arrow-down-png-purple"></i>
+            </a>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  
+
+
+  <div class="row">
+    <div class="col-12 d-flex justify-content-center">
+      <div class="col-sm-6 offset-lx-1 offset-sm-0 mt-5">
+	        <h5 class="font-weight-bold mt-5 text-white">私たちのミッション:</h5>
+          <p class="text-white mb-5" >フリー・オープンソースの匿名性技術・プライバシー技術を創造・展開し、その無制限な有効性と利用を支援し、その科学的・一般的理解を深めることにより、人権と自由を向上させる。</p>
+      </div>
+      <div class="col-sm-2 mt-5 d-none d-sm-block">
+        <ul class="nav flex-column mt-sm-5">
+          
+          
+          <li class="nav-item">
+          
+          
+            
+            
+              <a class="nav-link text-light" href="../../../about/jobs/index.html">
+            
+          
+              採用情報
+              
+            </a>
+          </li>
+          
+          <li class="nav-item">
+          
+          
+            
+            
+              <a class="nav-link text-light" href="https://blog.torproject.org/">
+            
+          
+              ブログ
+              
+            </a>
+          </li>
+          
+          <li class="nav-item">
+          
+          
+            
+            
+              <a class="nav-link text-light" href="../../../contact/index.html">
+            
+          
+              連絡先
+              
+            </a>
+          </li>
+          
+          <li class="nav-item">
+          
+          
+            
+            
+              <a class="nav-link text-light" href="../../../press/index.html">
+            
+          
+              プレス
+              
+            </a>
+          </li>
+          
+          <li class="nav-item">
+          
+          
+            
+            
+              <a class="nav-link text-light" href="../../../privchat/index.html">
+            
+          
+              PrivChat
+              
+            </a>
+          </li>
+          
+        </ul>
+        
+        
+          <a href="https://donate.torproject.org/" title="寄付"><h4><span class="badge badge-warning p-2">今すぐ寄付</span></h4></a>
+        
+      </div>
+    </div>
+  </div>
+  
+  <div class="row">
+    <div class="col-12 d-flex justify-content-center">
+      <div class="col-sm-6 offset-lx-1 offset-sm-0 mt-5">
+        <p class="text-primary-light text-uppercase">ニュースレターの購読</p>
+        <p class="text-light">Tor Project からの毎月の更新やお知らせをお届けします：</p>
+        <p class="w"><a class="btn btn-small btn-dark mt-2 text-white text-uppercase active" role="button" aria-pressed="true" href="https://newsletter.torproject.org/">登録</a></p>
+      </div>
+      <div class="col-sm-2 mt-5 d-none d-sm-block">
+        <div class="row">
+          <h4><a class="text-white px-3" target="_blank" href="https://forum.torproject.net/"><i class="fab fa-discourse"></i></a></h4>
+          <h4><a class="text-white px-3" target="_blank" href="https://www.facebook.com/TorProject/"><i class="fab fa-facebook-png"></i></a></h4>
+          <h4><a class="mastodon text-white px-3" target="_blank" href="https://mastodon.social/@torproject" rel="me"><i class="fab fa-mastodon-png"></i></a></h4>
+        </div>
+        <div class="row">
+          <h4><a class="instagram text-white px-3" target="_blank" href="https://www.instagram.com/torproject"><i class="fab fa-instagram-png"></i></a></h4>
+          <h4><a class="twitter text-white px-3" target="_blank" href="https://twitter.com/torproject"><i class="fab fa-twitter-png"></i></a></h4>
+          <h4><a class="linkedin text-white px-3" target="_blank" href="https://www.linkedin.com/company/tor-project"><i class="fab fa-linkedin-png"></i></a></h4>
+        </div>
+        <div class="row">
+          <h4><a class="github text-white px-3" target="_blank" href="https://github.com/torproject"><i class="fab fa-github-png"></i></a></h4>
+          <h4><a class="telegram text-white px-3" target="_blank" href="https://t.me/torproject"><i class="fab fa-telegram-png"></i></a></h4>
+        </div>
+      </div>
+    </div>
+  </div>
+  
+  <div class="row">
+    <div class="col-12 d-flex justify-content-center">
+      <div class="col-8 mt-5">
+        
+        <p class="text-primary text-light">商標、著作権表示、第三者による使用に関する規定については 
+  <a href="../../../about/trademark/index.html" target="_blank" class="text-primary text-light"><u>FAQ</u></a>
+ をご覧ください。</p>
+      </div>
+      <div class="col-sm-2 mt-5 d-none d-sm-block">
+        <div class="btn-group dropup float-right">
+      	  <button type="button" class="btn btn-primary dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+            日本語 (ja)
+      	  </button>
+      	  <div class="dropdown-menu">
+            
+              
+    	          <a class="dropdown-item" href="../../../privchat/chapter-2/index.html">English (en)</a>
+              
+            
+              
+    	          <a class="dropdown-item" href="../../../ca/privchat/chapter-2/index.html">Català (ca)</a>
+              
+            
+              
+    	          <a class="dropdown-item" href="../../../de/privchat/chapter-2/index.html">Deutsch (de)</a>
+              
+            
+              
+    	          <a class="dropdown-item" href="../../../es/privchat/chapter-2/index.html">Español (es)</a>
+              
+            
+              
+    	          <a class="dropdown-item" href="../../../fa/privchat/chapter-2/index.html">فارسی (fa)</a>
+              
+            
+              
+    	          <a class="dropdown-item" href="../../../fr/privchat/chapter-2/index.html">Français (fr)</a>
+              
+            
+              
+    	          <a class="dropdown-item" href="../../../hu/privchat/chapter-2/index.html">Magyar nyelv (hu)</a>
+              
+            
+              
+    	          <a class="dropdown-item" href="../../../is/privchat/chapter-2/index.html">Íslenska (is)</a>
+              
+            
+              
+    	          <a class="dropdown-item" href="../../../it/privchat/chapter-2/index.html">Italiano (it)</a>
+              
+            
+              
+            
+              
+    	          <a class="dropdown-item" href="../../../ka/privchat/chapter-2/index.html">ქართული (ka)</a>
+              
+            
+              
+    	          <a class="dropdown-item" href="../../../km/privchat/chapter-2/index.html">ភាសាខ្មែរ (km)</a>
+              
+            
+              
+    	          <a class="dropdown-item" href="../../../ko/privchat/chapter-2/index.html">한국어(ko)</a>
+              
+            
+              
+    	          <a class="dropdown-item" href="../../../pt-BR/privchat/chapter-2/index.html">Português Brasil (pt-BR)</a>
+              
+            
+              
+    	          <a class="dropdown-item" href="../../../ru/privchat/chapter-2/index.html">Русский (ru)</a>
+              
+            
+              
+    	          <a class="dropdown-item" href="../../../sq/privchat/chapter-2/index.html">Shqip (sq)</a>
+              
+            
+              
+    	          <a class="dropdown-item" href="../../../sw/privchat/chapter-2/index.html">Kiswahili (sw)</a>
+              
+            
+              
+    	          <a class="dropdown-item" href="../../../tr/privchat/chapter-2/index.html">Türkçe (tr)</a>
+              
+            
+              
+    	          <a class="dropdown-item" href="../../../vi/privchat/chapter-2/index.html">Tiếng Việt (vi)</a>
+              
+            
+              
+    	          <a class="dropdown-item" href="../../../zh-CN/privchat/chapter-2/index.html">简体中文 (zh-CN)</a>
+              
+            
+              
+    	          <a class="dropdown-item" href="../../../zh-TW/privchat/chapter-2/index.html">正體中文 (zh-TW)</a>
+              
+            
+        	</div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <script src="../../../static/js/jquery-3.2.1.min518c.js?h=1055018c" ></script>
+  <script src="../../../static/js/popper.min4068.html?h=a4336719" ></script>
+  <script src="../../../static/js/bootstrap.bundle.min8420.html?h=46d1f82f" ></script>
+  <script src="../../../static/js/scrollspy.minbf04.html?h=02674132" ></script>
+  <script src="../../../static/js/modernizr1532.html?h=9a7f0609" ></script>
+  <script src="../../../static/js/download4ad7.html?h=caaadf8f" ></script>
+  <script src="../../../static/js/fallback5781.html?h=de02ee18" ></script>
+  </div>
+</div>
+  
+</body>
+
+<!-- Mirrored from www.torproject.org/ja/privchat/chapter-2/ by HTTrack Website Copier/3.x [XR&CO'2014], Mon, 22 May 2023 01:13:33 GMT -->
+</html>
