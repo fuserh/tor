@@ -1,7 +1,7 @@
 <!doctype html>
 <html xmlns="http://www.w3.org/1999/xhtml" lang="es" >
 
-<!-- Mirrored from www.torproject.org/es/press/page/6/ by HTTrack Website Copier/3.x [XR&CO'2014], Tue, 08 Oct 2024 01:19:28 GMT -->
+<!-- Mirrored from www.torproject.org/es/press/page/6/ by HTTrack Website Copier/3.x [XR&CO'2014], Tue, 15 Oct 2024 01:20:33 GMT -->
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -15,7 +15,7 @@
   <meta property="og:description" content="Defiéndete de la vigilancia de red y el análisis de tráfico. Elude la censura." />
   <meta property="og:image" content="../../../../static/images/tor-project-logo-onions.html" />
   <meta name="monetization" content="$ilp.uphold.com/pYfXb92JBQN4">
-  <link rel="stylesheet" href="../../../../static/css/bootstrape3f0.html?h=2122cf07">
+  <link rel="stylesheet" href="../../../../static/css/bootstrap7291.css?h=7244dbcd">
   <link rel="stylesheet" href="../../../../static/fonts/fontawesome/css/all.mindad8.html?h=9d272f6a" rel="stylesheet">
   
   <!-- Standard favicon -->
@@ -26,7 +26,6 @@
   
 </head>
 <body class="no-gutters">
-  
   <header>
       
 <div class="container-fluid bg-primary">
@@ -178,6 +177,10 @@
               
             
               
+                <a class="dropdown-item" href="../../../../ga/press/page/6/index.html">Gaeilge (ga)</a>
+              
+            
+              
                 <a class="dropdown-item" href="../../../../hu/press/page/6/index.html">Magyar nyelv (hu)</a>
               
             
@@ -203,6 +206,14 @@
             
               
                 <a class="dropdown-item" href="../../../../ko/press/page/6/index.html">한국어(ko)</a>
+              
+            
+              
+                <a class="dropdown-item" href="../../../../nl/press/page/6/index.html">Nederlands (nl)</a>
+              
+            
+              
+                <a class="dropdown-item" href="../../../../pl/press/page/6/index.html">polski (pl)</a>
               
             
               
@@ -255,6 +266,88 @@
     </nav>
 </div>
   </header>
+  <div class="banner">
+  <input id="trigger" type="checkbox" title="Close banner" />
+  <label for="trigger" class="banner-close text-white">
+      <div class="d-flex h-100">
+        <img src="../../../../static/images/yec/x-dark3c81.png?h=353e04cc" class="m-auto h-100 w-100 p-1 img-svg">
+      </div>
+  </label>
+  <span class="eoy-sr-only text-black">Close banner</span>
+  
+  <div id="banner-header">
+    <div class="banner-content">
+      <div class="banner-content-spacer pt-5 h-100">
+        <div class="banner-content-container d-flex px-3">
+          <div id="banner-text-container" class="d-flex flex-column text-left">
+            <div id="banner-text">
+              <h1 class="yec-variant-browse">Tienes derecho a NAVEGAR sin ser observado.</h1>
+              <h1 class="yec-variant-search">Tienes derecho a BUSCAR sin que te sigan.</h1>
+              <h1 class="yec-variant-speak">Tienes derecho a HABLAR sin oyentes no invitados.</h1>
+              <p>Join the thousands of Tor supporters building an internet powered by privacy. 
+                 Haz una donación hoy.</p>
+              <p><strong>Through December 31, your gift will be matched 1:1, up to $300,000!</strong></p>
+            </div>
+            <div id="yec-donate-button-container">
+              <a class="btn" id="yec-donate-button" href="https://donate.torproject.org/">
+                <span>Dona ahora</span>
+                <img src="../../../../static/images/yec/heart673a.png?h=ad369acb" class="donate-heart img-svg">
+              </a>
+            </div>
+          </div>
+          <div class="banner-main-graphics h-100">
+            <img class="yec-illo yec-variant-browse img-svg" src="../../../../static/images/yec/illo-yec-browse98e1.png?h=86d8fd2b">
+            <img class="yec-illo yec-variant-search img-svg" src="../../../../static/images/yec/illo-yec-search465b.png?h=347ed4b2">
+            <img class="yec-illo yec-variant-speak img-svg" src="../../../../static/images/yec/illo-yec-speakae5f.png?h=abdc7268">
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<script type="text/javascript">
+/* persist banner close across pages in the same session/tab */
+let trigger = document.querySelector(".banner #trigger");
+trigger.addEventListener("change", () => {
+    sessionStorage.setItem("bannerClosed", trigger.checked);
+});
+if (sessionStorage.getItem("bannerClosed")) {
+    trigger.checked = sessionStorage.getItem("bannerClosed");
+}
+/* display a random variant of the banner */
+/* not using jQuery because it's loaded later, and this is just faster */
+const variants = ['browse', 'search', 'speak'];
+const default_variant = 'browse';
+const variant = variants[Math.floor(Math.random() * variants.length)]
+const variant_elements =  document.querySelectorAll('h1.yec-variant-' + default_variant + ', img.yec-variant-' + default_variant);
+if (variant == default_variant) {
+    variant_elements.forEach((i) => {
+        i.style.visibility = 'visible';
+    });
+} else {
+    variant_elements.forEach((i) => {
+        i.style.display = 'none';
+    });
+    document.querySelector('h1.yec-variant-' + variant).style.display = 'inline';
+    document.querySelector('img.yec-variant-' + variant).style.display = 'block';
+}
+document.getElementById('yec-donate-button').classList.add('yec-variant-' + variant);
+</script>
+
+<noscript>
+<!-- show the default variant -->
+<style>
+  #banner-header .banner-content h1.yec-variant-browse,
+  #banner-header .banner-content img.yec-variant-browse {
+    visibility: visible;
+  }
+  #yec-donate-button {
+    background-color: var(--abouttor-yec-button-bg-color-browse);
+    visibility: visible;
+  }
+</style>
+</noscript>
   <div class="page pt-4">
     
 <div class="container-fluid bg-primary">
@@ -792,6 +885,10 @@
               
             
               
+    	          <a class="dropdown-item" href="../../../../ga/press/page/6/index.html">Gaeilge (ga)</a>
+              
+            
+              
     	          <a class="dropdown-item" href="../../../../hu/press/page/6/index.html">Magyar nyelv (hu)</a>
               
             
@@ -817,6 +914,14 @@
             
               
     	          <a class="dropdown-item" href="../../../../ko/press/page/6/index.html">한국어(ko)</a>
+              
+            
+              
+    	          <a class="dropdown-item" href="../../../../nl/press/page/6/index.html">Nederlands (nl)</a>
+              
+            
+              
+    	          <a class="dropdown-item" href="../../../../pl/press/page/6/index.html">polski (pl)</a>
               
             
               
@@ -872,5 +977,5 @@
   
 </body>
 
-<!-- Mirrored from www.torproject.org/es/press/page/6/ by HTTrack Website Copier/3.x [XR&CO'2014], Tue, 08 Oct 2024 01:19:28 GMT -->
+<!-- Mirrored from www.torproject.org/es/press/page/6/ by HTTrack Website Copier/3.x [XR&CO'2014], Tue, 15 Oct 2024 01:20:33 GMT -->
 </html>

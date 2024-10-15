@@ -1,7 +1,7 @@
 <!doctype html>
 <html xmlns="http://www.w3.org/1999/xhtml" lang="tk" >
 
-<!-- Mirrored from www.torproject.org/tk/about/supporters/ by HTTrack Website Copier/3.x [XR&CO'2014], Tue, 08 Oct 2024 01:14:48 GMT -->
+<!-- Mirrored from www.torproject.org/tk/about/supporters/ by HTTrack Website Copier/3.x [XR&CO'2014], Tue, 15 Oct 2024 01:16:50 GMT -->
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -15,7 +15,7 @@
   <meta property="og:description" content="Özüňizi yzarlanmakdan we gözegçilikden goraň. Senzuradan aýlanyp geçiň." />
   <meta property="og:image" content="../../../static/images/tor-project-logo-onions.html" />
   <meta name="monetization" content="$ilp.uphold.com/pYfXb92JBQN4">
-  <link rel="stylesheet" href="../../../static/css/bootstrape3f0.html?h=2122cf07">
+  <link rel="stylesheet" href="../../../static/css/bootstrap7291.css?h=7244dbcd">
   <link rel="stylesheet" href="../../../static/fonts/fontawesome/css/all.mindad8.html?h=9d272f6a" rel="stylesheet">
   
   <!-- Standard favicon -->
@@ -26,7 +26,6 @@
   
 </head>
 <body class="no-gutters">
-  
   <header>
       
 <div class="container-fluid bg-primary">
@@ -180,6 +179,10 @@
               
             
               
+                <a class="dropdown-item" href="../../../ga/about/supporters/index.html">Gaeilge (ga)</a>
+              
+            
+              
                 <a class="dropdown-item" href="../../../hu/about/supporters/index.html">Magyar nyelv (hu)</a>
               
             
@@ -205,6 +208,14 @@
             
               
                 <a class="dropdown-item" href="../../../ko/about/supporters/index.html">한국어(ko)</a>
+              
+            
+              
+                <a class="dropdown-item" href="../../../nl/about/supporters/index.html">Nederlands (nl)</a>
+              
+            
+              
+                <a class="dropdown-item" href="../../../pl/about/supporters/index.html">polski (pl)</a>
               
             
               
@@ -255,6 +266,88 @@
     </nav>
 </div>
   </header>
+  <div class="banner">
+  <input id="trigger" type="checkbox" title="Close banner" />
+  <label for="trigger" class="banner-close text-white">
+      <div class="d-flex h-100">
+        <img src="../../../static/images/yec/x-dark3c81.png?h=353e04cc" class="m-auto h-100 w-100 p-1 img-svg">
+      </div>
+  </label>
+  <span class="eoy-sr-only text-black">Close banner</span>
+  
+  <div id="banner-header">
+    <div class="banner-content">
+      <div class="banner-content-spacer pt-5 h-100">
+        <div class="banner-content-container d-flex px-3">
+          <div id="banner-text-container" class="d-flex flex-column text-left">
+            <div id="banner-text">
+              <h1 class="yec-variant-browse">You have a right to BROWSE without being watched.</h1>
+              <h1 class="yec-variant-search">You have a right to SEARCH without being followed.</h1>
+              <h1 class="yec-variant-speak">You have a right to SPEAK without uninvited listeners.</h1>
+              <p>Join the thousands of Tor supporters building an internet powered by privacy. 
+                 Make a donation today.</p>
+              <p><strong>Through December 31, your gift will be matched 1:1, up to $300,000!</strong></p>
+            </div>
+            <div id="yec-donate-button-container">
+              <a class="btn" id="yec-donate-button" href="https://donate.torproject.org/">
+                <span>Häzir bagyş ediň</span>
+                <img src="../../../static/images/yec/heart673a.png?h=ad369acb" class="donate-heart img-svg">
+              </a>
+            </div>
+          </div>
+          <div class="banner-main-graphics h-100">
+            <img class="yec-illo yec-variant-browse img-svg" src="../../../static/images/yec/illo-yec-browse98e1.png?h=86d8fd2b">
+            <img class="yec-illo yec-variant-search img-svg" src="../../../static/images/yec/illo-yec-search465b.png?h=347ed4b2">
+            <img class="yec-illo yec-variant-speak img-svg" src="../../../static/images/yec/illo-yec-speakae5f.png?h=abdc7268">
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<script type="text/javascript">
+/* persist banner close across pages in the same session/tab */
+let trigger = document.querySelector(".banner #trigger");
+trigger.addEventListener("change", () => {
+    sessionStorage.setItem("bannerClosed", trigger.checked);
+});
+if (sessionStorage.getItem("bannerClosed")) {
+    trigger.checked = sessionStorage.getItem("bannerClosed");
+}
+/* display a random variant of the banner */
+/* not using jQuery because it's loaded later, and this is just faster */
+const variants = ['browse', 'search', 'speak'];
+const default_variant = 'browse';
+const variant = variants[Math.floor(Math.random() * variants.length)]
+const variant_elements =  document.querySelectorAll('h1.yec-variant-' + default_variant + ', img.yec-variant-' + default_variant);
+if (variant == default_variant) {
+    variant_elements.forEach((i) => {
+        i.style.visibility = 'visible';
+    });
+} else {
+    variant_elements.forEach((i) => {
+        i.style.display = 'none';
+    });
+    document.querySelector('h1.yec-variant-' + variant).style.display = 'inline';
+    document.querySelector('img.yec-variant-' + variant).style.display = 'block';
+}
+document.getElementById('yec-donate-button').classList.add('yec-variant-' + variant);
+</script>
+
+<noscript>
+<!-- show the default variant -->
+<style>
+  #banner-header .banner-content h1.yec-variant-browse,
+  #banner-header .banner-content img.yec-variant-browse {
+    visibility: visible;
+  }
+  #yec-donate-button {
+    background-color: var(--abouttor-yec-button-bg-color-browse);
+    visibility: visible;
+  }
+</style>
+</noscript>
   <div class="page">
     
 <div class="container-fluid bg-primary">
@@ -383,7 +476,7 @@ surveillance.</p>
     
       
 <div class="col-md-4 col-xl-4 my-2">
-<div class="card border-1 h-100"><img class="card-img-top" src="../../../static/images/supporters/sida4ba6.html?h=2044250e" alt="Logo of Sida - Swedish International Development Cooperation Agency">
+<div class="card border-1 h-100"><img class="card-img-top" src="../../../static/images/supporters/sida4ba6.png?h=2044250e" alt="Logo of Sida - Swedish International Development Cooperation Agency">
   <div class="card-body ">
   <h4><a href="https://www.sida.se/English/">Sida - Swedish International Development Cooperation Agency</a></h4><p>Sida is a government agency working on behalf of the Swedish parliament and
 government, with the mission to reduce poverty in the world. Through their work
@@ -396,7 +489,7 @@ Policy for Global Development.</p>
     
       
 <div class="col-md-4 col-xl-4 my-2">
-<div class="card border-1 h-100"><img class="card-img-top" src="../../../static/images/supporters/fastly88f3.html?h=1af84f97" alt="Logo of Fastly">
+<div class="card border-1 h-100"><img class="card-img-top" src="../../../static/images/supporters/fastly88f3.png?h=1af84f97" alt="Logo of Fastly">
   <div class="card-body ">
   <h4><a href="https://www.fastly.com/">Fastly</a></h4><p>Fastly's global edge cloud platform processes, serves, and secures applications
 as close to users as possible, at the edge of the network. Fastly generously
@@ -486,21 +579,6 @@ encryption to support advocacy and educational efforts.</p>
     
       
 <div class="col-md-4 col-xl-4 my-2">
-<div class="card border-1 h-100"><img class="card-img-top" src="../../../static/images/supporters/wasabi_logo3997.html?h=fea022ac" alt="Logo of Wasabi">
-  <div class="card-body ">
-  <h4><a href="https://wasabiwallet.io/">Wasabi</a></h4><p>Wasabi is a privacy-focused, free and open source, non-custodial Bitcoin wallet
-for desktop that has pioneered several privacy features, including
-sophisticated Tor integration to protect IP addresses, block filters to
-protect Bitcoin addresses, and coinjoins to protect transaction history.
-zkSNACKs, the research and development company behind Wasabi, is a proud
-founding sponsor of the Onion Service Resource Coalition.</p>
-
-  </div></div>
-</div>
-
-    
-      
-<div class="col-md-4 col-xl-4 my-2">
 <div class="card border-1 h-100"><img class="card-img-top" src="../../../static/images/supporters/osf-sponsor_logo8186.html?h=801ce5a1" alt="Logo of Open Society Foundations">
   <div class="card-body ">
   <h4><a href="https://www.opensocietyfoundations.org/">Open Society Foundations</a></h4><p>The Open Society Foundations, founded by George Soros, are the world's
@@ -510,6 +588,21 @@ support Tor's work to a) deliver digital safety and security trainings
 to human rights defenders, activists, journalists, former detainees,
 and the families of these communities in the MENA diaspora and b)
 enable Iranians to access the Tor network during censorship events.</p>
+
+  </div></div>
+</div>
+
+    
+      
+<div class="col-md-4 col-xl-4 my-2">
+<div class="card border-1 h-100"><img class="card-img-top" src="../../../static/images/supporters/wasabi_logo3997.html?h=fea022ac" alt="Logo of Wasabi">
+  <div class="card-body ">
+  <h4><a href="https://wasabiwallet.io/">Wasabi</a></h4><p>Wasabi is a privacy-focused, free and open source, non-custodial Bitcoin wallet
+for desktop that has pioneered several privacy features, including
+sophisticated Tor integration to protect IP addresses, block filters to
+protect Bitcoin addresses, and coinjoins to protect transaction history.
+zkSNACKs, the research and development company behind Wasabi, is a proud
+founding sponsor of the Onion Service Resource Coalition.</p>
 
   </div></div>
 </div>
@@ -625,11 +718,11 @@ enable Iranians to access the Tor network during censorship events.</p>
     <ul class="jobs-ul">
       
       
-        <li><a href="https://www.iri.org/">International Republican Institute</a> - <span> 2022-2023</span></li>
+        <li><a href="https://blockchair.com/">Blockchair</a> - <span> 2022-2023</span></li>
       
         <li><a href="https://futo.org/grants/">FUTO</a> - <span> 2022-2023</span></li>
       
-        <li><a href="https://blockchair.com/">Blockchair</a> - <span> 2022-2023</span></li>
+        <li><a href="https://www.iri.org/">International Republican Institute</a> - <span> 2022-2023</span></li>
       
         <li><a href="https://sloan.org/">Sloan Foundation</a> - <span> 2021-2023</span></li>
       
@@ -675,9 +768,9 @@ enable Iranians to access the Tor network during censorship events.</p>
       
         <li><a href="https://digitaldefenders.org/">Hivos/The Digital Defenders Partnership</a> - <span> 2014-2015</span></li>
       
-        <li><a href="https://disconnect.me/">Disconnect</a> - <span> 2014</span></li>
-      
         <li><a href="https://freedom.press/">Freedom of the Press Foundation</a> - <span> 2014</span></li>
+      
+        <li><a href="https://disconnect.me/">Disconnect</a> - <span> 2014</span></li>
       
         <li><a href="https://nsf.gov/">National Science Foundation via University of Minnesota</a> - <span> 2013-2018</span></li>
       
@@ -926,6 +1019,10 @@ enable Iranians to access the Tor network during censorship events.</p>
               
             
               
+    	          <a class="dropdown-item" href="../../../ga/about/supporters/index.html">Gaeilge (ga)</a>
+              
+            
+              
     	          <a class="dropdown-item" href="../../../hu/about/supporters/index.html">Magyar nyelv (hu)</a>
               
             
@@ -951,6 +1048,14 @@ enable Iranians to access the Tor network during censorship events.</p>
             
               
     	          <a class="dropdown-item" href="../../../ko/about/supporters/index.html">한국어(ko)</a>
+              
+            
+              
+    	          <a class="dropdown-item" href="../../../nl/about/supporters/index.html">Nederlands (nl)</a>
+              
+            
+              
+    	          <a class="dropdown-item" href="../../../pl/about/supporters/index.html">polski (pl)</a>
               
             
               

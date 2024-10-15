@@ -1,0 +1,795 @@
+<!doctype html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="pl" >
+
+<!-- Mirrored from www.torproject.org/pl/privchat/chapter-5/ by HTTrack Website Copier/3.x [XR&CO'2014], Tue, 15 Oct 2024 01:20:06 GMT -->
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Privchat rozdział 5 | Obroń się przed śledzeniem i nadzorem. Omiń cenzurę.">
+  <meta name="twitter:card" content="summary" />
+  <meta name="twitter:site" content="@torproject" />
+  <meta name="twitter:creator" content="@torproject" />
+  <meta name="twitter:image" content="../../../static/images/tor-project-logo-onions.html"/>
+  <meta property="og:url" content="../../../index.html" />
+  <meta property="og:title" content="Project Tor | Prywatność i wolność w Internecie" />
+  <meta property="og:description" content="Obroń się przed śledzeniem i nadzorem. Omiń cenzurę." />
+  <meta property="og:image" content="../../../static/images/tor-project-logo-onions.html" />
+  <meta name="monetization" content="$ilp.uphold.com/pYfXb92JBQN4">
+  <link rel="stylesheet" href="../../../static/css/bootstrap7291.css?h=7244dbcd">
+  <link rel="stylesheet" href="../../../static/fonts/fontawesome/css/all.mindad8.html?h=9d272f6a" rel="stylesheet">
+  
+  <!-- Standard favicon -->
+  <link rel="icon" type="image/x-icon" href="../../../static/images/favicon/favicon.html">
+  <!-- Recommended favicon format -->
+  <link rel="icon" type="image/png" href="../../../static/images/favicon/favicon-2.html">
+  <title>Projekt Tor | Privchat rozdział 5</title>
+  
+</head>
+<body class="no-gutters">
+  <header>
+      
+<div class="container-fluid bg-primary">
+  <nav class="navbar no-background navbar-expand-lg navbar-dark bg-primary p-4">
+
+    <a class="navbar-brand" href="../../index.html">
+      <img alt="The Tor Project" src="../../../static/images/tor-logo%402x0291.html?h=16ad42bc" >
+      <span class="sr-only">Tor Logo</span>
+    </a>
+
+    
+    
+      <a href="../../../donate/pl.html" title="Przekaż darowiznę" class="px-2 h4"><span class="badge badge-warning p-2">Wpłać teraz</span></a>
+    
+
+    <label for="nav-toggle">
+      <a class="btn btn-lg btn-primary navbar-toggler text-white p-3" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        Menu <span class="navbar-toggler-icon ml-1"></span>
+      </a>
+    </label>
+    <input type="checkbox" id="nav-toggle"/>
+    <div class="collapse navbar-collapse hamburger-menu" id="navbarSupportedContent">
+      <div class="mx-auto">
+        <ul class="navbar-nav">
+        	
+        	
+        	<li class="nav-item">
+            
+            
+              
+              
+                <a class="nav-link" href="../../../about/history/index.html">
+              
+            
+            Informacje
+              
+            </a>
+        	</li>
+  	
+        	<li class="nav-item">
+            
+            
+              
+              
+                <a class="nav-link" href="https://support.torproject.org/">
+              
+            
+            Wsparcie
+              
+            </a>
+        	</li>
+  	
+        	<li class="nav-item">
+            
+            
+              
+              
+                <a class="nav-link" href="https://community.torproject.org/">
+              
+            
+            Społeczność
+              
+            </a>
+        	</li>
+  	
+        	<li class="nav-item">
+            
+            
+              
+              
+                <a class="nav-link" href="https://blog.torproject.org/">
+              
+            
+            Blog
+              
+            </a>
+        	</li>
+  	
+        	<li class="nav-item">
+            
+            
+              
+              
+                <a class="nav-link" href="https://donate.torproject.org/">
+              
+            
+            Przekaż darowiznę
+              
+            </a>
+        	</li>
+  	
+    <!--
+            I add some strings here because the i18n plugin does not pick them up from the Databags
+            Informacje
+            Dokumentacja
+            Wsparcie
+            Społeczność
+            Blog
+            PrivChat
+            Zadania
+            Kontakty
+            Prasa
+            Przekaż darowiznę
+    -->
+        </ul>
+      </div>
+      
+      
+        <div class="btn-group dropdown pull-right">
+          
+            <button type="button" class="btn btn-primary bg-primary dropdown-toggle btn-block" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+          
+          polski (pl)
+          </button>
+          <div class="dropdown-menu">
+            
+              
+                <a class="dropdown-item" href="../../../privchat/chapter-5/index.html">English (en)</a>
+              
+            
+              
+                <a class="dropdown-item" href="../../../ar/privchat/chapter-5/index.html">العربية (ar)</a>
+              
+            
+              
+                <a class="dropdown-item" href="../../../be/privchat/chapter-5/index.html">беларуская (be)</a>
+              
+            
+              
+                <a class="dropdown-item" href="../../../ca/privchat/chapter-5/index.html">Català (ca)</a>
+              
+            
+              
+                <a class="dropdown-item" href="../../../de/privchat/chapter-5/index.html">Deutsch (de)</a>
+              
+            
+              
+                <a class="dropdown-item" href="../../../el/privchat/chapter-5/index.html">Ελληνικά (el)</a>
+              
+            
+              
+                <a class="dropdown-item" href="../../../es/privchat/chapter-5/index.html">Español (es)</a>
+              
+            
+              
+                <a class="dropdown-item" href="../../../fa/privchat/chapter-5/index.html">فارسی (fa)</a>
+              
+            
+              
+                <a class="dropdown-item" href="../../../fr/privchat/chapter-5/index.html">Français (fr)</a>
+              
+            
+              
+                <a class="dropdown-item" href="../../../ga/privchat/chapter-5/index.html">Gaeilge (ga)</a>
+              
+            
+              
+                <a class="dropdown-item" href="../../../hu/privchat/chapter-5/index.html">Magyar nyelv (hu)</a>
+              
+            
+              
+                <a class="dropdown-item" href="../../../is/privchat/chapter-5/index.html">Íslenska (is)</a>
+              
+            
+              
+                <a class="dropdown-item" href="../../../it/privchat/chapter-5/index.html">Italiano (it)</a>
+              
+            
+              
+                <a class="dropdown-item" href="../../../ja/privchat/chapter-5/index.html">日本語 (ja)</a>
+              
+            
+              
+                <a class="dropdown-item" href="../../../ka/privchat/chapter-5/index.html">ქართული (ka)</a>
+              
+            
+              
+                <a class="dropdown-item" href="../../../km/privchat/chapter-5/index.html">ភាសាខ្មែរ (km)</a>
+              
+            
+              
+                <a class="dropdown-item" href="../../../ko/privchat/chapter-5/index.html">한국어(ko)</a>
+              
+            
+              
+                <a class="dropdown-item" href="../../../nl/privchat/chapter-5/index.html">Nederlands (nl)</a>
+              
+            
+              
+            
+              
+                <a class="dropdown-item" href="../../../pt-BR/privchat/chapter-5/index.html">Português Brasil (pt-BR)</a>
+              
+            
+              
+                <a class="dropdown-item" href="../../../ru/privchat/chapter-5/index.html">Русский (ru)</a>
+              
+            
+              
+                <a class="dropdown-item" href="../../../sq/privchat/chapter-5/index.html">Shqip (sq)</a>
+              
+            
+              
+                <a class="dropdown-item" href="../../../sw/privchat/chapter-5/index.html">Kiswahili (sw)</a>
+              
+            
+              
+                <a class="dropdown-item" href="../../../tk/privchat/chapter-5/index.html">türkmençe (tk)</a>
+              
+            
+              
+                <a class="dropdown-item" href="../../../tr/privchat/chapter-5/index.html">Türkçe (tr)</a>
+              
+            
+              
+                <a class="dropdown-item" href="../../../vi/privchat/chapter-5/index.html">Tiếng Việt (vi)</a>
+              
+            
+              
+                <a class="dropdown-item" href="../../../zh-CN/privchat/chapter-5/index.html">简体中文 (zh-CN)</a>
+              
+            
+              
+                <a class="dropdown-item" href="../../../zh-TW/privchat/chapter-5/index.html">正體中文 (zh-TW)</a>
+              
+            
+          </div>
+        </div>
+      
+      
+      <div class="pull-right">
+        
+          <a class="btn btn-outline-light pull-right" href="../../download/index.html">
+        
+          Pobierz Tor Browser<i class="ml-2 pt-1 fas fa-arrow-down-png"></i>
+        </a>
+      </div>
+    </nav>
+</div>
+  </header>
+  <div class="banner">
+  <input id="trigger" type="checkbox" title="Close banner" />
+  <label for="trigger" class="banner-close text-white">
+      <div class="d-flex h-100">
+        <img src="../../../static/images/yec/x-dark3c81.png?h=353e04cc" class="m-auto h-100 w-100 p-1 img-svg">
+      </div>
+  </label>
+  <span class="eoy-sr-only text-black">Close banner</span>
+  
+  <div id="banner-header">
+    <div class="banner-content">
+      <div class="banner-content-spacer pt-5 h-100">
+        <div class="banner-content-container d-flex px-3">
+          <div id="banner-text-container" class="d-flex flex-column text-left">
+            <div id="banner-text">
+              <h1 class="yec-variant-browse">Masz prawo PRZEGLĄDAĆ bez bycia obserwowanym.</h1>
+              <h1 class="yec-variant-search">Masz prawo WYSZUKIWAĆ, nie będąc śledzonym.</h1>
+              <h1 class="yec-variant-speak">Masz prawo MÓWIĆ bez udziału nieproszonych słuchaczy.</h1>
+              <p>Join the thousands of Tor supporters building an internet powered by privacy. 
+                 Przekaż darowiznę już dziś.</p>
+              <p><strong>Through December 31, your gift will be matched 1:1, up to $300,000!</strong></p>
+            </div>
+            <div id="yec-donate-button-container">
+              <a class="btn" id="yec-donate-button" href="https://donate.torproject.org/">
+                <span>Wpłać teraz</span>
+                <img src="../../../static/images/yec/heart673a.png?h=ad369acb" class="donate-heart img-svg">
+              </a>
+            </div>
+          </div>
+          <div class="banner-main-graphics h-100">
+            <img class="yec-illo yec-variant-browse img-svg" src="../../../static/images/yec/illo-yec-browse98e1.png?h=86d8fd2b">
+            <img class="yec-illo yec-variant-search img-svg" src="../../../static/images/yec/illo-yec-search465b.png?h=347ed4b2">
+            <img class="yec-illo yec-variant-speak img-svg" src="../../../static/images/yec/illo-yec-speakae5f.png?h=abdc7268">
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<script type="text/javascript">
+/* persist banner close across pages in the same session/tab */
+let trigger = document.querySelector(".banner #trigger");
+trigger.addEventListener("change", () => {
+    sessionStorage.setItem("bannerClosed", trigger.checked);
+});
+if (sessionStorage.getItem("bannerClosed")) {
+    trigger.checked = sessionStorage.getItem("bannerClosed");
+}
+/* display a random variant of the banner */
+/* not using jQuery because it's loaded later, and this is just faster */
+const variants = ['browse', 'search', 'speak'];
+const default_variant = 'browse';
+const variant = variants[Math.floor(Math.random() * variants.length)]
+const variant_elements =  document.querySelectorAll('h1.yec-variant-' + default_variant + ', img.yec-variant-' + default_variant);
+if (variant == default_variant) {
+    variant_elements.forEach((i) => {
+        i.style.visibility = 'visible';
+    });
+} else {
+    variant_elements.forEach((i) => {
+        i.style.display = 'none';
+    });
+    document.querySelector('h1.yec-variant-' + variant).style.display = 'inline';
+    document.querySelector('img.yec-variant-' + variant).style.display = 'block';
+}
+document.getElementById('yec-donate-button').classList.add('yec-variant-' + variant);
+</script>
+
+<noscript>
+<!-- show the default variant -->
+<style>
+  #banner-header .banner-content h1.yec-variant-browse,
+  #banner-header .banner-content img.yec-variant-browse {
+    visibility: visible;
+  }
+  #yec-donate-button {
+    background-color: var(--abouttor-yec-button-bg-color-browse);
+    visibility: visible;
+  }
+</style>
+</noscript>
+  <div class="page pt-4">
+    
+<div class="container-fluid bg-primary">
+
+  <div class="row flex-xl-nowrap order-last">
+    
+    <div class="container bg-primary pt-1 pt-sm-0">
+    
+      <div class="row">
+        
+        <div class="col-12 content-center pt-5">
+          <div class="row">
+            <h6 class="mx-auto text-white"></h6>
+          </div>
+          <div class="row pb-5">
+            <h2 class="mx-auto display-3 text-white">Privchat rozdział 5</h2>
+          </div>
+          
+          <div class="row header-description">
+          
+            
+          </div>
+        </div>
+        
+      </div>
+    </div>
+  </div>
+</div>
+
+    <div class="container-fluid">
+      <div class="row flex-xl-nowrap">
+        
+        <main role="main" class="mx-auto col-12 order-last text-left">
+          <div class="container py-3 mt-5 preamble">
+            
+          </div>
+          <div class="container" style="background:url(../../../static/images/privchat/pattern.png) no-repeat center; background-size: contain;">
+  <div class="w-50 text-center mx-auto">
+    <img class="img-fluid p-3" height="auto" src="../../../static/images/privchat/privchat.html" /> <h1 class="display-2 text-primary">PrivChat</h1>
+    <p class="text-primary p-3"> <p>rozmowa o technologii, prawach człowieka, <br/>i wolności w internecie, którą przygotował Tor Project</p>
+</p>
+  </div>
+</div>
+
+<div class="container pb-3 mt-5 preamble">
+  <p>
+    PrivChat to seria wydarzeń zbierania funduszy, organizowana w celu zebrania datków na Tor Project. Za pośrednictwem PrivChat będziemy dostarczać Ci ważne informacje związane z tym, co dzieje się w technologii, prawach człowieka i wolności w Internecie, zapraszając ekspertów na czat z naszą społecznością.
+  </p>
+  <hr class="mt-5"/>
+</div>
+
+<div class="container py-3 mt-5">
+    <p class="h2 text-primary" target="_blank">Rozdział 5 – Zabezpieczenie przed Pegasusem</p>
+    <a class="btn btn-small bg-primary text-light my-4" href="https://youtu.be/4ovmcZtaacY" target="_blank"><i class="mr-2 pt-1 fas fa-play-circle-png"></i> Oglądaj </a>
+    <div>
+    <p class="font-family-serif">
+      Każdego roku rządy, organy ścigania, wojsko i korporacje inwestują miliardy dolarów w tworzenie i kupowanie złośliwego oprogramowania szpiegującego — oprogramowania zaprojektowanego w celu cichej infiltracji urządzenia użytkownika i umożliwienia atakującym przeglądania zawartości bez wykrycia.
+    </p>
+    <p class="font-family-serif">
+      W tym roku Projekt Pegasus ujawnił, że użytkownicy tego rodzaju oprogramowania szpiegującego, znanego jako Pegasus i zbudowanego przez grupę NSO, atakowali telefony należące do tysięcy osób w ponad 50 krajach, w tym dyrektorów biznesowych, polityków, dziennikarzy i działaczy na rzecz praw człowieka.
+    </p>
+    <p class="font-family-serif">
+    <p>W tej edycji PrivChat dołącz do <strong>Likhity</strong> i <strong>Etienne'a Mayniera</strong> z Amnesty International oraz <strong>Johna Scotta-Railtona</strong> z Citizen Lab, aby porozmawiać:</p>
+
+      <ul>
+        <li>Co mogą zrobić poszczególne osoby, dziennikarze, aktywiści i obrońcy praw człowieka, aby uchronić się przed zaawansowanym oprogramowaniem szpiegującym?</li>
+     	<li>Jakie organizacje możemy wspierać, aby pomóc powstrzymać te nadużycia?</li>
+    	<li>Kto pracuje nad bezpieczniejszym, bardziej prywatnym oprogramowaniem, któremu możemy zaufać?</li>
+      </ul>
+    </p>
+    <p class="font-family-serif">
+    <strong>Roger Dingledine</strong>, Co-Founder of the Tor Project, will join us as our host and moderator.
+    </p>
+    </div>
+</div>
+
+<div class="container pt-5 justify-content-center">
+
+  <h4>Host</h4>
+
+    <div class="row">
+      <div class="container">
+      <div class="card flex-row flex-wrap py-3">
+        <div class="col-3">
+            <img class="card-img-top" src="../../../static/images/privchat/roger.png" alt="">
+        </div>
+        <div class="col">
+          <div class="card-block px-2">
+              <div class="pb-4">
+                <h4 class="display-4 text-primary">Roger Dingledine</h4>
+                <strong class="display-5 text-primary mb-4">President & Co-Founder, the Tor Project</strong>
+              </div>
+	      <p class="text-tpo"><strong>Roger Dingledine</strong> is president and co-founder of the Tor Project, a nonprofit that develops free and open source software to protect people from tracking, censorship, and surveillance online. He works with journalists and activists on many continents to help them understand and defend against the threats they face. Roger was chosen by the MIT Technology Review as one of its top 35 innovators under 35, he co-authored the Tor design paper that won the Usenix Security "Test of Time" award, and he has been recognized by Foreign Policy magazine as one of its top 100 global thinkers.</p>
+          </div>
+        </div>
+      </div>
+      </div>
+    </div>
+
+  <h4 class="mt-5">Uczestnicy</h4>
+
+  <div class="row">
+    <div class="container">
+
+    <div class="card flex-row flex-wrap py-3 mb-5">
+      <div class="col-3">
+          <img class="card-img-top" src="../../../static/images/privchat/likhita.html" alt="">
+      </div>
+      <div class="col">
+        <div class="card-block px-2">
+            <div class="pb-4">
+              <h4 class="display-4 text-primary">Likhita</h4>
+              <strong class="display-5 text-primary mb-4">Researcher/Adviser - Technology and Human Rights, Amnesty International</strong>
+            </div>
+	    <p class="text-tpo"><strong>Likhita</strong> works as a Researcher and Adviser for Amnesty International's Technology and Human Rights Programme. At present, she is involved in researching targeted surveillance and internet shutdowns. She has researched online hate speech against women and minority populations in India. Previously, she also researched and exposed challenges faced by human rights defenders in India and worked extensively on hate crimes in the country. Likhita holds a master's degree in Human Rights and Humanitarian Action from Sciences Po.</p>
+        </div>
+      </div>
+    </div>
+
+    <div class="card flex-row flex-wrap py-3 mb-5">
+      <div class="col-3">
+          <img class="card-img-top" src="../../../static/images/privchat/etienne.html" alt="">
+      </div>
+      <div class="col">
+        <div class="card-block px-2">
+            <div class="pb-4">
+              <h4 class="display-4 text-primary">Etienne Maynier</h4>
+              <strong class="display-5 text-primary mb-4">Amnesty International's Security Lab</strong>
+            </div>
+	    <p class="text-tpo"><strong>Etienne Maynier</strong> (he/him) is an activist and researcher who investigates the impact of targeted surveillance on NGOs and human rights defenders. He is currently working as Technologist in the Amnesty International's Security Lab doing technical research.</p>
+        </div>
+      </div>
+    </div>
+
+    <div class="card flex-row flex-wrap py-3 mb-5">
+      <div class="col-3">
+          <img class="card-img-top" src="../../../static/images/privchat/jsr.html" alt="">
+      </div>
+      <div class="col">
+        <div class="card-block px-2">
+            <div class="pb-4">
+              <h4 class="display-4 text-primary">John Scott-Railton</h4>
+              <strong class="display-5 text-primary mb-4">Senior Researcher, Citizen Lab</strong>
+            </div>
+	    <p class="text-tpo"><strong>John Scott-Railton</strong> is a Senior Researcher at Citizen Lab (at The University of Toronto). His work focuses on technological threats in civil society, including targeted malware operations, cyber militias, and online disinformation. His greatest hits include a collaboration with colleague Bill Marczak that uncovered the first iPhone zero-day and remote jailbreak seen in the wild, as well as the use of Pegasus spyware to human rights defenders, journalists, and opposition figures in Mexico, the UAE, Canada, and Saudi Arabia. Other investigations with Citizen Lab colleagues include the first report of ISIS-led malware operations, and China's "Great Cannon," the Government of China's nation-scale DDoS attack. John has also investigated Russian and Iranian disinformation campaigns, and the manipulation of news aggregators such as Google News. John has been a fellow at Google Ideas and Jigsaw at Alphabet. He graduated with a University of Chicago and a Masters from the University of Michigan. He is completing a Ph.D. at UCLA. Previously he founded The Voices Projects, collaborative information feeds that bypassed internet shutdowns in Libya and Egypt. John's work has been covered by Time Magazine, BBC, CNN, The Washington Post, and the New York Times.</p>
+        </div>
+      </div>
+    </div>
+    
+</div>
+
+
+<div class="container">
+  <div class="row bg-secondary p-5 mx-1 my-5">
+    <h1><i class="fas fa-hand-holding-usd px-5 text-light"></i></h1>
+    <h3 class="preamble text-light text-center mx-auto">Twoje darowizny sprawiają, że ta seria i nasza praca w Torze są możliwe.<br/> <p>Najlepszym sposobem na wsparcie naszej pracy jest <a class="text-success" href="https://donate.torproject.org/monthly-giving" target="_blank">zostanie comiesięcznym darczyńcą.</a></p>
+</h3>
+  </div>
+</div>
+        </main>
+      </div>
+    </div>
+  </div>
+  
+    
+
+<div class="container-fluid bg-dark footer order-last text-left">
+
+  
+
+  <div class="row">
+      <div class="col-4 d-flex onion-pattern">
+          <img src="../../../static/images/circle-patterneab9.png?h=9a4040e4" class="img-svg">
+    </div>
+    <div class="col-sm-8 d-flex download-section mt-auto">
+      <div class="container pb-2 justify-content-right">
+         <h2 class="text-white text-bold">Pobierz Tor Browser</h2>
+         <p class="text-white">Pobierz Tor Browser, aby doświadczyć prawdziwie prywatnego przeglądania bez śledzenia, nadzoru oraz cenzury.</p>
+            <a class="btn text-primary bg-white btn-light pull-right mt-2" href="../../download/index.html">
+          Pobierz Tor Browser<i class="ml-2 pt-1 fas fa-arrow-down-png-purple"></i>
+         </a>
+      </div>
+    </div>
+  </div>
+
+  
+
+
+  <div class="row">
+    <div class="col-12 d-flex justify-content-center">
+      <div class="col-sm-6 offset-lx-1 offset-sm-0 mt-5">
+	        <h5 class="font-weight-bold mt-5 text-white">Nasza misja:</h5>
+          <p class="text-white mb-5" >Rozwijanie praw i wolności człowieka poprzez tworzenie i wdrażanie wolnych i otwartych technologii anonimowości i prywatności, wspieranie ich nieograniczonej dostępności i wykorzystania oraz propagowanie ich naukowego i powszechnego zrozumienia.</p>
+      </div>
+      <div class="col-sm-2 mt-5 d-none d-sm-block">
+        <ul class="nav flex-column mt-sm-5">
+          
+          
+          <li class="nav-item">
+          
+          
+            
+            
+              <a class="nav-link text-light" href="../../../about/jobs/index.html">
+            
+          
+              Zadania
+              
+            </a>
+          </li>
+          
+          <li class="nav-item">
+          
+          
+            
+            
+              <a class="nav-link text-light" href="https://blog.torproject.org/">
+            
+          
+              Blog
+              
+            </a>
+          </li>
+          
+          <li class="nav-item">
+          
+          
+            
+            
+              <a class="nav-link text-light" href="../../../contact/index.html">
+            
+          
+              Kontakty
+              
+            </a>
+          </li>
+          
+          <li class="nav-item">
+          
+          
+            
+            
+              <a class="nav-link text-light" href="../../../press/index.html">
+            
+          
+              Prasa
+              
+            </a>
+          </li>
+          
+          <li class="nav-item">
+          
+          
+            
+            
+              <a class="nav-link text-light" href="../../../privchat/index.html">
+            
+          
+              PrivChat
+              
+            </a>
+          </li>
+          
+        </ul>
+        
+        
+        
+          <a href="../../../donate/pl.html" title="Przekaż darowiznę"><span class="badge badge-warning p-2 h4">Wpłać teraz</span></a>
+        
+        
+      </div>
+    </div>
+  </div>
+  
+  <div class="row">
+    <div class="col-12 d-flex justify-content-center">
+      <div class="col-sm-6 offset-lx-1 offset-sm-0 mt-5">
+        <p class="text-primary-light">ZASUBSKRYBUJ NASZ NEWSLETTER</p>
+        <p class="text-light">Uzyskaj comiesięczne aktualizacje i możliwości od Tor Project:</p>
+        <p class="w"><a class="btn btn-small btn-dark mt-2 text-white active" role="button" aria-pressed="true" href="https://newsletter.torproject.org/">ZAREJESTRUJ SIĘ</a></p>
+      </div>
+      <div class="col-sm-2 mt-5 d-none d-sm-block">
+        <div class="row">
+          <h4><a class="text-white px-3" target="_blank" href="https://forum.torproject.org/"><i class="fab fa-discourse"></i></a></h4>
+          <h4><a class="text-white px-3" target="_blank" href="https://www.facebook.com/TorProject/"><i class="fab fa-facebook-png"></i></a></h4>
+          <h4><a class="mastodon text-white px-3" target="_blank" href="https://mastodon.social/@torproject" rel="me"><i class="fab fa-mastodon-png"></i></a></h4>
+        </div>
+        <div class="row">
+          <h4><a class="instagram text-white px-3" target="_blank" href="https://www.instagram.com/torproject"><i class="fab fa-instagram-png"></i></a></h4>
+          <h4><a class="twitter text-white px-3" target="_blank" href="https://twitter.com/torproject"><i class="fab fa-twitter-png"></i></a></h4>
+          <h4><a class="linkedin text-white px-3" target="_blank" href="https://www.linkedin.com/company/tor-project"><i class="fab fa-linkedin-png"></i></a></h4>
+        </div>
+        <div class="row">
+          <h4><a class="github text-white px-3" target="_blank" href="https://github.com/torproject"><i class="fab fa-github-png"></i></a></h4>
+          <h4><a class="telegram text-white px-3" target="_blank" href="https://t.me/torproject"><i class="fab fa-telegram-png"></i></a></h4>
+          <h4><a class="gitlab text-white px-3" target="_blank" href="https://gitlab.torproject.org/"><i class="fab fa-gitlab-png"></i></a></h4>
+        </div>
+      </div>
+    </div>
+  </div>
+  
+  <div class="row">
+    <div class="col-12 d-flex justify-content-center">
+      <div class="col-8 mt-5">
+        
+        <p class="text-primary text-light">Znak towarowy, informacje o prawach autorskich i zasady korzystania przez osoby trzecie można znaleźć w naszym 
+  <a href="../../../about/trademark/index.html" target="_blank" class="text-primary text-light"><u>FAQ</u></a>
+.</p>
+      </div>
+      <div class="col-sm-2 mt-5 d-none d-sm-block">
+        <div class="btn-group dropup float-right">
+      	  <button type="button" class="btn btn-primary dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+            polski (pl)
+      	  </button>
+      	  <div class="dropdown-menu">
+            
+              
+    	          <a class="dropdown-item" href="../../../privchat/chapter-5/index.html">English (en)</a>
+              
+            
+              
+    	          <a class="dropdown-item" href="../../../ar/privchat/chapter-5/index.html">العربية (ar)</a>
+              
+            
+              
+    	          <a class="dropdown-item" href="../../../be/privchat/chapter-5/index.html">беларуская (be)</a>
+              
+            
+              
+    	          <a class="dropdown-item" href="../../../ca/privchat/chapter-5/index.html">Català (ca)</a>
+              
+            
+              
+    	          <a class="dropdown-item" href="../../../de/privchat/chapter-5/index.html">Deutsch (de)</a>
+              
+            
+              
+    	          <a class="dropdown-item" href="../../../el/privchat/chapter-5/index.html">Ελληνικά (el)</a>
+              
+            
+              
+    	          <a class="dropdown-item" href="../../../es/privchat/chapter-5/index.html">Español (es)</a>
+              
+            
+              
+    	          <a class="dropdown-item" href="../../../fa/privchat/chapter-5/index.html">فارسی (fa)</a>
+              
+            
+              
+    	          <a class="dropdown-item" href="../../../fr/privchat/chapter-5/index.html">Français (fr)</a>
+              
+            
+              
+    	          <a class="dropdown-item" href="../../../ga/privchat/chapter-5/index.html">Gaeilge (ga)</a>
+              
+            
+              
+    	          <a class="dropdown-item" href="../../../hu/privchat/chapter-5/index.html">Magyar nyelv (hu)</a>
+              
+            
+              
+    	          <a class="dropdown-item" href="../../../is/privchat/chapter-5/index.html">Íslenska (is)</a>
+              
+            
+              
+    	          <a class="dropdown-item" href="../../../it/privchat/chapter-5/index.html">Italiano (it)</a>
+              
+            
+              
+    	          <a class="dropdown-item" href="../../../ja/privchat/chapter-5/index.html">日本語 (ja)</a>
+              
+            
+              
+    	          <a class="dropdown-item" href="../../../ka/privchat/chapter-5/index.html">ქართული (ka)</a>
+              
+            
+              
+    	          <a class="dropdown-item" href="../../../km/privchat/chapter-5/index.html">ភាសាខ្មែរ (km)</a>
+              
+            
+              
+    	          <a class="dropdown-item" href="../../../ko/privchat/chapter-5/index.html">한국어(ko)</a>
+              
+            
+              
+    	          <a class="dropdown-item" href="../../../nl/privchat/chapter-5/index.html">Nederlands (nl)</a>
+              
+            
+              
+            
+              
+    	          <a class="dropdown-item" href="../../../pt-BR/privchat/chapter-5/index.html">Português Brasil (pt-BR)</a>
+              
+            
+              
+    	          <a class="dropdown-item" href="../../../ru/privchat/chapter-5/index.html">Русский (ru)</a>
+              
+            
+              
+    	          <a class="dropdown-item" href="../../../sq/privchat/chapter-5/index.html">Shqip (sq)</a>
+              
+            
+              
+    	          <a class="dropdown-item" href="../../../sw/privchat/chapter-5/index.html">Kiswahili (sw)</a>
+              
+            
+              
+    	          <a class="dropdown-item" href="../../../tk/privchat/chapter-5/index.html">türkmençe (tk)</a>
+              
+            
+              
+    	          <a class="dropdown-item" href="../../../tr/privchat/chapter-5/index.html">Türkçe (tr)</a>
+              
+            
+              
+    	          <a class="dropdown-item" href="../../../vi/privchat/chapter-5/index.html">Tiếng Việt (vi)</a>
+              
+            
+              
+    	          <a class="dropdown-item" href="../../../zh-CN/privchat/chapter-5/index.html">简体中文 (zh-CN)</a>
+              
+            
+              
+    	          <a class="dropdown-item" href="../../../zh-TW/privchat/chapter-5/index.html">正體中文 (zh-TW)</a>
+              
+            
+        	</div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <script src="../../../static/js/jquery-3.2.1.min518c.js?h=1055018c" ></script>
+  <script src="../../../static/js/popper.min4068.js?h=a4336719" ></script>
+  <script src="../../../static/js/bootstrap.bundle.min8420.html?h=46d1f82f" ></script>
+  <script src="../../../static/js/scrollspy.minbf04.html?h=02674132" ></script>
+  <script src="../../../static/js/modernizr1532.html?h=9a7f0609" ></script>
+  <script src="../../../static/js/download4ad7.html?h=caaadf8f" ></script>
+  <script src="../../../static/js/fallbackffa1.html?h=8a716acd" ></script>
+  </div>
+</div>
+  
+</body>
+
+<!-- Mirrored from www.torproject.org/pl/privchat/chapter-5/ by HTTrack Website Copier/3.x [XR&CO'2014], Tue, 15 Oct 2024 01:20:06 GMT -->
+</html>
