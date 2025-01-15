@@ -1,7 +1,7 @@
 <!doctype html>
 <html xmlns="http://www.w3.org/1999/xhtml" lang="ka" >
 
-<!-- Mirrored from www.torproject.org/ka/privchat/chapter-1/ by HTTrack Website Copier/3.x [XR&CO'2014], Wed, 08 Jan 2025 01:22:23 GMT -->
+<!-- Mirrored from www.torproject.org/ka/privchat/chapter-1/ by HTTrack Website Copier/3.x [XR&CO'2014], Wed, 15 Jan 2025 01:21:44 GMT -->
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -266,88 +266,7 @@
     </nav>
 </div>
   </header>
-  <div class="banner">
-  <input id="trigger" type="checkbox" title="Close banner" />
-  <label for="trigger" class="banner-close text-white">
-      <div class="d-flex h-100">
-        <img src="../../../static/images/yec/x-dark3c81.html?h=353e04cc" class="m-auto h-100 w-100 p-1 img-svg">
-      </div>
-  </label>
-  <span class="eoy-sr-only text-black">Close banner</span>
   
-  <div id="banner-header">
-    <div class="banner-content">
-      <div class="banner-content-spacer pt-5 h-100">
-        <div class="banner-content-container d-flex px-3">
-          <div id="banner-text-container" class="d-flex flex-column text-left">
-            <div id="banner-text">
-              <h1 class="yec-variant-browse">თქვენი უფლებაა ᲛᲝᲘᲜᲐᲮᲣᲚᲝᲗ გვერდები თვალთვალის გარეშე.</h1>
-              <h1 class="yec-variant-search">თქვენი უფლებაა ᲛᲝᲘᲫᲘᲝᲗ თვალთვალის გარეშე.</h1>
-              <h1 class="yec-variant-speak">თქვენი უფლებაა ᲘᲡᲐᲣᲑᲠᲝᲗ უნებართვო მიყურადების გარეშე.</h1>
-              <p>შემოუერთდით Tor-ის ათასობით მხარდამჭერს პირადულობის უზრუნველმყოფი ინტერნეტის შენებაში. 
-                 გაიღეთ თანხა ახლავე.</p>
-              <p><strong>31 დეკემბრის ჩათვლით გაღებული თანხა გაორმაგდება 1:1 წესით $300,000-მდე!</strong></p>
-            </div>
-            <div id="yec-donate-button-container">
-              <a class="btn" id="yec-donate-button" href="https://donate.torproject.org/">
-                <span>გაიღეთ თანხა</span>
-                <img src="../../../static/images/yec/heart673a.png?h=ad369acb" class="donate-heart img-svg">
-              </a>
-            </div>
-          </div>
-          <div class="banner-main-graphics h-100">
-            <img class="yec-illo yec-variant-browse img-svg" src="../../../static/images/yec/illo-yec-browse98e1.png?h=86d8fd2b">
-            <img class="yec-illo yec-variant-search img-svg" src="../../../static/images/yec/illo-yec-search465b.html?h=347ed4b2">
-            <img class="yec-illo yec-variant-speak img-svg" src="../../../static/images/yec/illo-yec-speakae5f.png?h=abdc7268">
-          </div>
-        </div>
-      </div>
-    </div>
-  </div>
-</div>
-
-<script type="text/javascript">
-/* persist banner close across pages in the same session/tab */
-let trigger = document.querySelector(".banner #trigger");
-trigger.addEventListener("change", () => {
-    sessionStorage.setItem("bannerClosed", trigger.checked);
-});
-if (sessionStorage.getItem("bannerClosed")) {
-    trigger.checked = sessionStorage.getItem("bannerClosed");
-}
-/* display a random variant of the banner */
-/* not using jQuery because it's loaded later, and this is just faster */
-const variants = ['browse', 'search', 'speak'];
-const default_variant = 'browse';
-const variant = variants[Math.floor(Math.random() * variants.length)]
-const variant_elements =  document.querySelectorAll('h1.yec-variant-' + default_variant + ', img.yec-variant-' + default_variant);
-if (variant == default_variant) {
-    variant_elements.forEach((i) => {
-        i.style.visibility = 'visible';
-    });
-} else {
-    variant_elements.forEach((i) => {
-        i.style.display = 'none';
-    });
-    document.querySelector('h1.yec-variant-' + variant).style.display = 'inline';
-    document.querySelector('img.yec-variant-' + variant).style.display = 'block';
-}
-document.getElementById('yec-donate-button').classList.add('yec-variant-' + variant);
-</script>
-
-<noscript>
-<!-- show the default variant -->
-<style>
-  #banner-header .banner-content h1.yec-variant-browse,
-  #banner-header .banner-content img.yec-variant-browse {
-    visibility: visible;
-  }
-  #yec-donate-button {
-    background-color: var(--abouttor-yec-button-bg-color-browse);
-    visibility: visible;
-  }
-</style>
-</noscript>
   <div class="page pt-4">
     
 <div class="container-fluid bg-primary">
@@ -384,7 +303,7 @@ document.getElementById('yec-donate-button').classList.add('yec-variant-' + vari
           <div class="container py-3 mt-5 preamble">
             
           </div>
-          <div class="container" style="background:url(../../../static/images/privchat/pattern.html) no-repeat center; background-size: contain;">
+          <div class="container" style="background:url(../../../static/images/privchat/pattern.png) no-repeat center; background-size: contain;">
   <div class="w-50 text-center mx-auto">
     <img class="img-fluid p-3" height="auto" src="../../../static/images/privchat/privchat.svg" /> <h1 class="display-2 text-primary">PrivChat</h1>
     <p class="text-primary p-3"> <p>საუბრები ტექნოლოგიების, ადამიანის უფლებებისა და <br/>Tor-პროექტის მიერ მონიჭებული ინტერნეტთავისუფლების ირგვლივ</p>
@@ -394,7 +313,7 @@ document.getElementById('yec-donate-button').classList.add('yec-variant-' + vari
 
 <div class="container pb-3 mt-5 preamble">
   <p>
-    PrivChat is a fundraising event series held to raise donations for the Tor Project. Through PrivChat, we will bring you important information related to what is happening in tech, human rights, and internet freedom by convening experts for a chat with our community.
+    PrivChat წარმოადგენს ღონისძიებების წყებას სახსრების მოსაზიდად და შემოწირულობის ზრდისთვის Tor-პროექტში. სანაცვლოდ კი PrivChat მოგაწვდით მეტად მნიშვნელოვან ცნობებს, თუ რა სიახლეებია ტექნოლოგიურ სამყაროში ადამიანის უფლებათა დაცვისა და ინტერნეტთავისუფლების კუთხით, მოწვეულ მცოდნე ხალხთან და ჩვენს ერთობასთან გასაუბრებით.
   </p>
 
   <hr class="mt-5"/>
@@ -402,15 +321,15 @@ document.getElementById('yec-donate-button').classList.add('yec-variant-' + vari
 </div>
 
 <div class="container py-3 mt-5">
-    <p class="h2 text-primary" target="_blank">Chapter #1 - Online Privacy in 2020: Activism &amp; COVID-19</p>
+    <p class="h2 text-primary" target="_blank">თავი #1 - ინტერნეტში პირადულობა 2020 წელს: მოძრაობა და COVID-19</p>
     <a class="btn btn-small bg-primary text-light my-4" href="https://youtu.be/gSyDvG4Z308" target="_blank"><i class="mr-2 pt-1 fas fa-play-circle-png"></i> სანახავი </a>
     <div>
     <p class="font-family-serif">
-    When the COVID-19 pandemic hit most countries around the world, many governments looked for technology to trace the spread of the virus in order to fight the pandemic. Contact tracing practices and technologies raised many questions about privacy, particularly: is it possible to trace the virus while respecting people&#39;s privacy?
+    როცა ᲙᲝᲕᲘᲓ-19 გავრცელების პიკს აღწევდა მსოფლიოს სხვადასხვა ქვეყანაში, ბევრმა მთავრობამ დაიწყო ტექნოლოგიების მოძიება ვირუსის გავრცელებისთვის თვალის სადევნებლად პანდემიასთან ბრძოლის ფარგლებში. ურთიერთშემხებ პირთა დასადგენად დანერგილმა საშუალებებმა და ტექნოლოგიებმა ბევრი კითხვა გააჩინა, განსაკუთრებით პირადულობის კუთხით: შესაძლებელია ვირუსის გავრცელებისთვის თვალის მიდევნება პირადი ცხოვრების ხელშეუხებლობის დაცვით?
 
-    Now amidst the uprising in the U.S. against systemic racism, followed by protests all around the world, the central question about contact tracing, privacy, and surveillance becomes critical. Can the technology used for tracking the virus be used to track protesters? Will it be?
+    ახლა შუაგულში ვიმყოფებით წამოწყებული აჯანყებებისა შეერთებულ შტატებში სისტემური რასიზმის წინააღმდეგ, რომელსაც მსოფლიოს დანარჩენ კუთხეებშიც არაერთი გამოსვლა ახლავს, ამიტომ გადამწყვეტ მნიშვნელობას იძენს შეკითხვები, რომლებიც ეხება ურთიერთშემხებ პირთა თვალის დევნებას, პირადულობასა და მიყურადებას. შესაძლებელია ვირუსის თვალის მისადევნებელი საშუალებების გამოყენება მეამბოხეთა ზედამხედველობისთვის? ან შესაძლებელი გახდება?
 
-    For our first ever PrivChat, the Tor Project is bringing you three amazing guests to chat with us about privacy in this context.
+    ჩვენი პირველი საუბრისთვის, რომლისთვისაც PrivChat გამოვიყენეთ, Tor-პროექტმა მოიწვია სამი არაჩვეულებრივი სტუმარი პირადი მონაცემების დაცვის საკითხების განსახილველად.
     </p>
     </div>
 </div>
@@ -428,7 +347,7 @@ document.getElementById('yec-donate-button').classList.add('yec-variant-' + vari
         <div class="col">
           <div class="card-block px-2">
               <h4 class="display-4 text-primary">Roger Dingledine</h4>
-              <p class="text-tpo"><p>Roger Dingledine is president and co-founder of the Tor Project, a nonprofit that develops free and open source software to protect people from tracking, censorship, and surveillance online.<br/> Wearing one hat, Roger works with journalists and activists on many continents to help them understand and defend against the threats they face. Wearing another, he is a lead researcher in the online anonymity field, coordinating and mentoring academic researchers working on Tor-related topics. Since 2002 he has helped organize the yearly international Privacy Enhancing Technologies Symposium (PETS).<br/> Among his achievements, Roger was chosen by the MIT Technology Review as one of its top 35 innovators under 35, he co-authored the Tor design paper that won the Usenix Security "Test of Time" award, and he has been recognized by Foreign Policy magazine as one of its top 100 global thinkers.</p>
+              <p class="text-tpo"><p>როჯერ დინგლედინი პრეზიდენტი და თანადამფუძნებელია Tor-პროექტისა, არამომგებიანი წამოწყებისა, რომელიც ავითარებს უფასო და ღია წყაროს პროგრამულ საშუალებებს ხალხის დასაცავად თვალთვალისგან, ცენზურისა და მიყურადებისგან ინტერნეტში.<br/> ერთი მხრივ, როჯერი ჟურნალისტურ საქმიანობას ეწევა და მეამბოხეა არაერთ კონტინენტზე, რომ დაეხმაროს ყველას საფრთხეთა გააზრებასა და თავის დაცვაში. მეორე მხრივ, წამყვანი მკვლევარია ინტერნეტში ვინაობის გაუმხელობის საკითხებისა, ხელმძღვანელობს და ზედამხედველობს აკადემიურ კვლევებს Tor-თან დაკავშირებული საკითხების შესახებ. 2002 წლიდან წვლილი შეაქვს ყოველწლიური სიმპოზიუმის გამართვაში პირადულობის დაცვის გასაუმჯობესებელი ტექნოლოგიებისთვის (PETS).<br/> მის მიღწევებს შორისაა, რომ როჯერი დასახელდა MIT-ის ტექნოლოგიურ მიმოხილვაში 35 წლამდე ასაკის 35 რჩეულ გამომგონებელს შორის, აგრეთვე შემდგენელია Tor-ის დიზაინის კონცეფციისა, რომელმაც დაიმსახურა Usenix-Security-ის პრიზი „Test of Time“, გარდა ამისა, აღიარებულია Foreign-Policy-magazine-ის მიერ 100 რჩეულ საერთაშორისო მოაზროვნეს შორის.</p>
 </p>
           </div>
         </div>
@@ -436,7 +355,7 @@ document.getElementById('yec-donate-button').classList.add('yec-variant-' + vari
     </div>
   </div>
 
-  <h4 class="mt-5">Participants</h4>
+  <h4 class="mt-5">მონაწილეები</h4>
 
   <div class="row">
     <div class="container">
@@ -456,12 +375,12 @@ document.getElementById('yec-donate-button').classList.add('yec-variant-' + vari
 
     <div class="card flex-row flex-wrap py-3 mb-5">
       <div class="col-3">
-          <img class="card-img-top" src="../../../static/images/privchat/dkg.html" alt="Daniel Kahn Gillmor">
+          <img class="card-img-top" src="../../../static/images/privchat/dkg.png" alt="Daniel Kahn Gillmor">
       </div>
       <div class="col">
         <div class="card-block px-2">
             <h4 class="display-4 text-primary">Daniel Kahn Gillmor</h4>
-            <p class="text-tpo"><p>Daniel Kahn Gillmor is a Senior Staff Technologist for ACLU\u2019s Speech, Privacy, and Technology Project, focused on the way our technical infrastructure shapes society and impacts civil liberties.<br/> As a free software developer and member of the Debian project, he contributes to fundamental tools that shape the possibilities of our information-rich environment.<br/> As a participant in the IETF he fosters the creation of new generations of networking and cryptographic protocols designed and optimized for privacy and security. He is an anti-surveillance advocate for privacy, justice, free speech, and data sovereignty. Daniel is a graduate of Brown University’s computer science program.</p>
+            <p class="text-tpo"><p>დანიელ კან გილმორი უფროსი ტექნოლოგია ACLU\u2019-ის სიტყვის თავისუფლების, პირადულობისა და ტექნოლოგიების პროექტში, თუ როგორ აყალიბებს ჩვენ ირგლივ არსებული ტექნიკური საშუალებები საზოგადოებას და როგორ ზემოქმედებს სამოქალაქო თავისუფლებაზე.<br/> როგორც ღია პროგრამული უზრუნველყოფის შემმუშავებელსა და Debian-პროექტის წევრს, წვლილი შეაქვს ძირითადი ხელსაწყოების შექმნაში, რომლებიც უზრუნველყოფს ინფორმაციით მდიდარ გარემოს.<br/> როგორც IETF-ის მონაწილე, ხელს უწყობს ქსელებსა და კრიპტოგრაფიაში ახალი თაობის ოქმების შედგენას, რომლებიც გათვლილი და მორგებული იქნება პირადულობასა და უსაფრთხოებაზე. იგი მიყურადების მოწინააღმდეგე, და ამასთანავე, პირადულობის, სამართლიანობის, სიტყვის თავისუფლებისა და მონაცემთა ხელშეუხებლობის დამცველია. დანიელი ბრაუნის უნივერსიტეტის კომპიუტერულ მეცნიერებათა კურსდამთავრებულია.</p>
 </p>
         </div>
       </div>
@@ -469,13 +388,13 @@ document.getElementById('yec-donate-button').classList.add('yec-variant-' + vari
 
     <div class="card flex-row flex-wrap py-3 mb-5">
       <div class="col-3">
-          <img class="card-img-top" src="../../../static/images/privchat/matt.html" alt="Matt Mitchell">
+          <img class="card-img-top" src="../../../static/images/privchat/matt.png" alt="Matt Mitchell">
       </div>
       <div class="col">
         <div class="card-block px-2">
             <h4 class="display-4 text-primary">Matt Mitchell</h4>
-            <p class="text-tpo"><p>Matt Mitchell is a hacker and Tech Fellow at The Ford Foundation. Matt is working with the BUILD and Technology and Society teams at Ford Foundation to develop digital security strategy, technical assistance offerings, and safety and security measures for the foundation’s grantee partners. <br/> Committed to using his digital skills — as hacker, developer, operational security trainer, security researcher, and data journalist — for good, Matt has worked in various capacities at the intersection of technology and social justice. Formerly the Director of Digital Safety &amp; Privacy for Tactical Tech (also known as the Tactical Technology Collective). Matt worked leading security training efforts, curricula, and organizational security for Tactical Tech in their mission to raise awareness about privacy, provide tools for digital security, and mobilize people to turn information into action.<br/>
-            Matt is a well known security researcher, operational security trainer, and data journalist who founded &amp; leads <a href="https://twitter.com/cryptoHarlem" title="CryptoHarlem" target="_blank">CryptoHarlem</a>, impromptu workshops teaching basic cryptography tools to the predominately African American community in upper Manhattan.</p>
+            <p class="text-tpo"><p>მეთ მიტჩელი ჰაკერი და უფროსი ტექნიკოსია ფორდის ფონდში. მეთი მუშაობს ფორდის ფონდის BUILD-ისა და ტექნოლოგიის, აგრეთვე საზოგადოებრივ ჯგუფებში, ციფრული უსაფრთხოების გეგმის შესამუშავებლად, ტექნიკური მხარდაჭერის შესათავაზებლად და დაცვისა თუ უსაფრთხოების ზომების მისაღებად ფონდის საგრანტო პარტნიორებისთვის. <br/> თავდადებულად მუდმივად იყენებდა თავის უნარებს — როგორც ჰაკერი, შემმუშავებელი, საოპერაციო უსაფრთხოების მრჩეველი, უსაფრთხოების მკვლევარი და მონაცემთა მიმომხილველი — სასარგებლო საქმეებში, მეთს არაერთგან უმუშავია სხვადასხვა მოვალეობის შესრულებით ტექნოლოგიებისა და სოციალური სამართლიანობის დარგების მიჯნაზე. ხელმძღვანელობდა ციფრულ უსაფრთხოებასა და პირადულობას Tactical-Tech-ში (ე.წ. Tactical Technology Collective). მეთი პასუხისმგებელი იყო უსაფრთხოების გადამზადების წარმართვაზე, სასწავლო გეგმის შედგენაზე, აგრეთვე, თავად ორგანიზაციის უსაფრთხოების უზრუნველყოფაზე Tactical-Tech-ში მათი მთავარი მიზნის მისაღწევად, რომელიც მოიცავს ცნობიერების ამაღლებას პირადულობის კუთხით, ციფრული უსაფრთხოების საშუალებების ხელმისაწვდომობის გაზრდასა და ხალხის წახალისებას, გამოიყენონ ინფორმაცია საქმეში.<br/>
+            მეთი ცნობილია, როგორც უსაფრთხოების მკვლევარი, საოპერაციო უსაფრთხოების მრჩეველი, მონაცემთა მიმომხილველი, რომელმაც დააფუძნა და ხელმძღვანელობს <a href="https://twitter.com/cryptoHarlem" title="CryptoHarlem" target="_blank">CryptoHarlem</a>-ს, სახელდახელოდ გამართულ სამუშაო შეხვედრებს კრიპტოგრაფიის ძირითადი ხელსაწყოების სწავლებისთვის ზემო მანჰეტენში მცხოვრები აფრო-ამერიკელი საზოგადოებისთვის.</p>
 </p>
         </div>
       </div>
@@ -487,7 +406,7 @@ document.getElementById('yec-donate-button').classList.add('yec-variant-' + vari
 <div class="container">
   <div class="row bg-secondary p-5 mx-1 my-5">
     <h1><i class="fas fa-hand-holding-usd px-5 text-light"></i></h1>
-    <h3 class="preamble text-light text-center mx-auto">Your donations make this series and our work at Tor possible.<br/> <p>The best way to support our work is to <a class="text-success" href="https://donate.torproject.org/monthly-giving" target="_blank">become a monthly donor.</a></p>
+    <h3 class="preamble text-light text-center mx-auto">თქვენი შემოწირულობები უზრუნველყოფს ამ სერიასა და ჩვენს საქმიანობას Tor-ში.<br/> <p>საუკეთესო გზა ჩვენი საქმიანობის მხარდასაჭერად <a class="text-success" href="https://donate.torproject.org/monthly-giving" target="_blank">ყოველთვიური შემწეობის გაღებაა.</a></p>
 </h3>
   </div>
 </div>
@@ -773,5 +692,5 @@ document.getElementById('yec-donate-button').classList.add('yec-variant-' + vari
   
 </body>
 
-<!-- Mirrored from www.torproject.org/ka/privchat/chapter-1/ by HTTrack Website Copier/3.x [XR&CO'2014], Wed, 08 Jan 2025 01:22:23 GMT -->
+<!-- Mirrored from www.torproject.org/ka/privchat/chapter-1/ by HTTrack Website Copier/3.x [XR&CO'2014], Wed, 15 Jan 2025 01:21:44 GMT -->
 </html>

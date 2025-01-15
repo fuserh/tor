@@ -1,7 +1,7 @@
 <!doctype html>
 <html xmlns="http://www.w3.org/1999/xhtml" lang="ka" >
 
-<!-- Mirrored from www.torproject.org/ka/about/history/ by HTTrack Website Copier/3.x [XR&CO'2014], Wed, 08 Jan 2025 01:09:30 GMT -->
+<!-- Mirrored from www.torproject.org/ka/about/history/ by HTTrack Website Copier/3.x [XR&CO'2014], Wed, 15 Jan 2025 01:08:45 GMT -->
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -266,88 +266,7 @@
     </nav>
 </div>
   </header>
-  <div class="banner">
-  <input id="trigger" type="checkbox" title="Close banner" />
-  <label for="trigger" class="banner-close text-white">
-      <div class="d-flex h-100">
-        <img src="../../../static/images/yec/x-dark3c81.html?h=353e04cc" class="m-auto h-100 w-100 p-1 img-svg">
-      </div>
-  </label>
-  <span class="eoy-sr-only text-black">Close banner</span>
   
-  <div id="banner-header">
-    <div class="banner-content">
-      <div class="banner-content-spacer pt-5 h-100">
-        <div class="banner-content-container d-flex px-3">
-          <div id="banner-text-container" class="d-flex flex-column text-left">
-            <div id="banner-text">
-              <h1 class="yec-variant-browse">თქვენი უფლებაა ᲛᲝᲘᲜᲐᲮᲣᲚᲝᲗ გვერდები თვალთვალის გარეშე.</h1>
-              <h1 class="yec-variant-search">თქვენი უფლებაა ᲛᲝᲘᲫᲘᲝᲗ თვალთვალის გარეშე.</h1>
-              <h1 class="yec-variant-speak">თქვენი უფლებაა ᲘᲡᲐᲣᲑᲠᲝᲗ უნებართვო მიყურადების გარეშე.</h1>
-              <p>შემოუერთდით Tor-ის ათასობით მხარდამჭერს პირადულობის უზრუნველმყოფი ინტერნეტის შენებაში. 
-                 გაიღეთ თანხა ახლავე.</p>
-              <p><strong>31 დეკემბრის ჩათვლით გაღებული თანხა გაორმაგდება 1:1 წესით $300,000-მდე!</strong></p>
-            </div>
-            <div id="yec-donate-button-container">
-              <a class="btn" id="yec-donate-button" href="https://donate.torproject.org/">
-                <span>გაიღეთ თანხა</span>
-                <img src="../../../static/images/yec/heart673a.png?h=ad369acb" class="donate-heart img-svg">
-              </a>
-            </div>
-          </div>
-          <div class="banner-main-graphics h-100">
-            <img class="yec-illo yec-variant-browse img-svg" src="../../../static/images/yec/illo-yec-browse98e1.png?h=86d8fd2b">
-            <img class="yec-illo yec-variant-search img-svg" src="../../../static/images/yec/illo-yec-search465b.html?h=347ed4b2">
-            <img class="yec-illo yec-variant-speak img-svg" src="../../../static/images/yec/illo-yec-speakae5f.png?h=abdc7268">
-          </div>
-        </div>
-      </div>
-    </div>
-  </div>
-</div>
-
-<script type="text/javascript">
-/* persist banner close across pages in the same session/tab */
-let trigger = document.querySelector(".banner #trigger");
-trigger.addEventListener("change", () => {
-    sessionStorage.setItem("bannerClosed", trigger.checked);
-});
-if (sessionStorage.getItem("bannerClosed")) {
-    trigger.checked = sessionStorage.getItem("bannerClosed");
-}
-/* display a random variant of the banner */
-/* not using jQuery because it's loaded later, and this is just faster */
-const variants = ['browse', 'search', 'speak'];
-const default_variant = 'browse';
-const variant = variants[Math.floor(Math.random() * variants.length)]
-const variant_elements =  document.querySelectorAll('h1.yec-variant-' + default_variant + ', img.yec-variant-' + default_variant);
-if (variant == default_variant) {
-    variant_elements.forEach((i) => {
-        i.style.visibility = 'visible';
-    });
-} else {
-    variant_elements.forEach((i) => {
-        i.style.display = 'none';
-    });
-    document.querySelector('h1.yec-variant-' + variant).style.display = 'inline';
-    document.querySelector('img.yec-variant-' + variant).style.display = 'block';
-}
-document.getElementById('yec-donate-button').classList.add('yec-variant-' + variant);
-</script>
-
-<noscript>
-<!-- show the default variant -->
-<style>
-  #banner-header .banner-content h1.yec-variant-browse,
-  #banner-header .banner-content img.yec-variant-browse {
-    visibility: visible;
-  }
-  #yec-donate-button {
-    background-color: var(--abouttor-yec-button-bg-color-browse);
-    visibility: visible;
-  }
-</style>
-</noscript>
   <div class="page">
     
 <div class="container-fluid bg-primary">
@@ -448,10 +367,10 @@ document.getElementById('yec-donate-button').classList.add('yec-variant-' + vari
       <p>The Tor Project, Inc. ჩამოყალიბდა 501(c)(3) არამომგებიან დაწესებულებად 2006 წელს, თუმცა „მრავალშრიანი დამისამართების“ (onion routing) შექმნის აზრი გაჩნდა ჯერ კიდევ 1990-იანი წლების შუა ხანაში.</p>
 <p><strong>მსგავსად Tor-ის მომხმარებლებისა, შემმუშავებლები, მკვლევრები და შემომწირველები, რომლებმაც შექმნეს Tor, წარმოადგენენ ერთმანეთისგან სრულიად განსხვავებულ ადამიანთა ჯგუფებს. მიუხედავად ამისა, ყველას, ვინც ჩართულია Tor-ის შემუშავებაში, აერთიანებს ერთი მარტივი რწმენა: ინტერნეტის მომხმარებლებს უნდა შეეძლოთ ქსელთან თავისუფალი წვდომა პირადი მონაცემების გაუმჟღავნებლად.</strong></p>
 <p>1990-იან წლებში ინტერნეტში უსაფრთხოების ნაკლებობა და მისი შესაძლებლობა, რომ გამოყენებულიყო თვალთვალისა და ზედამხედველობისთვის, თანდათან აშკარა ხდებოდა და 1995 წელს დევიდ გოლდშლაგმა (David Goldschlag), მაიკ რიდმა (Mike Reed) და პოლ სივერსონმა (Paul Syverson) აშშ-ს საზღვაო კვლევით ლაბორატორიაში (NRL) საკუთარ თავს დაუსვეს კითხვა, შესაძლებელი იყო თუ არა ისეთი ინტერნეტკავშირის შექმნა, რომელშიც შეუძლებელი იქნებოდა გარკვევა, ვინ ვის ესაუბრება ქსელის ზედამხედველობის პირობებშიც კი.
-მათი პასუხი იყო შემუშავება და მოწყობა onion (მრავალშრიანი) ქსელის პირველი საკვლევი ნიმუშებისა.</p>
+მათი პასუხი იყო შემუშავება და გამართვა onion (მრავალშრიანი) ქსელის პირველი საკვლევი ნიმუშებისა.</p>
 <p>მიზანი onion-ის სახით დამისამართებისა იყო იმგვარი საშუალების პოვნა ინტერნეტის გამოსაყენებლად, რომელიც რაც შეიძლება მეტად დაიცავდა პირად ინფორმაციას, ეს კი გულისხმობდა მონაცემების გატარებას რამდენიმე სხვადასხვა კვანძის გავლით თითოეულ ჯერზე ცალ-ცალკე დაშიფვრით.
 ესაა მარტივი ახსნა, თუ როგორ მუშაობს Tor დღეს.</p>
-<p>2000-იანი წლების ადრეულ ხანაში როჯერ დინგლდაინმა (Roger Dingledine), <a href="https://web.mit.edu/">მასაჩუსეტსის ტექნოლოგიური ინსტიტუტის (MIT)</a> ახალმა კურსდამთავრებულმა, დაიწყო მუშაობა NRL-ის onion-დამისამართების პროექტზე პოლ სივერსონთან (Paul Syverson) ერთად.
+<p>2000-იანი წლების ადრეულ ხანაში როჯერ დინგლდინმა (Roger Dingledine), <a href="https://web.mit.edu/">მასაჩუსეტსის ტექნოლოგიური ინსტიტუტის (MIT)</a> ახალმა კურსდამთავრებულმა, დაიწყო მუშაობა NRL-ის onion-დამისამართების პროექტზე პოლ სივერსონთან (Paul Syverson) ერთად.
 საზღვაო ლაბორატორიაში onion-დამისამართებასთან დაკავშირებით ჩატარებული თავდაპირველი სამუშაოების გამოსაყოფად სხვაგან მიმდინარე მსგავსი კვლევებისგან, როჯერმა პროექტს უწოდა Tor, რომელიც შემოკლებაა დასახელებისა The Onion Routing. ნიკ მეთიუსონი (Nick Mathewson), როჯერის თანაჯგუფელი MIT-ში, მალევე შეუერთდა ამ პროექტს.</p>
 <p>1990-იან წლებში, მისი შექმნიდან მოყოლებული, onion-დამისამართება ჩაფიქრებული იყო ისეთი ქსელისთვის, რომელიც არ იქნებოდა არავისზე დაქვემდებარებული. შესაბამისად, ამგვარი ქსელის მუშაობა უნდა უზრუნველყოფილიყო განსხვავებული მიზნების მქონე სანდო, დამოუკიდებელი ერთეულების მიერ, ხოლო პროგრამული ნაწილი თავისუფალი და ღია უნდა დარჩენილიყო მაღალი დონის გამჭვირვალობის მისაღწევად და ერთპიროვნული მართვის ასარიდებლად.
 სწორედ ამიტომ 2002 წლის ოქტომბერში, როდესაც Tor-ქსელი თავდაპირველად გაეშვა, მისი კოდი გავრცელდა პროგრამის თავისუფალი, გახსნილი ლიცენზიით.

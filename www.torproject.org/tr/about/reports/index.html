@@ -1,7 +1,7 @@
 <!doctype html>
 <html xmlns="http://www.w3.org/1999/xhtml" lang="tr" >
 
-<!-- Mirrored from www.torproject.org/tr/about/reports/ by HTTrack Website Copier/3.x [XR&CO'2014], Wed, 08 Jan 2025 01:17:41 GMT -->
+<!-- Mirrored from www.torproject.org/tr/about/reports/ by HTTrack Website Copier/3.x [XR&CO'2014], Wed, 15 Jan 2025 01:16:59 GMT -->
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -266,88 +266,7 @@
     </nav>
 </div>
   </header>
-  <div class="banner">
-  <input id="trigger" type="checkbox" title="Close banner" />
-  <label for="trigger" class="banner-close text-white">
-      <div class="d-flex h-100">
-        <img src="../../../static/images/yec/x-dark3c81.html?h=353e04cc" class="m-auto h-100 w-100 p-1 img-svg">
-      </div>
-  </label>
-  <span class="eoy-sr-only text-black">Close banner</span>
   
-  <div id="banner-header">
-    <div class="banner-content">
-      <div class="banner-content-spacer pt-5 h-100">
-        <div class="banner-content-container d-flex px-3">
-          <div id="banner-text-container" class="d-flex flex-column text-left">
-            <div id="banner-text">
-              <h1 class="yec-variant-browse">İzlenmeden İNTERNETTE GEZİNME hakkınız var.</h1>
-              <h1 class="yec-variant-search">İzlenmeden ARAMA YAPMA hakkınız var.</h1>
-              <h1 class="yec-variant-speak">Davetsiz dinleyiciler olmadan KONUŞMA hakkınız var.</h1>
-              <p>Gücünü gizlilikten alan bir internet oluşturan binlerce Tor destekçisine katılın. 
-                 Bağış yapın.</p>
-              <p><strong>31 Aralık tarihine kadar, $300,000 tutarına kadar olan bağışlarınıza aynı miktarda destek verilecek!</strong></p>
-            </div>
-            <div id="yec-donate-button-container">
-              <a class="btn" id="yec-donate-button" href="https://donate.torproject.org/">
-                <span>Bağış yapın</span>
-                <img src="../../../static/images/yec/heart673a.png?h=ad369acb" class="donate-heart img-svg">
-              </a>
-            </div>
-          </div>
-          <div class="banner-main-graphics h-100">
-            <img class="yec-illo yec-variant-browse img-svg" src="../../../static/images/yec/illo-yec-browse98e1.png?h=86d8fd2b">
-            <img class="yec-illo yec-variant-search img-svg" src="../../../static/images/yec/illo-yec-search465b.html?h=347ed4b2">
-            <img class="yec-illo yec-variant-speak img-svg" src="../../../static/images/yec/illo-yec-speakae5f.png?h=abdc7268">
-          </div>
-        </div>
-      </div>
-    </div>
-  </div>
-</div>
-
-<script type="text/javascript">
-/* persist banner close across pages in the same session/tab */
-let trigger = document.querySelector(".banner #trigger");
-trigger.addEventListener("change", () => {
-    sessionStorage.setItem("bannerClosed", trigger.checked);
-});
-if (sessionStorage.getItem("bannerClosed")) {
-    trigger.checked = sessionStorage.getItem("bannerClosed");
-}
-/* display a random variant of the banner */
-/* not using jQuery because it's loaded later, and this is just faster */
-const variants = ['browse', 'search', 'speak'];
-const default_variant = 'browse';
-const variant = variants[Math.floor(Math.random() * variants.length)]
-const variant_elements =  document.querySelectorAll('h1.yec-variant-' + default_variant + ', img.yec-variant-' + default_variant);
-if (variant == default_variant) {
-    variant_elements.forEach((i) => {
-        i.style.visibility = 'visible';
-    });
-} else {
-    variant_elements.forEach((i) => {
-        i.style.display = 'none';
-    });
-    document.querySelector('h1.yec-variant-' + variant).style.display = 'inline';
-    document.querySelector('img.yec-variant-' + variant).style.display = 'block';
-}
-document.getElementById('yec-donate-button').classList.add('yec-variant-' + variant);
-</script>
-
-<noscript>
-<!-- show the default variant -->
-<style>
-  #banner-header .banner-content h1.yec-variant-browse,
-  #banner-header .banner-content img.yec-variant-browse {
-    visibility: visible;
-  }
-  #yec-donate-button {
-    background-color: var(--abouttor-yec-button-bg-color-browse);
-    visibility: visible;
-  }
-</style>
-</noscript>
   <div class="page">
     
 <div class="container-fluid bg-primary">
@@ -877,7 +796,7 @@ document.getElementById('yec-donate-button').classList.add('yec-variant-' + vari
     
   </td>
   <td>2011 State of MA Form PC</td>
-  <td><a href="../../../static/findoc/2011-TorProject-FormPC4e8d.pdf?h=9f981a68">PDF dosyasını görüntüle</a></td>
+  <td><a href="../../../static/findoc/2011-TorProject-FormPC4e8d.html?h=9f981a68">PDF dosyasını görüntüle</a></td>
 </tr>
 
     
@@ -891,7 +810,7 @@ document.getElementById('yec-donate-button').classList.add('yec-variant-' + vari
     
   </td>
   <td>2011 IRS Form 990</td>
-  <td><a href="../../../static/findoc/2011-TorProject-Form990d012.pdf?h=465051c8">PDF dosyasını görüntüle</a></td>
+  <td><a href="../../../static/findoc/2011-TorProject-Form990d012.html?h=465051c8">PDF dosyasını görüntüle</a></td>
 </tr>
 
     
@@ -905,7 +824,7 @@ document.getElementById('yec-donate-button').classList.add('yec-variant-' + vari
     
   </td>
   <td>2011 Financial Statements and Audit Report</td>
-  <td><a href="../../../static/findoc/2011-TorProject-Amended-Final-Reportb17c.pdf?h=5d0380a4">PDF dosyasını görüntüle</a></td>
+  <td><a href="../../../static/findoc/2011-TorProject-Amended-Final-Reportb17c.html?h=5d0380a4">PDF dosyasını görüntüle</a></td>
 </tr>
 
     

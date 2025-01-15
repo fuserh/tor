@@ -1,7 +1,7 @@
 <!doctype html>
 <html xmlns="http://www.w3.org/1999/xhtml" lang="ka" >
 
-<!-- Mirrored from www.torproject.org/ka/privchat/ by HTTrack Website Copier/3.x [XR&CO'2014], Wed, 08 Jan 2025 01:15:07 GMT -->
+<!-- Mirrored from www.torproject.org/ka/privchat/ by HTTrack Website Copier/3.x [XR&CO'2014], Wed, 15 Jan 2025 01:14:23 GMT -->
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -266,88 +266,7 @@
     </nav>
 </div>
   </header>
-  <div class="banner">
-  <input id="trigger" type="checkbox" title="Close banner" />
-  <label for="trigger" class="banner-close text-white">
-      <div class="d-flex h-100">
-        <img src="../../static/images/yec/x-dark3c81.html?h=353e04cc" class="m-auto h-100 w-100 p-1 img-svg">
-      </div>
-  </label>
-  <span class="eoy-sr-only text-black">Close banner</span>
   
-  <div id="banner-header">
-    <div class="banner-content">
-      <div class="banner-content-spacer pt-5 h-100">
-        <div class="banner-content-container d-flex px-3">
-          <div id="banner-text-container" class="d-flex flex-column text-left">
-            <div id="banner-text">
-              <h1 class="yec-variant-browse">თქვენი უფლებაა ᲛᲝᲘᲜᲐᲮᲣᲚᲝᲗ გვერდები თვალთვალის გარეშე.</h1>
-              <h1 class="yec-variant-search">თქვენი უფლებაა ᲛᲝᲘᲫᲘᲝᲗ თვალთვალის გარეშე.</h1>
-              <h1 class="yec-variant-speak">თქვენი უფლებაა ᲘᲡᲐᲣᲑᲠᲝᲗ უნებართვო მიყურადების გარეშე.</h1>
-              <p>შემოუერთდით Tor-ის ათასობით მხარდამჭერს პირადულობის უზრუნველმყოფი ინტერნეტის შენებაში. 
-                 გაიღეთ თანხა ახლავე.</p>
-              <p><strong>31 დეკემბრის ჩათვლით გაღებული თანხა გაორმაგდება 1:1 წესით $300,000-მდე!</strong></p>
-            </div>
-            <div id="yec-donate-button-container">
-              <a class="btn" id="yec-donate-button" href="https://donate.torproject.org/">
-                <span>გაიღეთ თანხა</span>
-                <img src="../../static/images/yec/heart673a.png?h=ad369acb" class="donate-heart img-svg">
-              </a>
-            </div>
-          </div>
-          <div class="banner-main-graphics h-100">
-            <img class="yec-illo yec-variant-browse img-svg" src="../../static/images/yec/illo-yec-browse98e1.png?h=86d8fd2b">
-            <img class="yec-illo yec-variant-search img-svg" src="../../static/images/yec/illo-yec-search465b.html?h=347ed4b2">
-            <img class="yec-illo yec-variant-speak img-svg" src="../../static/images/yec/illo-yec-speakae5f.png?h=abdc7268">
-          </div>
-        </div>
-      </div>
-    </div>
-  </div>
-</div>
-
-<script type="text/javascript">
-/* persist banner close across pages in the same session/tab */
-let trigger = document.querySelector(".banner #trigger");
-trigger.addEventListener("change", () => {
-    sessionStorage.setItem("bannerClosed", trigger.checked);
-});
-if (sessionStorage.getItem("bannerClosed")) {
-    trigger.checked = sessionStorage.getItem("bannerClosed");
-}
-/* display a random variant of the banner */
-/* not using jQuery because it's loaded later, and this is just faster */
-const variants = ['browse', 'search', 'speak'];
-const default_variant = 'browse';
-const variant = variants[Math.floor(Math.random() * variants.length)]
-const variant_elements =  document.querySelectorAll('h1.yec-variant-' + default_variant + ', img.yec-variant-' + default_variant);
-if (variant == default_variant) {
-    variant_elements.forEach((i) => {
-        i.style.visibility = 'visible';
-    });
-} else {
-    variant_elements.forEach((i) => {
-        i.style.display = 'none';
-    });
-    document.querySelector('h1.yec-variant-' + variant).style.display = 'inline';
-    document.querySelector('img.yec-variant-' + variant).style.display = 'block';
-}
-document.getElementById('yec-donate-button').classList.add('yec-variant-' + variant);
-</script>
-
-<noscript>
-<!-- show the default variant -->
-<style>
-  #banner-header .banner-content h1.yec-variant-browse,
-  #banner-header .banner-content img.yec-variant-browse {
-    visibility: visible;
-  }
-  #yec-donate-button {
-    background-color: var(--abouttor-yec-button-bg-color-browse);
-    visibility: visible;
-  }
-</style>
-</noscript>
   <div class="page pt-4">
     
 <div class="container-fluid bg-primary">
@@ -384,7 +303,7 @@ document.getElementById('yec-donate-button').classList.add('yec-variant-' + vari
           <div class="container py-3 mt-5 preamble">
             
           </div>
-          <div class="container" style="background:url(../../static/images/privchat/pattern.html) no-repeat center; background-size: contain;">
+          <div class="container" style="background:url(../../static/images/privchat/pattern.png) no-repeat center; background-size: contain;">
   <div class="w-50 text-center mx-auto">
     <img class="img-fluid p-3" height="auto" src="../../static/images/privchat/privchat.svg" /> <h1 class="display-2 text-primary">PrivChat</h1>
     <p class="text-primary p-3"> <p>საუბრები ტექნოლოგიების, ადამიანის უფლებებისა და <br/>Tor-პროექტის მიერ მონიჭებული ინტერნეტთავისუფლების ირგვლივ</p>
@@ -394,15 +313,15 @@ document.getElementById('yec-donate-button').classList.add('yec-variant-' + vari
 
 <div class="container pb-3 mt-5 preamble">
   <p>
-    PrivChat is a fundraising event series held to raise donations for the Tor Project. Through PrivChat, we will bring you important information related to what is happening in tech, human rights, and internet freedom by convening experts for a chat with our community.
+    PrivChat წარმოადგენს ღონისძიებების წყებას სახსრების მოსაზიდად და შემოწირულობის ზრდისთვის Tor-პროექტში. სანაცვლოდ კი PrivChat მოგაწვდით მეტად მნიშვნელოვან ცნობებს, თუ რა სიახლეებია ტექნოლოგიურ სამყაროში ადამიანის უფლებათა დაცვისა და ინტერნეტთავისუფლების კუთხით, მოწვეულ მცოდნე ხალხთან და ჩვენს ერთობასთან გასაუბრებით.
   </p>
 </div>
 <div class="container">
   <p>
-    <p>PrivChat is free to attend. If you get value out of these events and you like Tor, <a href="https://donate.torproject.org/monthly-giving" alt="Tor Project Donate" target="_blank"><mark>please consider becoming a monthly donor</mark></a>. Reliable, predictable support is the best way to ensure Tor remains strong and stable.</p>
+    <p>PrivChat თავისუფალი და ღიაა დასასწრებად. თუ თქვენთვის ღირებულია ამგვარი ღონისძიებები და გიყვართ Tor, <a href="https://donate.torproject.org/monthly-giving" alt="Tor Project Donate" target="_blank"><mark>გახდით ყოველთვიური შემომწირველი</mark></a>. საიმედო და გეგმაზომიერი მხარდაჭერა საუკეთესო საშუალებაა Tor-ის სიძლიერისა და მდგრადობის შესანარჩუნებლად.</p>
 
 
-    Our goal with PrivChat is to build a two-way support system. You will get access to information from leading minds thinking about and working on privacy, technology, and human rights. And the Tor Project will be more agile in our development as a result of your support, allowing us to respond more rapidly to increasing surveillance and censorship threats (and host more PrivChats)!
+    ჩვენი მიზანია, რომ PrivChat ორმაგი სარგებლის მომტანი იყოს ორმხრივი მხარდაჭერით. თქვენ გექნებათ წვდომა თანამედროვე, მოწინავე მოსაზრებებსა და ჩანაფიქრებთან პირადულობის, ტექნოლოგიისა და ადამიანის უფლებათა დაცვის გაძლიერების შესახებ. Tor-პროექტი კი მეტ მოქნილობას შეიძენს შემუშავებისას თქვენი მხარდაჭერით და საშუალება გვექნება, მეტად სწრაფ-სწრაფად გამოგეხმაუროთ თვალთვალისა თუ ცენზურის მზარდი საფრთხის თაობაზე (და ხშირად გავმართოთ არაერთი PrivChat)!
   </p>
 
   <hr class="mt-5"/>
@@ -412,18 +331,18 @@ document.getElementById('yec-donate-button').classList.add('yec-variant-' + vari
 
 <div class="container py-3 mt-5">
   <img class="card-img-top mb-5" src="../../static/images/privchat/privchat6-cover.png" alt="PrivChat Tor-ით" />
-    <p class="h2 text-primary" target="_blank">Chapter #6 - Privacy is a human right</p>
+    <p class="h2 text-primary" target="_blank">თავი #6 - პირადულობა ადამიანის უფლებაა</p>
     <div>
       <p><span class="text-primary nick" style="font-size:18px;"><mark>12/15 ∙ 19:00 UTC ∙ 14:00 Eastern ∙ 11:00 Pacific ∙ <a href="https://www.youtube.com/watch?v=ttQiA_GfI6s" title="Tor Project YouTube Channel" target="_blank"><i class="fab fa-youtube"></i> @torproject YouTube channel</a></mark></span></p>
     </div>
     <a class="btn btn-small bg-primary text-light my-4" href="https://www.youtube.com/watch?v=ttQiA_GfI6s" target="_blank"><i class="mr-2 pt-1 fas fa-play-circle-png"></i> სანახავი </a>
     <div>
-      <p class="font-family-serif">Privacy is about protecting what makes us humans: our day-to-day behavior, our personality, our fears, our relationships, and our vulnerabilities. Everyone deserves privacy. The United Nations even codified privacy as a human right in the Universal Declaration of Human Rights in 1948. However, governments, corporations, and other powerful entities routinely block us from exercising our right to privacy through surveillance, monitoring, and tracking.</p>
-      <p class="font-family-serif">Activists, human rights defenders, minorities and people protesting for change are often the targets of this surveillance, and thus have a unique perspective on the critical importance of privacy and anonymity online.</p>
-      <p class="font-family-serif">In this edition of PrivChat, we&#39;re bringing together a group of panelists with direct experience as activists or working with activist groups who will talk about their experiences with surveillance and privacy:</p>
-      <p class="font-family-serif"><p>Join <strong>Ali Gharavi</strong>, Senior Programme Specialist, Swedish International Development Agency; <strong>Nadya Tolokonnika</strong>, artist, activist, and founding member of Pussy Riot; and <strong>Nicholas Merrill</strong>, founder and Executive Director, the Calyx Institute to discuss their experiences with surveillance and why fighting for privacy is a key part of ensuring human rights for all.</p>
+      <p class="font-family-serif">პირადულობა გულისხმობს, დავიცვათ სწორედ ის, რაც ადამიანებად გვაქცევს: ყოველდღიური ჩვევები თუ ქცევები, ჩვენი პასუხისმგებლობები, ჩვენი შიშები, ჩვენი ურთიერთობები და ჩვენი სისუსტეები. ყველა იმსახურებს პირადი ცხოვრების ხელშეუხებლობას. გაერომ განსაზღვრა კიდეც პირადულობა ძირითად უფლებად ადამიანის უფლებათა საყოველთაო დეკლარაციით 1948 წელს. მიუხედავად ამისა, მთავრობები, კორპორაციები და სხვა მსხვილი დაწესებულებები მუდმივად ხელს გვიშლიან პირადულობის უფლებით სარგებლობაში განუწყვეტელი მიყურადებით, ზედამხედველობითა და კუდში დევნით.</p>
+      <p class="font-family-serif">მეამბოხეები, ადამიანის უფლებათა დამცველები, უმცირესობათა წარმომადგენლები და ცვლილებებისთვის მებრძოლები ხშირად ხდებიან უნებართვო მიყურადების მსხვერპლნი, და შესაბამისად, თავიანთი განსხვავებული ხედვა გააჩნიათ პირადულობისა და ვინაობის გაუმხელობის გადამწყვეტ მნიშვნელობაზე.</p>
+      <p class="font-family-serif">მოცემული გამოშვების PrivChat, გთავაზობთ მონაწილეთა ჯგუფს, თავად რომ იყვნენ მეამბოხეები ან საქმიანობდნენ მეამბოხეთა ერთობაში და ისაუბრებენ თავს გადახდენილ შემთხვევებზე თვალთვალისა და პირადულობის ხელყოფის კუთხით:</p>
+      <p class="font-family-serif"><p>შემოუერთდით <strong>ალი ღარავის</strong>, პროგრამების უფროს სპეციალისტს, შვედეთის საერთაშორისო განვითარების სააგენტოდან; <strong>ნადია ტოლოკონიკას</strong>, ხელოვანს, მეამბოხეს, პუსი-რაიოტის თანადამფუძნებელს; და <strong>ნიკოლას მერილს</strong>, დამფუძნებელსა და აღმასრულებელ ხელმძღვანელს კალიქსის ინსტიტუტიდან, მათ თავს გადახდენილი მიყურადების შემთხვევების გასარჩევად და იმის განსახილველად, თუ რატომაა გადამწყვეტი პირადულობისთვის ბრძოლა ადამიანის უფლებათა საყოველთაო დაცვისთვის.</p>
 </p>
-      <p class="font-family-serif"><p><strong>Cindy Cohn</strong>, Executive Director of EFF, will join us as our host and moderator.</p>
+      <p class="font-family-serif"><p><strong>სინდი კონი</strong>, აღმასრულებელი ხელმძღვანელი EFF-ში, შემოგვიერთდება, როგორც მასპინძელი და ზედამხედველი.</p>
 </p>
     </div>
 </div>
@@ -442,9 +361,9 @@ document.getElementById('yec-donate-button').classList.add('yec-variant-' + vari
           <div class="card-block px-2">
               <div class="pb-4">
                 <h4 class="display-4 text-primary">Cindy Cohn</h4>
-                <strong class="display-5 text-primary mb-4">Executive Director, Electronic Frontier Foundation</strong>
+                <strong class="display-5 text-primary mb-4">აღმასრულებელი ხელმძღვანელი, ელექტრონული საზღვრების ფონდი</strong>
               </div>
-	      <p class="text-tpo"><p><strong>Cindy Cohn</strong> is the Executive Director of the Electronic Frontier Foundation. From 2000-2015 she served as EFF's Legal Director as well as its General Counsel. In 1993, EFF she served lead attorney in Bernstein v. Dept. of Justice, the successful First Amendment challenge to the U.S. export restrictions on cryptography. Among other honors, Ms. Cohn was named to TheNonProfitTimes 2020 Power &amp; Influence TOP 50 list, and in 2018, Forbes included Ms. Cohn as one of America's Top 50 Women in Tech. In 2013, The National Law Journal named Ms. Cohn one of 100 most influential lawyers in America, noting: "If Big Brother is watching, he better look out for Cindy Cohn."</p>
+	      <p class="text-tpo"><p><strong>სინდი კონი</strong> ელექტრონული სასაზღვრო ფონდის აღმასრულებელი ხელმძღვანელია. 2000-2015 წლებში მსახურობდა EFF-ის სამართლებრივი საკითხების ხელმძღვანელად და აგრეთვე ითავსებდა მთავარი მდივნის საქმიანობას. 1993 წელს იყო EFF-ის წამყვანი ადვოკატი საქმეში – ბერნშტაინი იუსტიციის დეპარტამენტის წინააღმდეგ, რომელიც წარმატებით დასრულდა კრიპტოგრაფიული ნაწარმის შტატებიდან გატანის შეზღუდვის პირველი შესწორებით. სხვა დამსახურებებთან ერთად, ქალბატონი კონი მოხსენიებულია TheNonProfitTimes-ის მიერ ძლიერი და გავლენიანი 50 რჩეული პიროვნების ჩამონათვალში 2020 წელს, და აგრეთვე, 2018 წელს ფორბსმა ქალბატონი კონი ტექნოლოგიებში ამერიკის 50 რჩეული ქალის სიაშიც შეიყვანა. 2013 წელს სამართლებრივი საკითხების ეროვნულმა ჟურნალმა დაასახელა ქალბატონი კონი ამერიკის 100 ყველაზე გავლენიან სამართალმცონეთა შორის იქვე აღნიშვნით: „თუ დიდი ძმა გვითვალთვალებს, ჯობია თვალი აარიდოს სინდი კონს“.</p>
 </p>
           </div>
         </div>
@@ -452,7 +371,7 @@ document.getElementById('yec-donate-button').classList.add('yec-variant-' + vari
       </div>
     </div>
 
-  <h4 class="mt-5">Participants</h4>
+  <h4 class="mt-5">მონაწილეები</h4>
 
   <div class="row">
     <div class="container">
@@ -464,8 +383,8 @@ document.getElementById('yec-donate-button').classList.add('yec-variant-' + vari
       <div class="col">
         <div class="card-block px-2">
             <div class="pb-4">
-              <h4 class="display-4 text-primary">Ali Gharavi</h4>
-              <strong class="display-5 text-primary mb-4">Senior Programme Specialist, Swedish International Development Agency</strong>
+              <h4 class="display-4 text-primary">ალი ღარავი</h4>
+              <strong class="display-5 text-primary mb-4">პროგრამების უფროსი სპეციალისტი, შვედეთის საერთაშორისო განვითარების სააგენტო</strong>
             </div>
 	    <p class="text-tpo"><p><strong>Ali Gharavi</strong> has been a leader in facilitation, mentoring, and strategic accompaniment of Human Rights Defenders' organizations for more than 18 years, and is co-author of Holistic Security - A manual for Human Rights Defenders. He has helped in designing and implementing programs entailing long-term, multidisciplinary accompaniment of HRD organizations to ensure their sustainability and strategic success. Ali has facilitated, trained, and consulted over 200 HRD projects, organizations, and foundations and has worked in this capacity in over 50 countries. He is currently working as a Senior Programme Specialist at the Swedish International Development Agency (SIDA)'s Unit for Democracy and Human Rights, with a concentration on Freedom of Expression and Information and Communication Technologies.</p>
 </p>
@@ -480,8 +399,8 @@ document.getElementById('yec-donate-button').classList.add('yec-variant-' + vari
       <div class="col">
         <div class="card-block px-2">
             <div class="pb-4">
-              <h4 class="display-4 text-primary">Nadya Tolokonnika</h4>
-              <strong class="display-5 text-primary mb-4">Artist, activist, and founding member of Pussy Riot</strong>
+              <h4 class="display-4 text-primary">ნადია ტოლოკონიკა</h4>
+              <strong class="display-5 text-primary mb-4">ხელოვანი, მეამბოხე, პუსი-რაიოტის თანადამფუძნებელი</strong>
             </div>
 	    <p class="text-tpo"><p><strong>Nadya Tolokonnika</strong> is a conceptual artist, activist, and founding member of Pussy Riot, a global feminist protest art movement. Pussy Riot stands for gender fluidity, inclusivity, matriarchy, love, laughter, decentralization, anarchy, and anti-authoritarianism. Today, hundreds of people identify as a part of the Pussy Riot community. In 2012, Nadya was sentenced to 2 years' imprisonment following an anti-Putin performance and went through a hunger strike protesting savage prison conditions and ended up being sent to a Siberian penal colony, where she managed to maintain her artistic activity and with her prison punk band she put together to tour around Siberian labor camps. In 2018, she has  published a book, Read and Riot: A Pussy Riot Guide to Activism. In 2021, Pussy Riot joined PleasrDAO, a supporter of a stronger female representation in the NFT space, as a member.</p>
 </p>
@@ -497,9 +416,9 @@ document.getElementById('yec-donate-button').classList.add('yec-variant-' + vari
         <div class="card-block px-2">
             <div class="pb-4">
               <h4 class="display-4 text-primary">Nicholas Merrill</h4>
-              <strong class="display-5 text-primary mb-4">Founder and Executive Director, the Calyx Institute</strong>
+              <strong class="display-5 text-primary mb-4">დამფუძნებელი და აღმასრულებელი ხელმძღვანელი კალიქსის ინსტიტუტიდან</strong>
             </div>
-	    <p class="text-tpo"><p><strong>Nicholas Merrill</strong> is the founder and Executive Director of The Calyx Institute. Previous to this, he founded the for-profit Calyx Internet Access Corporation in 1995, one of the first commercial Internet service providers operating in New York City. His work focuses on promoting privacy and freedom of expression online and in the telecommunications industry. Nick is a recipient of the ACLU\u2019s Roger Baldwin Medal of Liberty and the Bill of Rights Defense Committee\u2019s Patriot Award.</p>
+	    <p class="text-tpo"><p><strong>ნიკოლას მერილი</strong> კალიქსის ინსტიტუტის დამფუძნებელი და აღმასრულებელი ხელმძღვანელია. იქამდე მან დააფუძნა კალიქსის ინტერნეტწვდომის მომგებიანი კორპორაცია 1995 წელს, ინტერნეტმომსახურების ერთ-ერთი პირველი შემოსავლიანი მიმწოდებელი ქალაქ ნიუ-იორკში. მისი საქმიანობა მიმართულია ინტერნეტსა თუ კავშირგაბმულობის დარგში პირადულობისა და გამოხატვის თავისუფლების მხარდასაჭერად. ნიკი დაჯილდოებულია როჯერ ბალდუინის თავისუფლების მედლით ამერიკის სამოქალაქო თავისუფლების გაერთიანების ღონისძიებაზე 2019 წელს და უფლებათა დაცვის საბჭოს ჯილდოთი თავდადებისთვის 2019 წელს.</p>
 </p>
         </div>
       </div>
@@ -511,26 +430,26 @@ document.getElementById('yec-donate-button').classList.add('yec-variant-' + vari
 <div class="container">
   <div class="row bg-secondary p-5 mx-1 my-5">
     <h1><i class="fas fa-hand-holding-usd px-5 text-light"></i></h1>
-    <h3 class="preamble text-light text-center mx-auto">Your donations make this series and our work at Tor possible.<br/> <p>The best way to support our work is to <a class="text-success" href="https://donate.torproject.org/monthly-giving" target="_blank">become a monthly donor.</a></p>
+    <h3 class="preamble text-light text-center mx-auto">თქვენი შემოწირულობები უზრუნველყოფს ამ სერიასა და ჩვენს საქმიანობას Tor-ში.<br/> <p>საუკეთესო გზა ჩვენი საქმიანობის მხარდასაჭერად <a class="text-success" href="https://donate.torproject.org/monthly-giving" target="_blank">ყოველთვიური შემწეობის გაღებაა.</a></p>
 </h3>
   </div>
 </div>
 
 <div class="container pt-5 justify-content-center">
-  <h4>Editions</h4>
+  <h4>გამოცემები</h4>
 
   <div class="row">
     <div class="container">
 
       <div class="p-5 mt-5 border">
-        <img class="card-img-top mb-5" src="../../static/images/privchat/privchat5-cover.png" alt="PrivChat Tor-ით" />
-          <a class="h2 text-primary" href="chapter-5/index.html">Chapter #5 - Protection against Pegasus</a>
+        <img class="card-img-top mb-5" src="../../static/images/privchat/privchat5-cover.html" alt="PrivChat Tor-ით" />
+          <a class="h2 text-primary" href="chapter-5/index.html">თავი #5 - დაცვა პეგასუსის წინააღმდეგ</a>
           <div>
-            <p><span class="text-primary nick"><mark>With Likhita, Etienne Maynier and John Scott-Railton. Hosted by Roger Dingledine.</mark></span></p>
+            <p><span class="text-primary nick"><mark>ლიხიტასთან, ეტიენ მეინიერთან და ჯონ სკოტ-რეილტონთან ერთად. წამყვანია როჯერ დინგლედინი.</mark></span></p>
           </div>
           <div>
           <p class="font-family-serif">
-	   Every year, governments, law enforcement agencies, militaries, and corporations invest billions of dollars into building and buying malicious spyware--software designed to silently infiltrate a user&#39;s device and allow attackers to view the contents without detection. This year, the Pegasus Project revealed that users of this kind of spyware, known as Pegasus and built by the NSO group, had targeted the phones that belong to thousands of people in more than 50 countries, including business executives, politicians, journalists, and human rights activists. In this edition of PrivChat, join Likhita and Etienne Maynier of Amnesty International and John Scott-Railton of Citizen Lab to discuss how people can protect themselves, what organizations we can support to stop this abuse and who is working on safer, more private software that we can trust?
+	   ყოველწლიურად მთავრობები, ძალოვანი თუ სამხედრო სტრუქტურები და დიდი დაწესებულებები მილიარდობით დოლარს აბანდებენ მავნე მოთვალთვალე პროგრამების შექმნასა და შესყიდვაში -- რომლებიც განკუთვნილია მომხმარებელთა მოწყობილობაში ფარული შეღწევისთვის და შემტევებისთვის მასალების უნებართვოდ ხილვის შესაძლებლობის მიცემისთვის. წელს პეგასუსის პროექტით გამჟღავნდა, რომ მომხმარებლებს მოთვალთვალე პროგრამისა, სახელწოდებით პეგასუსი, რომელიც ისრაელს უსაფრთხოების სამსახურის (NSO-ჯგუფი) ქმნილებაა, სამიზნედ ჰყავდათ ამოღებული ათასობით პირი 50-ზე მეტი ქვეყნიდან, მათ შორის ბიზნესის აღმასრულებლები, პოლიტიკოსები, ჟურნალისტები და ადამინის უფლებათა დაცვისთვის მეამბოხეები. ამ გამოშვების PrivChat საშუალებას გაძლევთ, შემოუერთდეთ ლიხიტასა და ეტიენ მაინიერს ამნესტი-ინტერნეიშენალიდან და ჯონ სკოტ-რეილტონს სიტიზენ-ლაბიდან, რომლებიც მიმოიხილავენ, როგორ უნდა დაცივას ხალხმა თავი, რომელ დაწესებულებებს შეიძლება დავეყრდნოთ შევიწროებისას და ვინ მუშაობს მეტად უსაფრთხო და პირადულ პროგრამულ უზრუნველყოფაზე, რომლის ნდობაც შეიძლება?
           </p>
           </div>
       </div>
@@ -544,13 +463,13 @@ document.getElementById('yec-donate-button').classList.add('yec-variant-' + vari
 
       <div class="p-5 mt-5 border">
           <img class="card-img-top mb-5" src="../../static/images/privchat/privchat4-cover.png" alt="PrivChat Tor-ით" />
-          <a class="h2 text-primary" href="chapter-4/index.html">Chapter #4 - 25th Anniversary of Onion Routing</a>
+          <a class="h2 text-primary" href="chapter-4/index.html">თავი #4 - Onion-დამისამართების 25-ე წლისთავის აღნიშვნა</a>
           <div>
-            <p><span class="text-primary nick"><mark>With Roger Dingledine, Nick Mathewson, Paul Syverson. Hosted by Gabriella Coleman.</mark></span></p>
+            <p><span class="text-primary nick"><mark>როჯერ დინგლედინთან, ნიკ მეთიუსონთან, პოლ სივერსონთან ერთად. წამყვანია გაბრიელა კოულმენი.</mark></span></p>
           </div>
           <div>
           <p class="font-family-serif">
-      Celebrate 25 years of onion routing with Tor! May 31, 2021 marks the 25th anniversary of the first public presentation of onion routing in Cambridge, UK at Isaac Newton Institute&#39;s first Information Hiding Workshop. <p>მოპატეჟებული ხართ ამ მშვენიერი დღის აღსანიშნავად, რომ ვისაუბროთ Onion-დამისამართების შექმნის საწყის საფეხურებზე, თუ როგორ გარდაიქმნა Tor-ად და როგორ მივიღეთ საბოლოოდ Tor-პროექტი. შემოგვიერთდება <strong>პოლ სივერსონი</strong>, ერთ-ერთი სულისჩამდგმელი <a href="https://www.onion-router.net/Publications.html#IH-1996">პირველი სახის onion-დამისამართებისა</a>, Tor-პროექტის თანადამფუძნებელ <strong>როჯერ დინგლედინთან</strong> და <strong>ნიკ მეთიუსონთან</strong> ერთად.</p>
+      აღნიშნეთ Onion-დამისამართების 25-ე წლისთავი Tor-თან ერთად! 2021 წლის 31 მაისში აღინიშნება 25-ე წლისთავი Onion-დამისამართების პირველი წარდგენიდან კემბრიჯში, ბრიტანეთში, ისააკ ნიუტონის ინსიტუტის პირველ სამუშაო შეხვედრაზე ინფორმაციის ფარულობის შესახებ. <p>მოპატეჟებული ხართ ამ მშვენიერი დღის აღსანიშნავად, რომ ვისაუბროთ Onion-დამისამართების შექმნის საწყის საფეხურებზე, თუ როგორ გარდაიქმნა Tor-ად და როგორ მივიღეთ საბოლოოდ Tor-პროექტი. შემოგვიერთდება <strong>პოლ სივერსონი</strong>, ერთ-ერთი სულისჩამდგმელი <a href="https://www.onion-router.net/Publications.html#IH-1996">პირველი სახის onion-დამისამართებისა</a>, Tor-პროექტის თანადამფუძნებელ <strong>როჯერ დინგლედინთან</strong> და <strong>ნიკ მეთიუსონთან</strong> ერთად.</p>
  <p>We'll reflect on the first days of the onion routing network at the U.S. Naval Research Lab (NRL). (Back then, onion router connections went through five nodes instead of Tor's current three-nodes design!) It's no secret that the concept of onion routing originated at NRL (it's on <a href="../about/history/index.html">our history page</a>), but there is so much more we want to share about how Tor started and where we've come in the last 25 years.</p>
 
           </p>
@@ -565,9 +484,9 @@ document.getElementById('yec-donate-button').classList.add('yec-variant-' + vari
 
       <div class="p-5 mt-5 border">
           <img class="card-img-top mb-5" src="../../static/images/privchat/privchat3-cover.png" alt="PrivChat Tor-ით">
-          <a class="h2 text-primary" href="chapter-3/index.html">Chapter #3 - Tor Advancing Human Rights</a>
+          <a class="h2 text-primary" href="chapter-3/index.html">თავი #3 - Tor ადამიანის უფლებათა სადარაჯოზე</a>
           <div>
-            <p><span class="text-primary nick"><mark>With Alison Macrina, Berhan Taye and Ramy Raoof. Hosted by Ed Snowden.</mark></span></p>
+            <p><span class="text-primary nick"><mark>ელისონ მაკრინასთან, ბერჰან ტაესთან და რემი რაოფთან ერთად. წამყვანია ედ სნოუდენი.</mark></span></p>
           </div>
           <div>
           <p class="font-family-serif">
@@ -584,13 +503,13 @@ document.getElementById('yec-donate-button').classList.add('yec-variant-' + vari
 
       <div class="p-5 mt-5 border">
           <img class="card-img-top mb-5" src="../../static/images/privchat/privchat2-cover.html" alt="PrivChat Tor-ით">
-          <a class="h2 text-primary" href="chapter-2/index.html">Chapter #2 - the Good, the Bad, and the Ugly of Censorship Circumvention</a>
+          <a class="h2 text-primary" href="chapter-2/index.html">თავი #2 - კარგი, ცუდი და ბოროტი ცენზურის გვერდის ავლისას</a>
           <div>
-            <p><span class="text-primary nick"><mark>With Felicia Anthonio, Vrinda Bhandari, Cecylia Bocovich and Arturo Filastò. Hosted by Cory Doctorow.</mark></span></p>
+            <p><span class="text-primary nick"><mark>ფელისია ანტონიოსთან, ვრინდა ბჰანდართან, სესილია ბოკოვიჩთან და არტურო ფილასტოსთან ერთად. წამყვანია კორი დოქტოროუ.</mark></span></p>
           </div>
           <div>
           <p class="font-family-serif">
-          Every year, internet censorship increases globally. From network level blocking to nation-wide internet blackouts, governments and private companies have powerful tools to restrict information and prevent connections between people. Many people, groups, and organizations are doing innovative work to study, measure, and fight back against internet censorship--and they are helping millions of people connect more regularly and safely to the internet. Despite these successes, we&#39;re faced with well-funded adversaries that have billions of dollars to spend on censorship mechanisms, and the arms race is ongoing. The second edition of PrivChat with Tor will be about the Good, the Bad and the Ugly that is happening in the front lines of censorship circumvention. In a world where censorship technology is increasingly sophisticated and bought and sold between nations, so is our creativity to measure it and build tools to bypass it, as well as the willingness of people to fight back. But is it enough? What are the barriers facing the people and organizations fighting for internet freedom?
+          ყოველწლიურად იზრდება ინტერნეტკავშირის შეზღუდვები მთელ მსოფლიოში. ქსელის დონეზე შეზღუდვებიდან ეროვნულ დონეზე აკრძალვებამდე, მთავრობებსა თუ კერძო დაწესებულებებს მძლავრი საშუალებები გააჩნიათ ინფორმაციასთან წვდომისა თუ ურთიერთკავშირის შეფერხებისთვის. არაერთი პირი, ჯგუფი თუ დაწესებულება მუშაობს, რომ ახლებური გზები შეისწავლოს, გამოიკვლიოს და ამით დაუპირისპირდეს ინტერნეტის ცენზურას -- რითაც მილიონობით ადამიანს ეხმარებიან ინტერნეტთან უსაფრთხო და მეტად ხშირი კავშირის უზრუნველყოფაში. ამგვარი მცირეოდენი წარმატების მიუხედავად, ხშირად ვაწყდებით მაღალშემოსავლიან მეტოქეებს, რომლებიც მილიარდობით დოლარს ხარჯავენ ცენზურის საშუალებებზე და შეჯიბრებაა გამართული შეიარაღების ზრდაში. მეორე გამოშვების PrivChat Tor-თან ერთად შეეხება კარგის, ცუდისა და ბოროტის გარჩევას ცენზურის არიდების წინა ხაზზე. სამყაროში, რომელშიც სწრაფად იხვეწება ცენზურის საშუალებები და მათით უკვე ვაჭრობენ სხვადასხვა ერები, აგრეთვე იზრდება ჩვენი შემოქმდებითობა ამ ყველაფრის შეფასებისა თუ გვერდის ავლის საშუალებების შექმნაში, ისევე როგორც, იმატებს მუხტი, შევებრძოლოთ და გავუწიოთ წინააღმდეგობა. მაგრამ საკმარისია? რა დაბრკოლებებს აწყდება ხალხი და ორგანიზაციები ინტერნეტის თავისუფლებისთვის ბრძოლაში?
           </p>
           </div>
       </div>
@@ -603,17 +522,17 @@ document.getElementById('yec-donate-button').classList.add('yec-variant-' + vari
 
       <div class="p-5 mt-5 border">
           <img class="card-img-top mb-5" src="../../static/images/privchat/privchat1-cover.png" alt="PrivChat Tor-ით">
-          <a class="h2 text-primary" href="chapter-1/index.html">Chapter #1 - Online Privacy in 2020: Activism &amp; COVID-19</a>
+          <a class="h2 text-primary" href="chapter-1/index.html">თავი #1 - ინტერნეტში პირადულობა 2020 წელს: მოძრაობა და COVID-19</a>
           <div>
-            <p><span class="text-primary nick"><mark>With Carmela Troncoso, Daniel Kahn Gillmor and Matt Mitchell. Hosted by Roger Dingledine.</mark></span></p>
+            <p><span class="text-primary nick"><mark>კარმელა ტრონკოსოსთან, დენიელ კან გილმორთან და მეტ მიტჩელთან ერთად. წამყვანია როჯერ დინგლედინი.</mark></span></p>
           </div>
           <div>
           <p class="font-family-serif">
-          When the COVID-19 pandemic hit most countries around the world, many governments looked for technology to trace the spread of the virus in order to fight the pandemic. Contact tracing practices and technologies raised many questions about privacy, particularly: is it possible to trace the virus while respecting people&#39;s privacy?
+          როცა ᲙᲝᲕᲘᲓ-19 გავრცელების პიკს აღწევდა მსოფლიოს სხვადასხვა ქვეყანაში, ბევრმა მთავრობამ დაიწყო ტექნოლოგიების მოძიება ვირუსის გავრცელებისთვის თვალის სადევნებლად პანდემიასთან ბრძოლის ფარგლებში. ურთიერთშემხებ პირთა დასადგენად დანერგილმა საშუალებებმა და ტექნოლოგიებმა ბევრი კითხვა გააჩინა, განსაკუთრებით პირადულობის კუთხით: შესაძლებელია ვირუსის გავრცელებისთვის თვალის მიდევნება პირადი ცხოვრების ხელშეუხებლობის დაცვით?
 
-          Now amidst the uprising in the U.S. against systemic racism, followed by protests all around the world, the central question about contact tracing, privacy, and surveillance becomes critical. Can the technology used for tracking the virus be used to track protesters? Will it be?
+          ახლა შუაგულში ვიმყოფებით წამოწყებული აჯანყებებისა შეერთებულ შტატებში სისტემური რასიზმის წინააღმდეგ, რომელსაც მსოფლიოს დანარჩენ კუთხეებშიც არაერთი გამოსვლა ახლავს, ამიტომ გადამწყვეტ მნიშვნელობას იძენს შეკითხვები, რომლებიც ეხება ურთიერთშემხებ პირთა თვალის დევნებას, პირადულობასა და მიყურადებას. შესაძლებელია ვირუსის თვალის მისადევნებელი საშუალებების გამოყენება მეამბოხეთა ზედამხედველობისთვის? ან შესაძლებელი გახდება?
 
-          For our first ever PrivChat, the Tor Project is bringing you three amazing guests to chat with us about privacy in this context.
+          ჩვენი პირველი საუბრისთვის, რომლისთვისაც PrivChat გამოვიყენეთ, Tor-პროექტმა მოიწვია სამი არაჩვეულებრივი სტუმარი პირადი მონაცემების დაცვის საკითხების განსახილველად.
           </p>
           </div>
       </div>
@@ -903,5 +822,5 @@ document.getElementById('yec-donate-button').classList.add('yec-variant-' + vari
   
 </body>
 
-<!-- Mirrored from www.torproject.org/ka/privchat/ by HTTrack Website Copier/3.x [XR&CO'2014], Wed, 08 Jan 2025 01:15:12 GMT -->
+<!-- Mirrored from www.torproject.org/ka/privchat/ by HTTrack Website Copier/3.x [XR&CO'2014], Wed, 15 Jan 2025 01:14:28 GMT -->
 </html>

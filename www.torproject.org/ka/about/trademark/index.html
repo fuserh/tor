@@ -1,7 +1,7 @@
 <!doctype html>
 <html xmlns="http://www.w3.org/1999/xhtml" lang="ka" >
 
-<!-- Mirrored from www.torproject.org/ka/about/trademark/ by HTTrack Website Copier/3.x [XR&CO'2014], Wed, 08 Jan 2025 01:16:36 GMT -->
+<!-- Mirrored from www.torproject.org/ka/about/trademark/ by HTTrack Website Copier/3.x [XR&CO'2014], Wed, 15 Jan 2025 01:15:52 GMT -->
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -266,88 +266,7 @@
     </nav>
 </div>
   </header>
-  <div class="banner">
-  <input id="trigger" type="checkbox" title="Close banner" />
-  <label for="trigger" class="banner-close text-white">
-      <div class="d-flex h-100">
-        <img src="../../../static/images/yec/x-dark3c81.html?h=353e04cc" class="m-auto h-100 w-100 p-1 img-svg">
-      </div>
-  </label>
-  <span class="eoy-sr-only text-black">Close banner</span>
   
-  <div id="banner-header">
-    <div class="banner-content">
-      <div class="banner-content-spacer pt-5 h-100">
-        <div class="banner-content-container d-flex px-3">
-          <div id="banner-text-container" class="d-flex flex-column text-left">
-            <div id="banner-text">
-              <h1 class="yec-variant-browse">თქვენი უფლებაა ᲛᲝᲘᲜᲐᲮᲣᲚᲝᲗ გვერდები თვალთვალის გარეშე.</h1>
-              <h1 class="yec-variant-search">თქვენი უფლებაა ᲛᲝᲘᲫᲘᲝᲗ თვალთვალის გარეშე.</h1>
-              <h1 class="yec-variant-speak">თქვენი უფლებაა ᲘᲡᲐᲣᲑᲠᲝᲗ უნებართვო მიყურადების გარეშე.</h1>
-              <p>შემოუერთდით Tor-ის ათასობით მხარდამჭერს პირადულობის უზრუნველმყოფი ინტერნეტის შენებაში. 
-                 გაიღეთ თანხა ახლავე.</p>
-              <p><strong>31 დეკემბრის ჩათვლით გაღებული თანხა გაორმაგდება 1:1 წესით $300,000-მდე!</strong></p>
-            </div>
-            <div id="yec-donate-button-container">
-              <a class="btn" id="yec-donate-button" href="https://donate.torproject.org/">
-                <span>გაიღეთ თანხა</span>
-                <img src="../../../static/images/yec/heart673a.png?h=ad369acb" class="donate-heart img-svg">
-              </a>
-            </div>
-          </div>
-          <div class="banner-main-graphics h-100">
-            <img class="yec-illo yec-variant-browse img-svg" src="../../../static/images/yec/illo-yec-browse98e1.png?h=86d8fd2b">
-            <img class="yec-illo yec-variant-search img-svg" src="../../../static/images/yec/illo-yec-search465b.html?h=347ed4b2">
-            <img class="yec-illo yec-variant-speak img-svg" src="../../../static/images/yec/illo-yec-speakae5f.png?h=abdc7268">
-          </div>
-        </div>
-      </div>
-    </div>
-  </div>
-</div>
-
-<script type="text/javascript">
-/* persist banner close across pages in the same session/tab */
-let trigger = document.querySelector(".banner #trigger");
-trigger.addEventListener("change", () => {
-    sessionStorage.setItem("bannerClosed", trigger.checked);
-});
-if (sessionStorage.getItem("bannerClosed")) {
-    trigger.checked = sessionStorage.getItem("bannerClosed");
-}
-/* display a random variant of the banner */
-/* not using jQuery because it's loaded later, and this is just faster */
-const variants = ['browse', 'search', 'speak'];
-const default_variant = 'browse';
-const variant = variants[Math.floor(Math.random() * variants.length)]
-const variant_elements =  document.querySelectorAll('h1.yec-variant-' + default_variant + ', img.yec-variant-' + default_variant);
-if (variant == default_variant) {
-    variant_elements.forEach((i) => {
-        i.style.visibility = 'visible';
-    });
-} else {
-    variant_elements.forEach((i) => {
-        i.style.display = 'none';
-    });
-    document.querySelector('h1.yec-variant-' + variant).style.display = 'inline';
-    document.querySelector('img.yec-variant-' + variant).style.display = 'block';
-}
-document.getElementById('yec-donate-button').classList.add('yec-variant-' + variant);
-</script>
-
-<noscript>
-<!-- show the default variant -->
-<style>
-  #banner-header .banner-content h1.yec-variant-browse,
-  #banner-header .banner-content img.yec-variant-browse {
-    visibility: visible;
-  }
-  #yec-donate-button {
-    background-color: var(--abouttor-yec-button-bg-color-browse);
-    visibility: visible;
-  }
-</style>
-</noscript>
   <div class="page">
     
 <div class="container-fluid bg-primary">
@@ -439,19 +358,19 @@ document.getElementById('yec-donate-button').classList.add('yec-variant-' + vari
           
             <!-- Special case for the /about/trademark page -->
             <div class="container py-3 mt-5 content">
-              <h1>სავაჭრო და საფირმო ნიშნების დებულება Tor-პროექტისთვის (“Tor”)</h1>
-<p>Last updated: October, 12, 2024</p>
+              <h1>სავაჭრო და საფირმო ნიშნების დებულება Tor-პროექტისთვის („Tor“)</h1>
+<p>ბოლო განახლება: 12 ოქტომბერი, 2024</p>
 <p>დებულება განმარტავს, როდის და როგორ უნდა გამოიყენოთ ჩვენი სავაჭრო და საფირმო ნიშნები (საერთო სახელწოდებით „Tor-ნიშნები“).
 ეს დებულება ეხება გამოყენების ყველა ნებადართულ შემთხვევას და დამატებით განსაზღვრავს, კიდევ რისი უფლება შეიძლება გეძლეოდეთ, გარდა სავაჭრო ნიშნებთან დაკავშირებული საკითხებისა.</p>
 <p>თუ აპირებთ Tor-ნიშნების იმ სახით გამოყენებას, რომელიც არაა ნებადართული ამ დებულებით ან სავაჭრო ნიშნების დაცვის საერთო კანონით, გარდა მართლზომიერი გამოყენებისა, გთხოვთ <a href="https://torproject.org/contact">გვაცნობოთ</a> და ყოველმხრივ ვეცდებით გავითვალისწინოთ თქვენი მოთხოვნა.
 არ აქვს მნიშვნელობა, როგორ იქნება ნებართვა მოპოვებული, ნებისმიერი სახის ღირებულება, რომელიც გამომუშავებულია Tor-ნიშნების გამოყენებით, უნდა მიიჩნეოდეს Tor-ის მიერ შექმნილ სარგებლად.</p>
-<h2>ესე იგი, აპირებთ სადამსჯელო ზომების მიღებას?</h2>
+<h2>ესე იგი, აპირებთ სადამსჯელო ზომების მიღებას!?</h2>
 <p>Tor-პროექტი არამომგებიანი დაწესებულებაა, რომელიც თავდაუზოგავად შრომობს ხალხის ერთობასთან ერთად კვლევებისა და შემუშავებისთვის Tor-ის ვინაობის გაუმხელი პროგრამისა და ქსელის დასახვეწად, რაც ადამიანის უფლებების დაცვის წინაპირობაა და უზრუნველყოფს უსაფრთხო კავშირის შესაძლებლობას მსოფლიოს ნებისმიერ მხარეში.
-Tor ფართოდ გახდა ცნობილი თავისი პროგრამული კრებულითა და მასთან არსებული ანონიმური გადამცემებისგან შემდგარი onion-დამისამართების ქსელით, აგრეთვე, მასალებითა თუ ინტერნეტ-სახელმძღვანელობით ვინაობის გამჟღავნებისგან დაცვის გაძლიერების შესახებ და გაფრთხილებებით, რომ პროგრამა ჯერ კიდევ საცდელია.
+Tor ფართოდ გახდა ცნობილი თავისი პროგრამული ნაკრებითა და მასთან არსებული ანონიმური გადამცემებისგან შემდგარი onion-დამისამართების ქსელით, აგრეთვე, მასალებითა თუ ინტერნეტსახელმძღვანელობით ვინაობის გამჟღავნებისგან დაცვის გაძლიერების შესახებ და გაფრთხილებებით, რომ პროგრამა ჯერ კიდევ საცდელია.
 ვთანამშრომლობთ შემმუშავებლებთან, რომ დავხვეწოთ პროგრამა და ქსელი, ამასთანავე, ვზრუნავთ, მუდმივად წავახალისოთ ხოლმე მკვლევრები, რათა აღრიცხონ შეტევის მცდელობები ვინაობის გამჟღავნებისგან დაცვის სამომავლო განმტკიცებისთვის. პროგრამას ვავრცელებთ ღიად და უფასოდ, მაგრამ ვითხოვთ მესაკუთრეობის სანათადოდ მითითებას.</p>
 <p>არ გვსურს ვიქცეთ სავაჭრო ნიშნების აკრძალვების ძალისმიერ გამტარებლებად, მაგრამ გვსურს გამოვიყენოთ მონიჭებული უფლებები, რომ მივცეთ ხალხს საშუალება, ადვილად ამოიცნონ Tor-პროგრამა და მისი მომსახურებები აუცილებელი საჭიროებების დასაკმაყოფილებლად.
 სავაჭრო ნიშნების კანონი გვეხმარება იმის უზრუნველყოფაში, რომ სახელი Tor დაკავშირებული იყოს მხოლოდ Tor-ის ნამდვილ პროგრამასთან და მომსახურებებთან ვინაობის გამჟღავნებისგან დასაცავად, ამასთანავე გამოიყენებოდეს მხოლოდ ნებადართული და სათანადო საჭიროებებისთვის.
-შედეგად, ვინაობის გამხელის არიდებისთვის ხალხს შეეძლებათ ადვილად ამოიცნონ სასურველი პროგრამის წყარო და სათანადოდ შეაფასონ მისი უპირატესობები თუ ნაკლოვანებები.
+შედეგად, ვინაობის გამხელის არიდებისთვის ხალხს შეეძლება ადვილად ამოიცნოს სასურველი პროგრამის წყარო და სათანადოდ შეაფასოს მისი უპირატესობები თუ ნაკლოვანებები.
 ჩვენთვის მეტად ღირებულია ნდობა, რომელიც მომხმარებლებს აქვთ Tor-პროგრამისა და მომსახურებების მიმართ, ამიტომაც ვიცავთ სავაჭრო ნიშნებს, რომ შევძლოთ არსებული მოლოდინების სრულად გამართლება, ახლაც და მომავალშიც.</p>
 <p>ჩვენი ძირითადი მიდგომა სავაჭრო ნიშნების გათვალისწინებისას არის ის, რომ Tor-ნიშნების გამოყენებისას არ უნდა დააბნიოთ მომხმარებლები და არ უნდა გამოიყენოთ ეს ნიშნები იმგვარად, რომ ვინმეს შემთხვევით ან განგებ მიანიშნოს ან დააჯეროს ჩვენსა და სხვა პროექტს შორის რამე კავშირის არსებობა, მაშინ როცა არანაირი ურთიერთკავშირი არ არსებობს.
 თუ სხვაგვარად არაა ნებადართული, არ უნდა გამოიყენოთ Tor-ნიშნები იმ გზით, რომ ღირსება შეელახოს ან რამე სხვა სახით შეებღალოს სახელი Tor-ს, ანდაც იმ სარგებელს, რომელიც Tor-ნიშნებთანაა გაიგივებული.</p>
@@ -460,61 +379,61 @@ Tor ფართოდ გახდა ცნობილი თავისი 
 თუ მიგაჩნიათ, რომ თქვენი ადრინდელი უფლებები ახლა იზღუდება, გვაცნობეთ!</p>
 <h2>რას წარმოადგენს Tor-ის სავაჭრო ნიშნები?</h2>
 <p>ტერმინი „სავაჭრო ნიშანი“ მოიცავს ნებისმიერ სიტყვას, სახელს, ნიშანს ან მოწყობილობას, ანდაც ამ ყველაფრის ერთობლიობას, რომელიც გამოიყენება პირის ან დაწესებულების მიერ მათი საქონლისა თუ მომსახურების გამოსარჩევად სხვების მიერ შემოთავაზებულისგან, ამასთანავე, მიუთითებს ამ საქონლისა თუ მომსახურების წყაროს.
-So, for example, you can tell if your computer operating system originated in Redmond or in Cupertino by referencing the operating system’s trademark; and neither Microsoft nor Apple can adopt the brands of the other, because such use would typically cause confusion among consumers.
-In the U.S., and in many other jurisdictions, it is not required to register a trademark with the government before claiming rights in the mark.</p>
-<p>The Tor Marks are any and all trademarks owned or used by Tor, including but not limited to:</p>
-<pre><code>    • our “Tor” and “The Tor Project” word marks; and
-    • our “Tor” and “Tor Onion” logo marks.
+მაგალითად, თქვენ შეგიძლიათ გაარკვიოთ, თქვენი კომპიუტერის საოპერაციო სისტემა რედმონდიდანაა, თუ კუპერტინოდან, სწორედ სავაჭრო ნიშნების მოხმობით; ამასთანავე, ვერც Microsoft და ვერც Apple ვერ მიითვისებს სხვის ნიშნებს, ვინაიდან ეს ყველაფერი დამაბნეველი იქნება მომხმარებლებისთვის.
+შეერთებული შტატებისა და ბევრი სხვა ქვეყნის სამართლის მიხედვითაც, აუცილებელი არაა მთავრობის მიერ სავაჭრო ნიშნის რეგისტრაცია უფლებების წარმოსაშობად.</p>
+<p>Tor-ნიშნები და ყველა სხვა სავაჭრო ნიშანი, რომლის მესაკუთრეცაა Tor, მათ შორის და არამხოლოდ:</p>
+<pre><code>    • ჩვენი „Tor“ და „Tor-პროექტი (The Tor Project)“ სიტყვიერად; აგრეთვე
+    • ჩვენი „Tor“ და „Tor Onion“ ლოგოს ნიშნები.
 </code></pre>
-<p>This list may be updated as other trademarks are created or registered.</p>
-<h2>Using the Tor Marks</h2>
-<p>If you are authorized to use the Tor Marks, the following general requirements apply:</p>
-<p><em>Use the exact Mark.</em> Tor’s trademarks should be used in their exact, most up-to-date form.
-They should neither be abbreviated nor combined with other words.</p>
-<p><em>Use it as a Mark.</em> Trademarks, including the Tor Marks, are adjectives, and when used should always be followed by the generic term they modify, such as “software,” “certificate,” or “product.”
-Never use a trademark as a noun, verb, or other part of speech.</p>
-<p><em>Mark the Mark.</em> The first or most prominent mention of a Tor Mark should be accompanied by a “tm’”’ symbol (”™”) where practical, to indicate that it is a trademark; you may also use the “r in a circle” symbol (”®”), if the trademark in question is a registered trademark.
-If you aren’t sure, just using the “tm” symbol (”™”) is fine too.</p>
-<p><em>Credit the Mark.</em> The following notice text should appear somewhere nearby your first or most prominent mention of a Tor Mark.
-If that’s not practical, you may include it on the credits page instead:</p>
-<pre><code>    [Tor Mark you are referencing] is a trademark of The Tor Project; all rights reserved.
+<p>ეს ჩამონათვალი შეიძლება განახლდეს სხვა სავაჭრო ნიშნების შექმნისას ან რეგისტრაციისას.</p>
+<h2>Tor-ნიშნების გამოყენება</h2>
+<p>თუ მოპოვებული გაქვთ Tor-ნიშნების გამოყენების ნებართვა, უნდა დაკმაყოფილდეს მოცემული ზოგადი მოთხოვნები:</p>
+<p><em>შეუცვლელად გამოიყენეთ ნიშნები.</em> Tor-ის სავაჭრო ნიშნები უნდა გადმოიცემოდეს ზუსტად და ბოლოდროინდელი სახით.
+არ შეიძლება მათი შემოკლება ან სხვა სიტყვებთან გაერთიანება.</p>
+<p><em>გამოიყენეთ ნიშნის შესაფერისად.</em> სავაჭრო ნიშნები, მათ შორის Tor-ნიშნები, წარმოადგენს ზედსართავ სახელებს და გამოყენებისას უნდა ახლდეს სიტყვა, რომელსაც განსაზღვრავს, მაგალითად, „პროგრამა“, „სერტიფიკატი“ ან „პროდუქტი“.
+არასდროს გამოიყენოთ სავაჭრო ნიშნები არსებით სახელად, ზმნად ან მეტყველების სხვა ნაწილად.</p>
+<p><em>მონიშნეთ ნიშანი.</em> ამის უპირველესი და ყველაზე მეტად გავრცელებული გზაა, რომ Tor-ნიშნებს ახლდეს „tm“ სიმბოლო („™“), სადაც კი მოხერხდება აღნიშვნა, რომ სავაჭრო ნიშანს წარმოადგენს; აგრეთვე შეგიძლიათ გამოიყენოთ „წრეში ჩასმული R“ („®“), თუ განხილული სავაჭრო ნიშანი რეგისტრირებულია.
+როცა ზუსტად არ იცით, „tm“ სიმბოლო („™“) საკმარისი იქნება.</p>
+<p><em>სათანდოდ მოიხსენიეთ ნიშნები.</em> ქვემოთ მოცემული ჩანაწერი უნდა ახლდეს პირველად ნახსენებ ან მნიშვნელოვან ადგილას გამოყენებულ Tor-ნიშანს.
+თუ მოუხერხებელია, შეგიძლია გაიტანოთ ცალკე მოსახსენიებელ გვერდზე:</p>
+<pre><code>    [ნახსენები Tor-ნიშანი] Tor-პროექტის სავაჭრო ნიშანია (The Tor Project); ყველა უფლება დაცულია.
 </code></pre>
-<p>You should also include a link to the official Tor website at <a href="../../../index.html">https://torproject.org</a>, so users can verify the original source of Tor for themselves, and unless otherwise agreed a note indicating that your project is not sponsored by The Tor Project.
-For example: “This product is not endorsed or sponsored by, or affiliated with, the Tor Project.”</p>
-<h3>Particular Use Requirements</h3>
-<p>We also have some additional requirements that apply to particular use cases, and the following apply to some of the most common situations in which you might want to use a Tor Mark.</p>
-<h3>Certain Personal, Non-Commercial Uses</h3>
-<p>You may use the Tor Marks to express your affinity for our project in a truthful, personal, and non-commercial manner, in real life – for example on t-shirts, stickers, cupcakes, and other things that you share with your friends. If you want to make a commercial or online use of Tor Marks on these kinds of items (for example, selling t-shirts bearing our Tor Marks at a conference, or giving away or selling t-shirts bearing our Tor Marks online), you must obtain our written permission first.
-Whenever you make use of a Tor Mark, please feel free to send us a sample – we’d love to see what you’re doing!</p>
-<h3>Use in Research Paper Names</h3>
-<p>Tor enjoys a vibrant research community that examines anonymity attacks and defenses, design improvements, impact on society, and a range of other topics.
-We think it's amazing that professors and other researchers continue to contribute to our community, and we've even gotten funding from the National Science Foundation to help keep the Tor design and code researcher-friendly.
-The anonymity bibliography at freehaven.net/anonbib lists many research papers that use Tor-derived names in their titles: Torsk, DefenestraTor, Tortoise, LASTor, Torchestra, StegoTorus, and more.</p>
-<p>Since the authors of these research papers aren't trying to make a profit from them, and (because they're just papers, not products), the papers aren't confusing Tor users into running potentially unsafe software or purchasing services they believe originate from Tor, so we believe that the use of the Tor mark in these research paper titles is acceptable non-trademark or fair use.</p>
-<p>That said, if the research paper comes with software, and that software could potentially confuse people (users or other researchers) about whether it's written or endorsed by The Tor Project, or if such use is otherwise confusing, it requires our express permission.</p>
-<h1>Project and Product Names, Trademarks, Domain Names, Blockchains or Virtual Tokens, and Internet Account Names</h1>
-<p>Because of the nature of our work, it is critical that users be able to distinguish our official software and services from those of third parties, even if those third parties services are of excellent quality, so you may not use the Tor Marks in, or as a part of, any project or product name, software title, trade name, trademark, domain name, virtual or currency token or project name or symbol, or internet account name, unless authorized expressly in writing.
-For example, the software title “BROWSER X – connect to the Tor network!” or the handle “@BrowserX-Tor,” are not permitted, because consumers who see those uses are likely to assume that they are official Tor services or accounts. Domain names like “TorHelpDesk.com,” or the social media group “Tor Help Desk,” would also be likely to cause confusion.
-If you’d like to use the Tor Marks in, or as a part of, any project or product name, software title, or the like, please contact us to discuss your planned use before you begin, and we’ll see if an accommodation can be made.
-Please note that we have to be a little extra protective here, so uses of this type are rarely authorized.</p>
-<h3>Derivative Software</h3>
-<p>Many of Tor’s software offerings are provided on an open-source basis, meaning that you can alter and modify our source code to better suit your needs.
-However, software that you have modified is different from the software that originates from Tor, and as above you may not use the Tor Marks in, or as a part of, your derivative software project or product name, or use any brand that might cause confusion as to its source or origin.
-If you modify Tor software, you may not distribute the modified software under the Tor brand, or under any Tor Mark.</p>
-<h3>Services Related to Tor Software and Services</h3>
-<p>If you offer goods or services that are related to Tor goods or services (e.g., your software interacts with the Tor network), you may use Tor’s word marks (but not logos or design marks, unless otherwise authorized in writing) in truthfully describing your offering, so long as you don’t violate the requirements for use of Tor Marks or do anything that might mislead customers into thinking either that your offering is an official Tor offering or that Tor has any direct relationship with your organization.
-For example, you may truthfully describe your services as, “providing third party access on the Tor network,” or “Unofficial support services for Tor users.”
-The same offerings would be unauthorized if styled as “Tor Access services,” or “Tor Help support services,” though, because those formations are likely to cause confusion as to who is providing the services.
-In general, use of the term “unofficial” is a great way to tip off consumers that your project is different from our own. When in doubt, you should err on the side of providing more, rather than less, explanation and information, because Tor users love to be informed and providing that extra information can help ensure that your offering does not cause confusion.</p>
-<h3>Logo Use</h3>
-<p>If you have written permission to use a logo / graphic Tor Mark, like our “Tor Onion” logo, you must use it in the form in which it is made available at <a href="https://styleguide.torproject.org/brand-assets">https://styleguide.torproject.org/brand-assets</a>.
-You may not alter the color, font, proportions, or any other aspect of our logo.
-You must also set our logo off from the other content appearing in your use, and may not make our logo the most prominent feature of your use, except in connection with those personal, non-commercial uses permitted above.</p>
-<h2>Reporting Trademark Abuse</h2>
-<p>Please report any misuse of the Tor Marks to <a href="mailto:tor-brand@rt.torproject.org">tor-brand@rt.torproject.org</a>, and provide us with as much information as you can about the use you think might be infringing.
-We’ll investigate the use, and if warranted take appropriate action.</p>
-<h2>Questions</h2>
-<p>If you’d like to use the Tor Marks in a way that’s not covered by this policy, or if you have any questions regarding this policy, please <a href="https://torproject.org/contact">contact us</a></p>
+<p>აგრეთვე უნდა დაურთოთ ოფიციალური Tor-ვებსაიტი <a href="../../../index.html">https://torproject.org</a>, რომ მომხმარებლებმა თავადვე გადაამოწმონ Tor-ის თავდაპირველი წყარო და სხვაგვარი შეთანხმების არქონისას იქვე საჭიროა შენიშვნაც, რომ დამფინანსებელი ან დამკვეთი არაა Tor-პროექტი.
+მაგალითად: „ეს პროდუქტი არაა დამოწმებული ან დაფინანსებული, ანდაც არ შეიძლება მივაკუთვნოთ Tor-პროექტს“.</p>
+<h3>ცალკეული გამოყენების მოთხოვნები</h3>
+<p>გარდა ამისა, დამატებითი მოთხოვნებიცაა, რომლებიც განეკუთვნება ცალკეული გამოყენების შემთხვევებს, ქვემოთ კი მოცემულია ის ხშირი გარემოებები, რომლებშიც შეიძლება დაგჭირდეთ Tor-ნიშნების გამოყენება.</p>
+<h3>გარკვეული სახის პირადი, არამომგებიანი გამოყენება</h3>
+<p>შეიძლება Tor-ნიშნების გამოყენება გესაჭიროებოდეთ თქვენი კეთილგანწყობის გამოსახატავად ჩვენი პროექტისა და სანდოობის მიმართ, პირადი, არამომგებიანი სახით, ნამდვილ საგნებზე – მაგალითად, მაისურებზე, მისაკრობებზე, ჭიქებზე ან სხვა ნივთებზე, რომლებიც მეგობრებს შეიძლება აჩუქოთ. თუ სურვილი გაქვთ, მოგება მიიღოთ ამ საქმიანობით ან ვებსივრცეში გამოიყენოთ Tor-ნიშნები ამგვარი დანიშნულებით (მათ შორის მაისურების გაყიდვით შეხვედრებზე სატარებლად ან დასარიგებლად, ანდაც Tor-ნიშნებიანი მაისურების ინტერნეტმაღაზიებში განსათავსებლად), დაგჭირდებათ ჩვენგან წერილობითი თანხმობა წინასწარ.
+რა შემთხვევისთვისაც არ უნდა გსურდეთ გამოიყენოთ Tor-ნიშანი, ნუ მოგერიდებათ ნიმუშის გამოგზავნა – სიამოვნებით გავეცნობით თქვენს საქმიანობას!</p>
+<h3>კვლევითი ნაშრომების დასახელებებში გამოყენება</h3>
+<p>ჩვენ მეტად მოხარულნი ვართ მკვლევართა მხურვალე ერთობით, რომელიც იკვლევს ვინაობის გაუმხელობის მიმართ შეტევებსა და დაცვის საშუალებებს, აგებულების გაუმჯობესების გზებს, საზოგადოებაზე გავლენას და უამრავ სხვა საკითხს.
+ჩვენთვის მეტად აღმაფრთოვანებელია, რომ პროფესორები და სხვა მკვლევრები მუდმივად განაგრძობენ ჩვენი ერთობისთვის წვლილის შეტანას და ვცდილობთ კიდეც, რომ მოვიძიოთ მათთვის სახსრები ეროვნული სამეცნიერო ფონდიდან, რათა Tor-ის აგებულება და კოდი დარჩეს კვლევებისადმი ღია.
+ვინაობის გაუმხელობის შესახებ საძიებელში მისამართზე freehaven.net/anonbib აღნუსხულია არაერთი კვლევითი ნაშრომი, რომელთა სათაურშიცაა Tor-ით ნაწარმოები სახელები: Torsk, DefenestraTor, Tortoise, LASTor, Torchestra, StegoTorus და სხვა.</p>
+<p>ვინაიდან ამ კვლევითი მასალების ავტორები არ ცდილობენ მოგების მიღებას და (ვინაიდან მხოლოდ ქაღალდებია და არა რამე სახის ნაწარმი) ამგვარი მასალები ვერ დააბნევს Tor-მომხმარებლებს, რომ მოტყუებით გადმოიწერონ შესაძლო საფრთხის შემცველი პროგრამა ან შეიძინონ მომსახურებები, რომლებიც თავს Tor-ისგან მომდინარედ ასაღებს, ამიტომ მიგვაჩნია, რომ Tor-ნიშნების დართვა მსგავსი კვლევითი ნაშრომების დასახელებებში მისაღებია და არ არღვევს სავაჭრო ნიშნების მართლზომიერი გამოყენების პირობებს.</p>
+<p>როგორც აღინიშნა, თუ კვლევითი მასალები ახლავს პროგრამას, რომელმაც შეიძლება შეაცდინოს ვინმე (მომხმარებელი ან სხვა მკვლევარი), რომ მომდინარეობს ან დაწერილია Tor-პროექტის მიერ, ანდაც სხვა გზით აღმოჩნდეს დამაბნეველი, საჭირო იქნება ჩვენგან აშკარა ნებართვა.</p>
+<h1>პროექტისა თუ პროდუქტის დასახელებები, სავაჭრო ნიშნები, საიტის მისამართები, ბლოკჩეინი ან სხვა წარმოსახვითი მოწმობები და ინტერნეტანგარიშების სახელები</h1>
+<p>ჩვენი საქმიანობის თავისებურებებიდან გამომდინარე გადამწყვეტია, რომ მომხმარებლებმა შეძლონ განასხვავონ ჩვენი ოფიციალური პროგრამა და მომსახურებები გარეშე მხარეების ნამუშევრებისგან, რაოდენ მაღალი ხარისხითაც არ უნდა გამოირჩეოდეს ამ გარეშე მხარეთა მომსახურებები, ასე რომ არ უნდა გამოიყენოთ Tor-ნიშნები ან მათი ნაწილები რამე პროექტის ან პროდუქტის სახელში, პროგრამის სათაურში, სავაჭრო დასახელებაში, სავაჭრო ნიშნებში, საიტის მისამართში, წარმოსახვით ან ვალუტის მოწმობაში, წინასწარი პროექტის ლოგოში ან ემბლემაში, ანდაც ინტერნეტანგარიშის სახელში, წერილობითი ნებართვა თუ არ გექნებათ.
+მაგალითად, პროგრამას რომ ერქვას „BROWSER X – დაუკავშირდით Tor-ქსელს!“ ან შემოკლებით „@BrowserX-Tor“, არაა ნებადართული, ვინაიდან მომხმარებელი როცა იხილავს, ივარაუდებს, რომ ოფიციალურ Tor-მომსახურებებს ან ანგარიშებს ეხება. საიტის მისამართი „TorHelpDesk.com“ ან სოცქსელის ჯგუფი „Tor-ის შესახებ მხარდაჭერა“ აგრეთვე გამოიწვევს დაბნეულობას.
+თუ გსურთ გამოიყენოთ Tor-ნიშნები სხვა პროექტის ან პროდუქტის დასახელების ან პროგრამის სათაურის ნაწილად, ანდაც სხვა მსგავსი შემთხვევისთვის, გთხოვთ გვაცნობოთ თქვენი გეგმების შესახებ წინასწარ, სანამ რამეს წამოიწყებდეთ და განვიხილავთ, რა შეიძლება მოხერხდეს.
+გთხოვთ გაითვალისწინოთ, რომ ასეთ შემთხვევებში მეტად დაუცველი ვრჩებით და ამგვარი სახით გამოყენება იშვიათად შეიძლება იყოს ნებადართული.</p>
+<h3>გადამუშავებული პროგრამა</h3>
+<p>Tor-პროგრამების უმეტესობა შემოთავაზებულია ხოლმე ღია წყაროს სახით, რაც ნიშნავს, რომ შესაძლებელია პირველწყარო კოდის გადაკეთება ან ჩასწორება საჭიროებისამებრ მოსარგებად.
+მიუხედავად ამისა, პროგრამა, რომელიც ჩასწორებულია, განსხვავდება იმ პროგრამისგან, რომელსაც გთავაზობთ Tor და შესაბამისად, არ უნდა გამოიყენებოდეს Tor-ნიშნები მის ან პროგრამის პროექტისა თუ პროდუქტის სახელის ნაწილად, აგრეთვე მიუღებელია ისეთი დასახელების გამოყენება, რომელიც დამაბნეველი იქნება წარმომავლობისა თუ წყაროს დადგენისას.
+თუ გადააკეთებთ Tor-პროგრამას, არ შეგეძლებათ ამ გადაკეთებული პროგრამის გავრცელება Tor-ის სახელით ან სხვა Tor-ნიშნის გამოყენებით.</p>
+<h3>მომსახურებები, რომლებიც უკავშირდება Tor-პროგრამებსა და მომსახურებებს</h3>
+<p>თუ სთავაზობთ ხალხს ისეთ პროდუქტსა და მომსახურებას, რომელიც დაკავშირებულია Tor-ის შემოთავაზებულ პროდუქტებთან და მომსახურებებთან (მაგ. თქვენი პროგრამა ურთიერთმოქმედებს Tor-ქსელთან), შეგიძლიათ გამოიყენოთ Tor-ნიშნები სიტყვიერად (მაგრამ არა ლოგოს ან იერსახის მეშვეობით წერილობითი ნებართვის არქონისას) თქვენი შეთავაზების სათანადოდ აღწერისთვის, თუ არ დაარღვევთ Tor-ნიშნებით სარგებლობის პირობებს ან ისე არ იმოქმედებთ, რომ შეცდეს მომხმარებელი და იფიქროს, თითქოს, თქვენი შეთავაზების წყაროა Tor ან თქვენს დაწესებულებასთან რამე საერთო აქვს Tor-ს.
+მაგალითად, თქვენი მომსახურებების სათანადო აღწერა იქნება „გთავაზობთ გარეშე კავშირს Tor-ქსელთან“ ან „არაოფიციალურ მხარდამჭერ მომსახურებებს Tor-მომხმარებლებისთვის“.
+იგივე შემოთავაზებები ვერ იქნება ნებადართული, თუ მოწოდებულია, როგორც „Tor-თან წვდომის მომსახურებები“ ან „Tor-ის თაობაზე მხარდაჭერის მომსახურებები“, ვინაიდან ამ სახით გადმოცემისას შეიძლება დამაბნეველი აღმოჩნდეს, ვისგან მომდინარეობს ეს მომსახურებები.
+საზოგადოდ, ტერმინი „არაოფიციალური“ საუკეთესო გზაა მომხმარებლებს მიანიშნოთ, რომ თქვენი პროექტი განსხვადება ჩვენი კუთვნილისგან. თუ რამე გეეჭვებათ, უმჯობესია მეტი განმარტება და ინფორმაცია დაურთოთ, ვიდრე ნაკლები, ვინაიდან Tor-მომხმარებლებს ყოველთვის ურჩევნიათ, მეტად დაწვრილებით გაეცნონ საკითხს, რომ გაარკვიონ, შემოთავაზება გაუგებრობას ხომ არ იწვევს.</p>
+<h3>ლოგოს გამოყენება</h3>
+<p>თუ გაქვთ წერილობითი ნებართვა ლოგოს / გრაფიკული Tor-ნიშნის გამოსაყენებლად, როგორიცაა თუნდაც „Tor Onion“, უნდა გამოიყენოთ იმ სახით, როგორითაც ხელმისაწვდომია მისამართზე <a href="https://styleguide.torproject.org/brand-assets">https://styleguide.torproject.org/brand-assets</a>.
+უნდა ეცადოთ, არ შეუცვალოთ ფერი, შრიფტი, ზომების ფარდობა ან სხვა მახასიათებელი ჩვენს ლოგოს.
+აგრეთვე უნდა განაცალკევოთ ჩვენი ლოგო სხვა გამოყენებული მასალებისგან და არ უნდა იყოს ყველაზე გამოსაჩენ ადგილას, გარდა იმ შემთხვევებისა, როცა პირადი, არამომგებიანი დანიშნულებითაა ნებადართული ზემოაღნიშნულ შემთხვევებში.</p>
+<h2>სავაჭრო ნიშნების შესახებ დარღვევის მოხსენება</h2>
+<p>გთხოვთ გვაცნობოთ Tor-ნიშნების არასათანადო გამოყენების შესახებ მისამართზე <a href="mailto:tor-brand@rt.torproject.org">tor-brand@rt.torproject.org</a>, ამასთან ერთად აღგვიწეროთ, რაც შეიძლება დაწვრილებით, თუ რა მიგაჩნიათ დარღვევად.
+კარგად გამოვიძიებთ და საფუძვლიანი თუ აღმოჩნდება, სათანადოდაც ვიმოქმედებთ.</p>
+<h2>კითხვები</h2>
+<p>თუ გსურთ გამოიყენოთ Tor-ნიშნები იმ სახით, როგორითაც არაა აღწერილი ჩვენს დებულებაში ან რამე კითხვა გაქვთ დებულებასთან დაკავშირებით, გთხოვთ <a href="https://torproject.org/contact">შეგვეხმიანოთ</a></p>
 
             </div>
           

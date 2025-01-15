@@ -1,7 +1,7 @@
 <!doctype html>
 <html xmlns="http://www.w3.org/1999/xhtml" lang="fa" dir="rtl" >
 
-<!-- Mirrored from www.torproject.org/fa/download/ by HTTrack Website Copier/3.x [XR&CO'2014], Wed, 08 Jan 2025 01:11:16 GMT -->
+<!-- Mirrored from www.torproject.org/fa/download/ by HTTrack Website Copier/3.x [XR&CO'2014], Wed, 15 Jan 2025 01:10:32 GMT -->
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -268,88 +268,7 @@
     </nav>
 </div>
   </header>
-  <div class="banner">
-  <input id="trigger" type="checkbox" title="Close banner" />
-  <label for="trigger" class="banner-close text-white">
-      <div class="d-flex h-100">
-        <img src="../../static/images/yec/x-dark3c81.html?h=353e04cc" class="m-auto h-100 w-100 p-1 img-svg">
-      </div>
-  </label>
-  <span class="eoy-sr-only text-black">Close banner</span>
   
-  <div id="banner-header">
-    <div class="banner-content">
-      <div class="banner-content-spacer pt-5 h-100">
-        <div class="banner-content-container d-flex px-3">
-          <div id="banner-text-container" class="d-flex flex-column text-right">
-            <div id="banner-text">
-              <h1 class="yec-variant-browse">مرور بدون جاسوسی حق شماست.</h1>
-              <h1 class="yec-variant-search">جست‌وجوی بدون ردیابی حق شماست.</h1>
-              <h1 class="yec-variant-speak">صحبت بدون شنود حق شماست.</h1>
-              <p>Join the thousands of Tor supporters building an internet powered by privacy. 
-                 Make a donation today.</p>
-              <p><strong>Through December 31, your gift will be matched 1:1, up to $300,000!</strong></p>
-            </div>
-            <div id="yec-donate-button-container">
-              <a class="btn" id="yec-donate-button" href="https://donate.torproject.org/">
-                <span>اکنون حمایت کنید</span>
-                <img src="../../static/images/yec/heart673a.png?h=ad369acb" class="donate-heart img-svg">
-              </a>
-            </div>
-          </div>
-          <div class="banner-main-graphics h-100">
-            <img class="yec-illo yec-variant-browse img-svg" src="../../static/images/yec/illo-yec-browse98e1.png?h=86d8fd2b">
-            <img class="yec-illo yec-variant-search img-svg" src="../../static/images/yec/illo-yec-search465b.html?h=347ed4b2">
-            <img class="yec-illo yec-variant-speak img-svg" src="../../static/images/yec/illo-yec-speakae5f.png?h=abdc7268">
-          </div>
-        </div>
-      </div>
-    </div>
-  </div>
-</div>
-
-<script type="text/javascript">
-/* persist banner close across pages in the same session/tab */
-let trigger = document.querySelector(".banner #trigger");
-trigger.addEventListener("change", () => {
-    sessionStorage.setItem("bannerClosed", trigger.checked);
-});
-if (sessionStorage.getItem("bannerClosed")) {
-    trigger.checked = sessionStorage.getItem("bannerClosed");
-}
-/* display a random variant of the banner */
-/* not using jQuery because it's loaded later, and this is just faster */
-const variants = ['browse', 'search', 'speak'];
-const default_variant = 'browse';
-const variant = variants[Math.floor(Math.random() * variants.length)]
-const variant_elements =  document.querySelectorAll('h1.yec-variant-' + default_variant + ', img.yec-variant-' + default_variant);
-if (variant == default_variant) {
-    variant_elements.forEach((i) => {
-        i.style.visibility = 'visible';
-    });
-} else {
-    variant_elements.forEach((i) => {
-        i.style.display = 'none';
-    });
-    document.querySelector('h1.yec-variant-' + variant).style.display = 'inline';
-    document.querySelector('img.yec-variant-' + variant).style.display = 'block';
-}
-document.getElementById('yec-donate-button').classList.add('yec-variant-' + variant);
-</script>
-
-<noscript>
-<!-- show the default variant -->
-<style>
-  #banner-header .banner-content h1.yec-variant-browse,
-  #banner-header .banner-content img.yec-variant-browse {
-    visibility: visible;
-  }
-  #yec-donate-button {
-    background-color: var(--abouttor-yec-button-bg-color-browse);
-    visibility: visible;
-  }
-</style>
-</noscript>
   <div class="page">
     <div class="container-fluid bg-dark">
       <div class="row flex-xl-nowrap order-last">
@@ -383,7 +302,7 @@ document.getElementById('yec-donate-button').classList.add('yec-variant-' + vari
           
           
         
-        <a class="downloadLink" href="https://dist.torproject.org/torbrowser/14.0.3/tor-browser-windows-x86_64-portable-14.0.3.exe">
+        <a class="downloadLink" href="https://dist.torproject.org/torbrowser/14.0.4/tor-browser-windows-x86_64-portable-14.0.4.exe">
           <i class="text-light fab fa-windows-png"></i>
         </a>
         <script>
@@ -392,8 +311,8 @@ document.getElementById('yec-donate-button').classList.add('yec-variant-' + vari
            $('[data-toggle="tooltip"]').tooltip();
          });
         </script>
-        <a class="btn btn-primary mt-4 downloadLink" href="https://dist.torproject.org/torbrowser/14.0.3/tor-browser-windows-x86_64-portable-14.0.3.exe">بارگیری برای Windows</a>
-        <a class="link" href="https://dist.torproject.org/torbrowser/14.0.3/tor-browser-windows-x86_64-portable-14.0.3.exe.asc" download><span class="nick text-white" style="text-decoration: underline;">امضا</span></a>
+        <a class="btn btn-primary mt-4 downloadLink" href="https://dist.torproject.org/torbrowser/14.0.4/tor-browser-windows-x86_64-portable-14.0.4.exe">بارگیری برای Windows</a>
+        <a class="link" href="https://dist.torproject.org/torbrowser/14.0.4/tor-browser-windows-x86_64-portable-14.0.4.exe.asc" download><span class="nick text-white" style="text-decoration: underline;">امضا</span></a>
         <a class="link" href="https://support.torproject.org/fa/tbb/how-to-verify-signature/" target="_blank" data-toggle="tooltip" data-placement="top" title="نحوه تایید امضا را بیاموزید"><i style="font-size:10px;" class="text-light fas fa-question-circle"></i></a>
       </div>
     </div>
@@ -408,7 +327,7 @@ document.getElementById('yec-donate-button').classList.add('yec-variant-' + vari
           
           
         
-        <a class="downloadLink" href="https://dist.torproject.org/torbrowser/14.0.3/tor-browser-macos-14.0.3.dmg">
+        <a class="downloadLink" href="https://dist.torproject.org/torbrowser/14.0.4/tor-browser-macos-14.0.4.dmg">
           <i class="text-light fab fa-apple-png"></i>
         </a>
         <script>
@@ -417,8 +336,8 @@ document.getElementById('yec-donate-button').classList.add('yec-variant-' + vari
            $('[data-toggle="tooltip"]').tooltip();
          });
         </script>
-        <a class="btn btn-primary mt-4 downloadLink" href="https://dist.torproject.org/torbrowser/14.0.3/tor-browser-macos-14.0.3.dmg">بارگیری برای macOS</a>
-        <a class="link" href="https://dist.torproject.org/torbrowser/14.0.3/tor-browser-macos-14.0.3.dmg.asc" download><span class="nick text-white" style="text-decoration: underline;">امضا</span></a>
+        <a class="btn btn-primary mt-4 downloadLink" href="https://dist.torproject.org/torbrowser/14.0.4/tor-browser-macos-14.0.4.dmg">بارگیری برای macOS</a>
+        <a class="link" href="https://dist.torproject.org/torbrowser/14.0.4/tor-browser-macos-14.0.4.dmg.asc" download><span class="nick text-white" style="text-decoration: underline;">امضا</span></a>
         <a class="link" href="https://support.torproject.org/fa/tbb/how-to-verify-signature/" target="_blank" data-toggle="tooltip" data-placement="top" title="نحوه تایید امضا را بیاموزید"><i style="font-size:10px;" class="text-light fas fa-question-circle"></i></a>
       </div>
     </div>
@@ -434,7 +353,7 @@ document.getElementById('yec-donate-button').classList.add('yec-variant-' + vari
           
           
         
-        <a class="downloadLink" href="https://dist.torproject.org/torbrowser/14.0.3/tor-browser-linux-x86_64-14.0.3.tar.xz">
+        <a class="downloadLink" href="https://dist.torproject.org/torbrowser/14.0.4/tor-browser-linux-x86_64-14.0.4.tar.xz">
           <i class="text-light fab fa-linux-png"></i>
         </a>
         <script>
@@ -443,8 +362,8 @@ document.getElementById('yec-donate-button').classList.add('yec-variant-' + vari
            $('[data-toggle="tooltip"]').tooltip();
          });
         </script>
-        <a class="btn btn-primary mt-4 downloadLink" href="https://dist.torproject.org/torbrowser/14.0.3/tor-browser-linux-x86_64-14.0.3.tar.xz">بارگیری برای Linux</a>
-        <a class="link" href="https://dist.torproject.org/torbrowser/14.0.3/tor-browser-linux-x86_64-14.0.3.tar.xz.asc" download><span class="nick text-white" style="text-decoration: underline;">امضا</span></a>
+        <a class="btn btn-primary mt-4 downloadLink" href="https://dist.torproject.org/torbrowser/14.0.4/tor-browser-linux-x86_64-14.0.4.tar.xz">بارگیری برای Linux</a>
+        <a class="link" href="https://dist.torproject.org/torbrowser/14.0.4/tor-browser-linux-x86_64-14.0.4.tar.xz.asc" download><span class="nick text-white" style="text-decoration: underline;">امضا</span></a>
         <a class="link" href="https://support.torproject.org/fa/tbb/how-to-verify-signature/" target="_blank" data-toggle="tooltip" data-placement="top" title="نحوه تایید امضا را بیاموزید"><i style="font-size:10px;" class="text-light fas fa-question-circle"></i></a>
       </div>
     </div>
@@ -575,17 +494,17 @@ document.getElementById('yec-donate-button').classList.add('yec-variant-' + vari
       <div class="row my-5">
         <div class="col-xl-6 mx-auto">
           
-          <a class="btn btn-lg btn-light text-primary py-1 px-2 my-2" href="https://dist.torproject.org/torbrowser/14.0.3/tor-browser-android-aarch64-14.0.3.apk">بارگیری ‎.apk  <small class="badge-pill badge-dark mx-1 nick">aarch64</small></a>
-          <a class="btn btn-primary btn-sm nick" href="https://dist.torproject.org/torbrowser/14.0.3/tor-browser-android-aarch64-14.0.3.apk.asc"><small>Sig</small></a>
+          <a class="btn btn-lg btn-light text-primary py-1 px-2 my-2" href="https://dist.torproject.org/torbrowser/14.0.4/tor-browser-android-aarch64-14.0.4.apk">بارگیری ‎.apk  <small class="badge-pill badge-dark mx-1 nick">aarch64</small></a>
+          <a class="btn btn-primary btn-sm nick" href="https://dist.torproject.org/torbrowser/14.0.4/tor-browser-android-aarch64-14.0.4.apk.asc"><small>Sig</small></a>
 
-          <a class="btn btn-lg btn-light text-primary py-1 px-2 my-2" href="https://dist.torproject.org/torbrowser/14.0.3/tor-browser-android-armv7-14.0.3.apk">بارگیری ‎.apk  <small class="badge-pill badge-dark mx-1 nick">arm</small></a>
-          <a class="btn btn-primary btn-sm nick" href="https://dist.torproject.org/torbrowser/14.0.3/tor-browser-android-armv7-14.0.3.apk.asc"><small>Sig</small></a>
+          <a class="btn btn-lg btn-light text-primary py-1 px-2 my-2" href="https://dist.torproject.org/torbrowser/14.0.4/tor-browser-android-armv7-14.0.4.apk">بارگیری ‎.apk  <small class="badge-pill badge-dark mx-1 nick">arm</small></a>
+          <a class="btn btn-primary btn-sm nick" href="https://dist.torproject.org/torbrowser/14.0.4/tor-browser-android-armv7-14.0.4.apk.asc"><small>Sig</small></a>
 
-          <a class="btn btn-lg btn-light text-primary py-1 px-2 my-2" href="https://dist.torproject.org/torbrowser/14.0.3/tor-browser-android-x86_64-14.0.3.apk">بارگیری ‎.apk  <small class="badge-pill badge-dark mx-1 nick">x86_64</small></a>
-          <a class="btn btn-primary btn-sm nick" href="https://dist.torproject.org/torbrowser/14.0.3/tor-browser-android-x86_64-14.0.3.apk.asc"><small>Sig</small></a>
+          <a class="btn btn-lg btn-light text-primary py-1 px-2 my-2" href="https://dist.torproject.org/torbrowser/14.0.4/tor-browser-android-x86_64-14.0.4.apk">بارگیری ‎.apk  <small class="badge-pill badge-dark mx-1 nick">x86_64</small></a>
+          <a class="btn btn-primary btn-sm nick" href="https://dist.torproject.org/torbrowser/14.0.4/tor-browser-android-x86_64-14.0.4.apk.asc"><small>Sig</small></a>
 
-          <a class="btn btn-lg btn-light text-primary py-1 px-2 my-2" href="https://dist.torproject.org/torbrowser/14.0.3/tor-browser-android-x86-14.0.3.apk">بارگیری ‎.apk  <small class="badge-pill badge-dark mx-1 nick">x86</small></a>
-          <a class="btn btn-primary btn-sm nick" href="https://dist.torproject.org/torbrowser/14.0.3/tor-browser-android-x86-14.0.3.apk.asc"><small>Sig</small></a>
+          <a class="btn btn-lg btn-light text-primary py-1 px-2 my-2" href="https://dist.torproject.org/torbrowser/14.0.4/tor-browser-android-x86-14.0.4.apk">بارگیری ‎.apk  <small class="badge-pill badge-dark mx-1 nick">x86</small></a>
+          <a class="btn btn-primary btn-sm nick" href="https://dist.torproject.org/torbrowser/14.0.4/tor-browser-android-x86-14.0.4.apk.asc"><small>Sig</small></a>
 
           <a class="btn btn-block btn-lg btn-light text-primary my-2" href="https://play.google.com/store/apps/details?id=org.torproject.torbrowser">به گوگل‌پلی بروید</a>
           
@@ -861,5 +780,5 @@ document.getElementById('yec-donate-button').classList.add('yec-variant-' + vari
 </div>
 </body>
 
-<!-- Mirrored from www.torproject.org/fa/download/ by HTTrack Website Copier/3.x [XR&CO'2014], Wed, 08 Jan 2025 01:11:17 GMT -->
+<!-- Mirrored from www.torproject.org/fa/download/ by HTTrack Website Copier/3.x [XR&CO'2014], Wed, 15 Jan 2025 01:10:33 GMT -->
 </html>
