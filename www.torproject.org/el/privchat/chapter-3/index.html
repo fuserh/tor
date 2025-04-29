@@ -1,7 +1,7 @@
 <!doctype html>
 <html xmlns="http://www.w3.org/1999/xhtml" lang="el" >
 
-<!-- Mirrored from www.torproject.org/el/privchat/chapter-3/ by HTTrack Website Copier/3.x [XR&CO'2014], Tue, 22 Apr 2025 01:27:16 GMT -->
+<!-- Mirrored from www.torproject.org/el/privchat/chapter-3/ by HTTrack Website Copier/3.x [XR&CO'2014], Tue, 29 Apr 2025 01:30:20 GMT -->
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -15,7 +15,7 @@
   <meta property="og:description" content="Προστατεύστε τον εαυτό σας από την παρακολούθηση και την επιτήρηση. Παρακάμψτε τη λογοκρισία." />
   <meta property="og:image" content="../../../static/images/tor-project-logo-onions.html" />
   <meta name="monetization" content="$ilp.uphold.com/pYfXb92JBQN4">
-  <link rel="stylesheet" href="../../../static/css/bootstrap4019.html?h=4dcad18e">
+  <link rel="stylesheet" href="../../../static/css/bootstrap3dc7.css?h=4dc4b864">
   <link rel="stylesheet" href="../../../static/fonts/fontawesome/css/all.min4346.html?h=3c73ff1c" rel="stylesheet">
   
   <!-- Standard favicon -->
@@ -275,7 +275,50 @@
     </nav>
 </div>
   </header>
+  <div class="banner">
+  <input id="trigger" type="checkbox" title="Close banner" />
+  <label for="trigger" class="banner-close text-white">
+      <div class="d-flex h-100">
+          <img src="../../../static/images/yec/x-dark3c81.html?h=353e04cc" class="m-auto h-100 w-100 p-1 img-svg">
+      </div>
+  </label>
+  <span class="eoy-sr-only text-black">Close banner</span>
   
+  <div id="banner-header">
+    <div class="banner-content">
+      <div class="banner-content-spacer h-100">
+        <div class="banner-content-container d-flex px-3">
+          <div class="banner-main-graphics h-100">
+            <img class="yec-illo" src="../../../static/images/yec/spring-onion-comp_1.5xb27d.png?h=7a14cd3b">
+          </div>
+          <div id="banner-text-container" class="d-flex flex-column text-left">
+            <div id="banner-text">
+              <h1 class="yec-variant-browse">Η ιδιωτικότητα είναι δυνατή.</h1>
+              <p>Ένας καλύτερος κόσμος είναι εφικτός όταν επενδύετε σε εργαλεία που δίνουν προτεραιότητα στην ιδιωτική σας ζωή έναντι του κέρδους. Δωρίστε στο Tor σήμερα.</p>
+            </div>
+            <div id="yec-donate-button-container">
+              <a class="btn" id="yec-donate-button" href="https://torproject.org/donate/donate-bn1-sc2025">
+                <span>Δωρεά τώρα</span>
+                <img src="../../../static/images/yec/spring-heart36e5.svg?h=7c32fa9e" class="donate-heart">
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<script type="text/javascript">
+/* persist banner close across pages in the same session/tab */
+let trigger = document.querySelector(".banner #trigger");
+trigger.addEventListener("change", () => {
+    sessionStorage.setItem("bannerClosed", trigger.checked);
+});
+if (sessionStorage.getItem("bannerClosed")) {
+    trigger.checked = sessionStorage.getItem("bannerClosed");
+}
+</script>
   <div class="page pt-4">
     
 <div class="container-fluid bg-primary">
@@ -314,7 +357,7 @@
           </div>
           <div class="container" style="background:url(../../../static/images/privchat/pattern.png) no-repeat center; background-size: contain;">
   <div class="w-50 text-center mx-auto">
-    <img class="img-fluid p-3" height="auto" src="../../../static/images/privchat/privchat.svg" /> <h1 class="display-2 text-primary">PrivChat</h1>
+    <img class="img-fluid p-3" height="auto" src="../../../static/images/privchat/privchat.html" /> <h1 class="display-2 text-primary">PrivChat</h1>
     <p class="text-primary p-3"> <p>μια συζήτηση για την τεχνολογία, τα ανθρώπινα δικαιώματα <br/>και την ελευθερία του Διαδικτύου που σας έφερε το Tor Project</p>
 </p>
   </div>
@@ -347,7 +390,7 @@
       <div class="container">
       <div class="card flex-row flex-wrap py-3">
         <div class="col-3">
-            <img class="card-img-top" src="../../../static/images/privchat/ed.png" alt="">
+            <img class="card-img-top" src="../../../static/images/privchat/ed.html" alt="">
         </div>
         <div class="col">
           <div class="card-block px-2">
@@ -388,7 +431,7 @@
 
     <div class="card flex-row flex-wrap py-3 mb-5">
       <div class="col-3">
-          <img class="card-img-top" src="../../../static/images/privchat/berhan.html" alt="">
+          <img class="card-img-top" src="../../../static/images/privchat/berhan.jpg" alt="">
       </div>
       <div class="col">
         <div class="card-block px-2">
@@ -405,7 +448,7 @@
 
     <div class="card flex-row flex-wrap py-3 mb-5">
       <div class="col-3">
-          <img class="card-img-top" src="../../../static/images/privchat/ramy.html" alt="">
+          <img class="card-img-top" src="../../../static/images/privchat/ramy.png" alt="">
       </div>
       <div class="col">
         <div class="card-block px-2">
@@ -448,7 +491,7 @@
     <div class="col-sm-8 d-flex download-section mt-auto">
       <div class="container pb-2 justify-content-right">
          <h2 class="text-white text-bold">Κατεβάστε τον Tor Browser</h2>
-         <p class="text-white">Κάντε λήψη του Tor Browser για να ζήσετε τη πραγματική ιδιωτική περιήγηση χωρίς παρακολούθηση, επιτήρηση ή λογοκρισία.</p>
+         <p class="text-white">Κατεβάστε το Tor Browser για να βιώσετε πραγματική ιδιωτική περιήγηση χωρίς παρακολούθηση, επιτήρηση ή λογοκρισία.</p>
             <a class="btn text-primary bg-white btn-light pull-right mt-2" href="../../download/index.html">
           Κατεβάστε τον Tor Browser<i class="ml-2 pt-1 fas fa-arrow-down-png-purple"></i>
          </a>
@@ -552,10 +595,10 @@
         <p class="text-light">Λάβετε μηνιαίες ενημερώσεις και ευκαιρίες από το Tor Project:</p>
         <p class="w"><a class="btn btn-small btn-dark mt-2 text-white active" role="button" aria-pressed="true" href="https://donate.torproject.org/subscribe/">ΕΓΓΡΑΦΗ</a></p>
         <div class="mt-5">
-          <p class="text-primary-light">SEARCH</p>
+          <p class="text-primary-light">ΑΝΑΖΗΤΗΣΗ</p>
           <form method="get" id="ddgSearch" action="https://duckduckgo.com/">
             <input type="hidden" name="sites" value="../../../index.html"/>
-            <input type="text" name="q" placeholder="Search this website on DuckDuckGo..." class="form-control" />
+            <input type="text" name="q" placeholder="Αναζητήστε αυτόν τον ιστότοπο στο DuckDuckGo..." class="form-control" />
           </form>
         </div>
       </div>
@@ -588,7 +631,7 @@
 
     <div class="col-12 d-flex justify-content-center">
       <div class="col-12 col-sm-8 px-0 mt-5 trademark-policy">
-        <p>Trademark, copyright notices, and rules for use by third parties can be found in our <a href="../../../about/trademark/index.html">Trademark and Brand policy</a>.</p>
+        <p>Οι ειδοποιήσεις για τα εμπορικά σήματα, τα πνευματικά δικαιώματα και οι κανόνες για τη χρήση από τρίτους βρίσκονται στην <a href="../../../about/trademark/index.html">Trademark and Brand policy</a>.</p>
 
       </div>
       <div class="col-sm-2 mt-5 d-none d-sm-block">
@@ -725,5 +768,5 @@
   
 </body>
 
-<!-- Mirrored from www.torproject.org/el/privchat/chapter-3/ by HTTrack Website Copier/3.x [XR&CO'2014], Tue, 22 Apr 2025 01:27:16 GMT -->
+<!-- Mirrored from www.torproject.org/el/privchat/chapter-3/ by HTTrack Website Copier/3.x [XR&CO'2014], Tue, 29 Apr 2025 01:30:20 GMT -->
 </html>

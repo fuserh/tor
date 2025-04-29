@@ -1,7 +1,7 @@
 <!doctype html>
 <html xmlns="http://www.w3.org/1999/xhtml" lang="vi" >
 
-<!-- Mirrored from www.torproject.org/vi/about/reports/ by HTTrack Website Copier/3.x [XR&CO'2014], Tue, 22 Apr 2025 01:23:24 GMT -->
+<!-- Mirrored from www.torproject.org/vi/about/reports/ by HTTrack Website Copier/3.x [XR&CO'2014], Tue, 29 Apr 2025 01:25:34 GMT -->
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -15,7 +15,7 @@
   <meta property="og:description" content="Phòng vệ cho chính bạn kháng đỡ lại theo dõi và giám sát. Vượt qua kiểm duyệt." />
   <meta property="og:image" content="../../../static/images/tor-project-logo-onions.html" />
   <meta name="monetization" content="$ilp.uphold.com/pYfXb92JBQN4">
-  <link rel="stylesheet" href="../../../static/css/bootstrap4019.html?h=4dcad18e">
+  <link rel="stylesheet" href="../../../static/css/bootstrap3dc7.css?h=4dc4b864">
   <link rel="stylesheet" href="../../../static/fonts/fontawesome/css/all.min4346.html?h=3c73ff1c" rel="stylesheet">
   
   <!-- Standard favicon -->
@@ -275,7 +275,50 @@
     </nav>
 </div>
   </header>
+  <div class="banner">
+  <input id="trigger" type="checkbox" title="Close banner" />
+  <label for="trigger" class="banner-close text-white">
+      <div class="d-flex h-100">
+          <img src="../../../static/images/yec/x-dark3c81.html?h=353e04cc" class="m-auto h-100 w-100 p-1 img-svg">
+      </div>
+  </label>
+  <span class="eoy-sr-only text-black">Close banner</span>
   
+  <div id="banner-header">
+    <div class="banner-content">
+      <div class="banner-content-spacer h-100">
+        <div class="banner-content-container d-flex px-3">
+          <div class="banner-main-graphics h-100">
+            <img class="yec-illo" src="../../../static/images/yec/spring-onion-comp_1.5xb27d.png?h=7a14cd3b">
+          </div>
+          <div id="banner-text-container" class="d-flex flex-column text-left">
+            <div id="banner-text">
+              <h1 class="yec-variant-browse">Privacy is possible.</h1>
+              <p>A better world is possible when you invest in tools that prioritize your privacy over profit. Donate to Tor today.</p>
+            </div>
+            <div id="yec-donate-button-container">
+              <a class="btn" id="yec-donate-button" href="https://torproject.org/donate/donate-bn1-sc2025">
+                <span>Quyên góp ngay</span>
+                <img src="../../../static/images/yec/spring-heart36e5.svg?h=7c32fa9e" class="donate-heart">
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<script type="text/javascript">
+/* persist banner close across pages in the same session/tab */
+let trigger = document.querySelector(".banner #trigger");
+trigger.addEventListener("change", () => {
+    sessionStorage.setItem("bannerClosed", trigger.checked);
+});
+if (sessionStorage.getItem("bannerClosed")) {
+    trigger.checked = sessionStorage.getItem("bannerClosed");
+}
+</script>
   <div class="page">
     
 <div class="container-fluid bg-primary">
@@ -892,7 +935,7 @@
     
   </td>
   <td>2009 Financial Statements and Audit Results</td>
-  <td><a href="../../../static/findoc/2009-TorProject-FinancialStatementsbedd.pdf?h=ca0ca123">Xem PDF</a></td>
+  <td><a href="../../../static/findoc/2009-TorProject-FinancialStatementsbedd.html?h=ca0ca123">Xem PDF</a></td>
 </tr>
 
     
@@ -906,7 +949,7 @@
     
   </td>
   <td>2009 Dept of Commerce Data Collection Form</td>
-  <td><a href="../../../static/findoc/2009-TorProject-DCFc22e.pdf?h=84d6b759">Xem PDF</a></td>
+  <td><a href="../../../static/findoc/2009-TorProject-DCFc22e.html?h=84d6b759">Xem PDF</a></td>
 </tr>
 
     
@@ -920,7 +963,7 @@
     
   </td>
   <td>2009 Annual Report</td>
-  <td><a href="../../../static/findoc/2009-TorProject-Annual-Reportb1fa.pdf?h=eee62cad">Xem PDF</a></td>
+  <td><a href="../../../static/findoc/2009-TorProject-Annual-Reportb1fa.html?h=eee62cad">Xem PDF</a></td>
 </tr>
 
     
@@ -1170,7 +1213,7 @@
         <div class="mt-5">
           <p class="text-primary-light">SEARCH</p>
           <form method="get" id="ddgSearch" action="https://duckduckgo.com/">
-            <input type="hidden" name="sites" value="../../../index.html"/>
+            <input type="hidden" name="sites" value="https://www.torproject.org/"/>
             <input type="text" name="q" placeholder="Search this website on DuckDuckGo..." class="form-control" />
           </form>
         </div>

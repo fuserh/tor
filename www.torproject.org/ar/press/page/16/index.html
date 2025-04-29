@@ -1,7 +1,7 @@
 <!doctype html>
 <html xmlns="http://www.w3.org/1999/xhtml" lang="ar" dir="rtl" >
 
-<!-- Mirrored from www.torproject.org/ar/press/page/16/ by HTTrack Website Copier/3.x [XR&CO'2014], Tue, 22 Apr 2025 01:30:33 GMT -->
+<!-- Mirrored from www.torproject.org/ar/press/page/16/ by HTTrack Website Copier/3.x [XR&CO'2014], Tue, 29 Apr 2025 01:33:17 GMT -->
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -15,10 +15,10 @@
   <meta property="og:description" content="دافع عن نفسك ضد التتبع والمراقبة. تجاوز الرقابة." />
   <meta property="og:image" content="../../../../static/images/tor-project-logo-onions.html" />
   <meta name="monetization" content="$ilp.uphold.com/pYfXb92JBQN4">
-  <link rel="stylesheet" href="../../../../static/css/bootstrap4019.html?h=4dcad18e">
+  <link rel="stylesheet" href="../../../../static/css/bootstrap3dc7.css?h=4dc4b864">
   <link rel="stylesheet" href="../../../../static/fonts/fontawesome/css/all.min4346.html?h=3c73ff1c" rel="stylesheet">
   
-  <link rel="stylesheet" href="../../../../static/custom-css/rtlc612.css?h=b0c410b1">
+  <link rel="stylesheet" href="../../../../static/custom-css/rtlc612.html?h=b0c410b1">
   
   <!-- Standard favicon -->
   <link rel="icon" type="image/x-icon" href="../../../../static/images/favicon/favicon.html">
@@ -277,7 +277,50 @@
     </nav>
 </div>
   </header>
+  <div class="banner">
+  <input id="trigger" type="checkbox" title="Close banner" />
+  <label for="trigger" class="banner-close text-white">
+      <div class="d-flex h-100">
+          <img src="../../../../static/images/yec/x-dark3c81.html?h=353e04cc" class="m-auto h-100 w-100 p-1 img-svg">
+      </div>
+  </label>
+  <span class="eoy-sr-only text-black">Close banner</span>
   
+  <div id="banner-header">
+    <div class="banner-content">
+      <div class="banner-content-spacer h-100">
+        <div class="banner-content-container d-flex px-3">
+          <div class="banner-main-graphics h-100">
+            <img class="yec-illo" src="../../../../static/images/yec/spring-onion-comp_1.5xb27d.png?h=7a14cd3b">
+          </div>
+          <div id="banner-text-container" class="d-flex flex-column text-right">
+            <div id="banner-text">
+              <h1 class="yec-variant-browse">الخصوصيّة ممكنة.</h1>
+              <p>يكون العالم الأفضل ممكنًا عندما تستثمر في الأدوات التي تعطي أولويات خصوصيتك على الربح. تبرّع إلى تور اليوم.</p>
+            </div>
+            <div id="yec-donate-button-container">
+              <a class="btn" id="yec-donate-button" href="https://torproject.org/donate/donate-bn1-sc2025">
+                <span>تبرع الآن</span>
+                <img src="../../../../static/images/yec/spring-heart36e5.svg?h=7c32fa9e" class="donate-heart">
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<script type="text/javascript">
+/* persist banner close across pages in the same session/tab */
+let trigger = document.querySelector(".banner #trigger");
+trigger.addEventListener("change", () => {
+    sessionStorage.setItem("bannerClosed", trigger.checked);
+});
+if (sessionStorage.getItem("bannerClosed")) {
+    trigger.checked = sessionStorage.getItem("bannerClosed");
+}
+</script>
   <div class="page pt-4">
     
 <div class="container-fluid bg-primary">
@@ -747,7 +790,7 @@
         <div class="mt-5">
           <p class="text-primary-light">ابحث</p>
           <form method="get" id="ddgSearch" action="https://duckduckgo.com/">
-            <input type="hidden" name="sites" value="../../../../index.html"/>
+            <input type="hidden" name="sites" value="https://www.torproject.org/"/>
             <input type="text" name="q" placeholder="ابحث في هذا الموقع على DuckDuckGo..." class="form-control" />
           </form>
         </div>
@@ -918,5 +961,5 @@
   
 </body>
 
-<!-- Mirrored from www.torproject.org/ar/press/page/16/ by HTTrack Website Copier/3.x [XR&CO'2014], Tue, 22 Apr 2025 01:30:33 GMT -->
+<!-- Mirrored from www.torproject.org/ar/press/page/16/ by HTTrack Website Copier/3.x [XR&CO'2014], Tue, 29 Apr 2025 01:33:17 GMT -->
 </html>
